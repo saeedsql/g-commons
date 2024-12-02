@@ -91,7 +91,7 @@ fun ComponentActivity.upgradeToPro() {
 
 const val DEVELOPER_PLAY_STORE_URL = "https://play.google.com/store/apps/dev?id=8268163890866913014"
 const val FAKE_VERSION_APP_LABEL =
-    "You are using a fake version of the app. For your own safety download the original one from play.google.com. Thanks"
+    "Heyghghghghghghghgh Thanks"
 
 fun Context.fakeVersionCheck(
     showConfirmationDialog: () -> Unit
