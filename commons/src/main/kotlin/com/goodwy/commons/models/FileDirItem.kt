@@ -1,12 +1,12 @@
-package com.goodwy.commons.models
+package com.devgroup.commons.models
 
 import android.content.Context
 import android.net.Uri
 import android.provider.MediaStore
 import androidx.compose.runtime.Immutable
 import com.bumptech.glide.signature.ObjectKey
-import com.goodwy.commons.extensions.*
-import com.goodwy.commons.helpers.*
+import com.devgroup.commons.extensions.*
+import com.devgroup.commons.helpers.*
 import java.io.File
 
 open class FileDirItem(

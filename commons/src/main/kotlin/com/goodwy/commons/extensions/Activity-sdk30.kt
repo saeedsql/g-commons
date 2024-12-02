@@ -1,10 +1,10 @@
-package com.goodwy.commons.extensions
+package com.devgroup.commons.extensions
 
 import android.content.ContentValues
 import android.provider.MediaStore
-import com.goodwy.commons.R
-import com.goodwy.commons.activities.BaseSimpleActivity
-import com.goodwy.commons.models.FileDirItem
+import com.devgroup.commons.R
+import com.devgroup.commons.activities.BaseSimpleActivity
+import com.devgroup.commons.models.FileDirItem
 import java.io.File
 import java.io.InputStream
 import java.io.OutputStream

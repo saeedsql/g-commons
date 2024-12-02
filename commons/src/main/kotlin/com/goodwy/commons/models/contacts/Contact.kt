@@ -1,12 +1,12 @@
-package com.goodwy.commons.models.contacts
+package com.devgroup.commons.models.contacts
 
 import android.content.Context
 import android.graphics.Bitmap
 import android.provider.ContactsContract
 import android.telephony.PhoneNumberUtils
-import com.goodwy.commons.extensions.*
-import com.goodwy.commons.helpers.*
-import com.goodwy.commons.models.PhoneNumber
+import com.devgroup.commons.extensions.*
+import com.devgroup.commons.helpers.*
+import com.devgroup.commons.models.PhoneNumber
 import ezvcard.property.FormattedName
 import kotlinx.serialization.Contextual
 import kotlinx.serialization.Serializable

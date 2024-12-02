@@ -1,4 +1,4 @@
-package com.goodwy.commons.views
+package com.devgroup.commons.views
 
 import android.app.Activity
 import android.content.Context
@@ -7,12 +7,12 @@ import android.graphics.Color
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import com.google.android.material.appbar.AppBarLayout
-import com.goodwy.commons.R
-import com.goodwy.commons.activities.BaseSimpleActivity
-import com.goodwy.commons.databinding.MenuSearchTopBinding
-import com.goodwy.commons.extensions.*
-import com.goodwy.commons.helpers.LOWER_ALPHA
-import com.goodwy.commons.helpers.MEDIUM_ALPHA
+import com.devgroup.commons.R
+import com.devgroup.commons.activities.BaseSimpleActivity
+import com.devgroup.commons.databinding.MenuSearchTopBinding
+import com.devgroup.commons.extensions.*
+import com.devgroup.commons.helpers.LOWER_ALPHA
+import com.devgroup.commons.helpers.MEDIUM_ALPHA
 
 class MySearchMenuTop(context: Context, attrs: AttributeSet) : AppBarLayout(context, attrs) {
     var isSearchOpen = false

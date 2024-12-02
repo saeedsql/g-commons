@@ -1,4 +1,4 @@
-package com.goodwy.commons.adapters
+package com.devgroup.commons.adapters
 
 import android.content.Context
 import android.util.SparseArray
@@ -7,14 +7,14 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.biometric.auth.AuthPromptHost
 import androidx.viewpager.widget.PagerAdapter
-import com.goodwy.commons.R
-import com.goodwy.commons.helpers.PROTECTION_FINGERPRINT
-import com.goodwy.commons.helpers.PROTECTION_PATTERN
-import com.goodwy.commons.helpers.PROTECTION_PIN
-import com.goodwy.commons.helpers.isRPlus
-import com.goodwy.commons.interfaces.HashListener
-import com.goodwy.commons.interfaces.SecurityTab
-import com.goodwy.commons.views.MyScrollView
+import com.devgroup.commons.R
+import com.devgroup.commons.helpers.PROTECTION_FINGERPRINT
+import com.devgroup.commons.helpers.PROTECTION_PATTERN
+import com.devgroup.commons.helpers.PROTECTION_PIN
+import com.devgroup.commons.helpers.isRPlus
+import com.devgroup.commons.interfaces.HashListener
+import com.devgroup.commons.interfaces.SecurityTab
+import com.devgroup.commons.views.MyScrollView
 
 class PasswordTypesAdapter(
     private val context: Context,

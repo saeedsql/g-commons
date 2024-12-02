@@ -1,4 +1,4 @@
-package com.goodwy.commons.views.bottomactionmenu
+package com.devgroup.commons.views.bottomactionmenu
 
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
@@ -13,12 +13,12 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import androidx.annotation.IdRes
 import com.google.android.material.animation.AnimationUtils
-import com.goodwy.commons.R
-import com.goodwy.commons.extensions.applyColorFilter
-import com.goodwy.commons.extensions.beVisibleIf
-import com.goodwy.commons.extensions.toast
-import com.goodwy.commons.extensions.windowManager
-import com.goodwy.commons.helpers.isRPlus
+import com.devgroup.commons.R
+import com.devgroup.commons.extensions.applyColorFilter
+import com.devgroup.commons.extensions.beVisibleIf
+import com.devgroup.commons.extensions.toast
+import com.devgroup.commons.extensions.windowManager
+import com.devgroup.commons.helpers.isRPlus
 
 class BottomActionMenuView : LinearLayout {
     companion object {

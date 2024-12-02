@@ -1,4 +1,4 @@
-package com.goodwy.commons.extensions
+package com.devgroup.commons.extensions
 
 import android.graphics.Color
 import android.view.View

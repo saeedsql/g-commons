@@ -1,4 +1,4 @@
-package com.goodwy.commons.compose.components
+package com.devgroup.commons.compose.components
 
 import androidx.annotation.StringRes
 import androidx.compose.foundation.Indication
@@ -14,10 +14,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import com.goodwy.commons.compose.extensions.MyDevices
-import com.goodwy.commons.compose.extensions.rememberMutableInteractionSource
-import com.goodwy.commons.compose.theme.AppThemeSurface
-import com.goodwy.commons.compose.theme.SimpleTheme
+import com.devgroup.commons.compose.extensions.MyDevices
+import com.devgroup.commons.compose.extensions.rememberMutableInteractionSource
+import com.devgroup.commons.compose.theme.AppThemeSurface
+import com.devgroup.commons.compose.theme.SimpleTheme
 
 private val dropDownPaddings = Modifier.padding(horizontal = 14.dp, vertical = 12.dp)
 
@@ -81,6 +81,6 @@ fun SimpleDropDownMenuItem(
 @Composable
 private fun SimpleDropDownMenuItemPreview() {
     AppThemeSurface {
-        SimpleDropDownMenuItem(text = com.goodwy.commons.R.string.copy, onClick = {})
+        SimpleDropDownMenuItem(text = com.devgroup.commons.R.string.copy, onClick = {})
     }
 }

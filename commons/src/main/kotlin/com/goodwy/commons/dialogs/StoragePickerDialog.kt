@@ -1,14 +1,14 @@
-package com.goodwy.commons.dialogs
+package com.devgroup.commons.dialogs
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.RadioGroup
 import androidx.appcompat.app.AlertDialog
-import com.goodwy.commons.R
-import com.goodwy.commons.activities.BaseSimpleActivity
-import com.goodwy.commons.databinding.DialogRadioGroupBinding
-import com.goodwy.commons.databinding.RadioButtonBinding
-import com.goodwy.commons.extensions.*
+import com.devgroup.commons.R
+import com.devgroup.commons.activities.BaseSimpleActivity
+import com.devgroup.commons.databinding.DialogRadioGroupBinding
+import com.devgroup.commons.databinding.RadioButtonBinding
+import com.devgroup.commons.extensions.*
 
 /**
  * A dialog for choosing between internal, root, SD card (optional) storage

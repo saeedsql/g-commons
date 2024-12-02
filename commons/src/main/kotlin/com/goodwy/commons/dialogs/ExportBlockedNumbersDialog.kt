@@ -1,12 +1,12 @@
-package com.goodwy.commons.dialogs
+package com.devgroup.commons.dialogs
 
 import androidx.appcompat.app.AlertDialog
-import com.goodwy.commons.R
-import com.goodwy.commons.activities.BaseSimpleActivity
-import com.goodwy.commons.databinding.DialogExportBlockedNumbersBinding
-import com.goodwy.commons.extensions.*
-import com.goodwy.commons.helpers.BLOCKED_NUMBERS_EXPORT_EXTENSION
-import com.goodwy.commons.helpers.ensureBackgroundThread
+import com.devgroup.commons.R
+import com.devgroup.commons.activities.BaseSimpleActivity
+import com.devgroup.commons.databinding.DialogExportBlockedNumbersBinding
+import com.devgroup.commons.extensions.*
+import com.devgroup.commons.helpers.BLOCKED_NUMBERS_EXPORT_EXTENSION
+import com.devgroup.commons.helpers.ensureBackgroundThread
 import java.io.File
 
 class ExportBlockedNumbersDialog(

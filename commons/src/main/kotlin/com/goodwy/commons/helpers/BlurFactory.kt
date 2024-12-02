@@ -1,4 +1,4 @@
-package com.goodwy.commons.helpers
+package com.devgroup.commons.helpers
 
 import android.content.Context
 import android.graphics.Bitmap

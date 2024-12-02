@@ -1,4 +1,4 @@
-package com.goodwy.commons.activities
+package com.devgroup.commons.activities
 
 import android.content.res.Configuration
 import android.os.Bundle
@@ -6,14 +6,14 @@ import androidx.activity.compose.setContent
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.goodwy.commons.R
-import com.goodwy.commons.compose.extensions.config
-import com.goodwy.commons.compose.extensions.enableEdgeToEdgeSimple
-import com.goodwy.commons.compose.screens.FAQScreen
-import com.goodwy.commons.compose.theme.AppThemeSurface
-import com.goodwy.commons.extensions.*
-import com.goodwy.commons.helpers.APP_FAQ
-import com.goodwy.commons.models.FAQItem
+import com.devgroup.commons.R
+import com.devgroup.commons.compose.extensions.config
+import com.devgroup.commons.compose.extensions.enableEdgeToEdgeSimple
+import com.devgroup.commons.compose.screens.FAQScreen
+import com.devgroup.commons.compose.theme.AppThemeSurface
+import com.devgroup.commons.extensions.*
+import com.devgroup.commons.helpers.APP_FAQ
+import com.devgroup.commons.models.FAQItem
 import kotlinx.collections.immutable.toImmutableList
 
 class FAQActivity : BaseComposeActivity() {

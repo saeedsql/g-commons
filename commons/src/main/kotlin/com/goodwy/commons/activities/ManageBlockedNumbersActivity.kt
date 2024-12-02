@@ -1,4 +1,4 @@
-package com.goodwy.commons.activities
+package com.devgroup.commons.activities
 
 import android.app.Activity
 import android.app.Application
@@ -14,18 +14,18 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewModelScope
-import com.goodwy.commons.R
-import com.goodwy.commons.compose.alert_dialog.rememberAlertDialogState
-import com.goodwy.commons.compose.extensions.enableEdgeToEdgeSimple
-import com.goodwy.commons.compose.extensions.onEventValue
-import com.goodwy.commons.compose.screens.ManageBlockedNumbersScreen
-import com.goodwy.commons.compose.theme.AppThemeSurface
-import com.goodwy.commons.dialogs.AddOrEditBlockedNumberAlertDialog
-import com.goodwy.commons.dialogs.ExportBlockedNumbersDialog
-import com.goodwy.commons.dialogs.FilePickerDialog
-import com.goodwy.commons.extensions.*
-import com.goodwy.commons.helpers.*
-import com.goodwy.commons.models.BlockedNumber
+import com.devgroup.commons.R
+import com.devgroup.commons.compose.alert_dialog.rememberAlertDialogState
+import com.devgroup.commons.compose.extensions.enableEdgeToEdgeSimple
+import com.devgroup.commons.compose.extensions.onEventValue
+import com.devgroup.commons.compose.screens.ManageBlockedNumbersScreen
+import com.devgroup.commons.compose.theme.AppThemeSurface
+import com.devgroup.commons.dialogs.AddOrEditBlockedNumberAlertDialog
+import com.devgroup.commons.dialogs.ExportBlockedNumbersDialog
+import com.devgroup.commons.dialogs.FilePickerDialog
+import com.devgroup.commons.extensions.*
+import com.devgroup.commons.helpers.*
+import com.devgroup.commons.models.BlockedNumber
 import java.io.FileOutputStream
 import java.io.OutputStream
 import kotlinx.collections.immutable.ImmutableList
@@ -71,7 +71,7 @@ class ManageBlockedNumbersActivity : BaseSimpleActivity() {
             val isTopAppBarColorIcon by config.isTopAppBarColorIcon.collectAsStateWithLifecycle(initialValue = config.topAppBarColorIcon)
             val isTopAppBarColorTitle by config.isTopAppBarColorTitle.collectAsStateWithLifecycle(initialValue = config.topAppBarColorTitle)
             val isDialer = remember {
-                config.appId.startsWith("com.goodwy.dialer")
+                config.appId.startsWith("com.devgroup.dialer")
             }
             val isDefaultDialer: Boolean = onEventValue {
                 context.isDefaultDialer()
@@ -225,7 +225,7 @@ class ManageBlockedNumbersActivity : BaseSimpleActivity() {
     }
 
     private fun maybeSetDefaultCallerIdApp() {
-        if (isQPlus() && baseConfig.appId.startsWith("com.goodwy.dialer")) {
+        if (isQPlus() && baseConfig.appId.startsWith("com.devgroup.dialer")) {
             setDefaultCallerIdApp()
         }
     }

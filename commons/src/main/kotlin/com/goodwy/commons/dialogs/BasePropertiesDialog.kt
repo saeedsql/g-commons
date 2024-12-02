@@ -1,17 +1,17 @@
-package com.goodwy.commons.dialogs
+package com.devgroup.commons.dialogs
 
 import android.app.Activity
 import android.content.res.Resources
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.LinearLayout
-import com.goodwy.commons.R
-import com.goodwy.commons.databinding.DialogPropertiesBinding
-import com.goodwy.commons.databinding.ItemPropertyBinding
-import com.goodwy.commons.extensions.copyToClipboard
-import com.goodwy.commons.extensions.getProperTextColor
-import com.goodwy.commons.extensions.showLocationOnMap
-import com.goodwy.commons.extensions.value
+import com.devgroup.commons.R
+import com.devgroup.commons.databinding.DialogPropertiesBinding
+import com.devgroup.commons.databinding.ItemPropertyBinding
+import com.devgroup.commons.extensions.copyToClipboard
+import com.devgroup.commons.extensions.getProperTextColor
+import com.devgroup.commons.extensions.showLocationOnMap
+import com.devgroup.commons.extensions.value
 
 
 

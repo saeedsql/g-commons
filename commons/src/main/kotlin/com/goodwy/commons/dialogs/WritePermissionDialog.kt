@@ -1,4 +1,4 @@
-package com.goodwy.commons.dialogs
+package com.devgroup.commons.dialogs
 
 import android.app.Activity
 import android.text.Html
@@ -31,23 +31,23 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.integration.compose.GlideImage
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.bumptech.glide.request.transition.DrawableCrossFadeFactory
-import com.goodwy.commons.R
-import com.goodwy.commons.activities.BaseSimpleActivity
-import com.goodwy.commons.compose.alert_dialog.AlertDialogState
-import com.goodwy.commons.compose.alert_dialog.DialogSurface
-import com.goodwy.commons.compose.alert_dialog.dialogTextColor
-import com.goodwy.commons.compose.alert_dialog.rememberAlertDialogState
-import com.goodwy.commons.compose.components.LinkifyTextComponent
-import com.goodwy.commons.compose.extensions.MyDevices
-import com.goodwy.commons.compose.extensions.andThen
-import com.goodwy.commons.compose.theme.AppThemeSurface
-import com.goodwy.commons.compose.theme.SimpleTheme
-import com.goodwy.commons.databinding.DialogWritePermissionBinding
-import com.goodwy.commons.databinding.DialogWritePermissionOtgBinding
-import com.goodwy.commons.extensions.fromHtml
-import com.goodwy.commons.extensions.getAlertDialogBuilder
-import com.goodwy.commons.extensions.humanizePath
-import com.goodwy.commons.extensions.setupDialogStuff
+import com.devgroup.commons.R
+import com.devgroup.commons.activities.BaseSimpleActivity
+import com.devgroup.commons.compose.alert_dialog.AlertDialogState
+import com.devgroup.commons.compose.alert_dialog.DialogSurface
+import com.devgroup.commons.compose.alert_dialog.dialogTextColor
+import com.devgroup.commons.compose.alert_dialog.rememberAlertDialogState
+import com.devgroup.commons.compose.components.LinkifyTextComponent
+import com.devgroup.commons.compose.extensions.MyDevices
+import com.devgroup.commons.compose.extensions.andThen
+import com.devgroup.commons.compose.theme.AppThemeSurface
+import com.devgroup.commons.compose.theme.SimpleTheme
+import com.devgroup.commons.databinding.DialogWritePermissionBinding
+import com.devgroup.commons.databinding.DialogWritePermissionOtgBinding
+import com.devgroup.commons.extensions.fromHtml
+import com.devgroup.commons.extensions.getAlertDialogBuilder
+import com.devgroup.commons.extensions.humanizePath
+import com.devgroup.commons.extensions.setupDialogStuff
 
 class WritePermissionDialog(activity: Activity, val writePermissionDialogMode: WritePermissionDialogMode, val callback: () -> Unit) {
 

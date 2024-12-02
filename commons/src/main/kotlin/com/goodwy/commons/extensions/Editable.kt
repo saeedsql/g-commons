@@ -1,4 +1,4 @@
-package com.goodwy.commons.extensions
+package com.devgroup.commons.extensions
 
 import android.text.Editable
 import android.text.style.BackgroundColorSpan

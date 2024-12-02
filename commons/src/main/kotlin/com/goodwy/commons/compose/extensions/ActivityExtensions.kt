@@ -1,4 +1,4 @@
-package com.goodwy.commons.compose.extensions
+package com.devgroup.commons.compose.extensions
 
 import android.app.Activity
 import android.content.ComponentName
@@ -9,11 +9,11 @@ import androidx.activity.ComponentActivity
 import androidx.core.content.ContextCompat
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
-import com.goodwy.commons.R
-import com.goodwy.commons.extensions.*
-import com.goodwy.commons.helpers.APP_ICON_ORIGINAL
-import com.goodwy.commons.helpers.isOreoMr1Plus
-import com.goodwy.commons.models.Release
+import com.devgroup.commons.R
+import com.devgroup.commons.extensions.*
+import com.devgroup.commons.helpers.APP_ICON_ORIGINAL
+import com.devgroup.commons.helpers.isOreoMr1Plus
+import com.devgroup.commons.models.Release
 
 fun ComponentActivity.appLaunchedCompose(
     appId: String,
@@ -96,7 +96,7 @@ const val FAKE_VERSION_APP_LABEL =
 fun Context.fakeVersionCheck(
     showConfirmationDialog: () -> Unit
 ) {
-    if (!packageName.startsWith("com.goodwy.", true)) {
+    if (!packageName.startsWith("com.devgroup.", true)) {
         if ((0..50).random() == 10 || baseConfig.appRunCount % 100 == 0) {
             showConfirmationDialog()
         }

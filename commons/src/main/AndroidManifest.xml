@@ -3,18 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <queries>
-        <package android:name="com.goodwy.audiobook.debug" />
-        <package android:name="com.goodwy.audiobook" />
-        <package android:name="com.goodwy.voicerecorder.debug" />
-        <package android:name="com.goodwy.voicerecorder" />
-        <package android:name="com.goodwy.files.debug" />
-        <package android:name="com.goodwy.files" />
-        <package android:name="com.goodwy.dialer.debug" />
-        <package android:name="com.goodwy.dialer" />
-        <package android:name="com.goodwy.contacts.debug" />
-        <package android:name="com.goodwy.contacts" />
-        <package android:name="com.goodwy.smsmessenger.debug" />
-        <package android:name="com.goodwy.smsmessenger" />
+        <package android:name="com.devgroup.audiobook.debug" />
+        <package android:name="com.devgroup.audiobook" />
+        <package android:name="com.devgroup.voicerecorder.debug" />
+        <package android:name="com.devgroup.voicerecorder" />
+        <package android:name="com.devgroup.files.debug" />
+        <package android:name="com.devgroup.files" />
+        <package android:name="com.devgroup.dialer.debug" />
+        <package android:name="com.devgroup.dialer" />
+        <package android:name="com.devgroup.contacts.debug" />
+        <package android:name="com.devgroup.contacts" />
+        <package android:name="com.devgroup.smsmessenger.debug" />
+        <package android:name="com.devgroup.smsmessenger" />
     </queries>
 
     <uses-feature
@@ -42,25 +42,25 @@
 
     <application android:supportsRtl="true">
         <activity
-            android:name="com.goodwy.commons.activities.ContributorsActivity"
+            android:name="com.devgroup.commons.activities.ContributorsActivity"
             android:configChanges="orientation|uiMode"
             android:exported="false"
             android:label="@string/contributors"
-            android:parentActivityName="com.goodwy.commons.activities.AboutActivity" />
+            android:parentActivityName="com.devgroup.commons.activities.AboutActivity" />
 
         <activity
-            android:name="com.goodwy.commons.activities.FAQActivity"
+            android:name="com.devgroup.commons.activities.FAQActivity"
             android:configChanges="orientation|uiMode"
             android:exported="false"
             android:label="@string/frequently_asked_questions"
-            android:parentActivityName="com.goodwy.commons.activities.AboutActivity" />
+            android:parentActivityName="com.devgroup.commons.activities.AboutActivity" />
 
         <activity
-            android:name="com.goodwy.commons.activities.LicenseActivity"
+            android:name="com.devgroup.commons.activities.LicenseActivity"
             android:configChanges="orientation|uiMode"
             android:exported="false"
             android:label="@string/third_party_licences"
-            android:parentActivityName="com.goodwy.commons.activities.AboutActivity" />
+            android:parentActivityName="com.devgroup.commons.activities.AboutActivity" />
 
         <activity
             android:name=".activities.ManageBlockedNumbersActivity"
@@ -79,7 +79,7 @@
             android:exported="true"
             tools:ignore="ExportedReceiver">
             <intent-filter>
-                <action android:name="com.goodwy.android.GLOBAL_CONFIG_UPDATED" />
+                <action android:name="com.devgroup.android.GLOBAL_CONFIG_UPDATED" />
             </intent-filter>
         </receiver>
     </application>

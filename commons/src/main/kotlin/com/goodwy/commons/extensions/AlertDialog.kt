@@ -1,4 +1,4 @@
-package com.goodwy.commons.extensions
+package com.devgroup.commons.extensions
 
 import android.view.WindowManager
 import androidx.appcompat.app.AlertDialog

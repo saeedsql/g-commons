@@ -1,4 +1,4 @@
-package com.goodwy.commons.dialogs
+package com.devgroup.commons.dialogs
 
 import android.os.Bundle
 import android.view.ViewGroup
@@ -19,20 +19,20 @@ import androidx.compose.ui.unit.sp
 import androidx.fragment.app.FragmentManager
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.toImmutableList
-import com.goodwy.commons.R
-import com.goodwy.commons.adapters.setupSimpleListItem
-import com.goodwy.commons.compose.alert_dialog.dialogContainerColor
-import com.goodwy.commons.compose.alert_dialog.dialogTextColor
-import com.goodwy.commons.compose.bottom_sheet.BottomSheetColumnDialogSurface
-import com.goodwy.commons.compose.bottom_sheet.BottomSheetDialogState
-import com.goodwy.commons.compose.bottom_sheet.BottomSheetSpacerEdgeToEdge
-import com.goodwy.commons.compose.bottom_sheet.rememberBottomSheetDialogState
-import com.goodwy.commons.compose.extensions.MyDevices
-import com.goodwy.commons.compose.theme.AppThemeSurface
-import com.goodwy.commons.compose.theme.SimpleTheme
-import com.goodwy.commons.databinding.ItemSimpleListBinding
-import com.goodwy.commons.fragments.BaseBottomSheetDialogFragment
-import com.goodwy.commons.models.SimpleListItem
+import com.devgroup.commons.R
+import com.devgroup.commons.adapters.setupSimpleListItem
+import com.devgroup.commons.compose.alert_dialog.dialogContainerColor
+import com.devgroup.commons.compose.alert_dialog.dialogTextColor
+import com.devgroup.commons.compose.bottom_sheet.BottomSheetColumnDialogSurface
+import com.devgroup.commons.compose.bottom_sheet.BottomSheetDialogState
+import com.devgroup.commons.compose.bottom_sheet.BottomSheetSpacerEdgeToEdge
+import com.devgroup.commons.compose.bottom_sheet.rememberBottomSheetDialogState
+import com.devgroup.commons.compose.extensions.MyDevices
+import com.devgroup.commons.compose.theme.AppThemeSurface
+import com.devgroup.commons.compose.theme.SimpleTheme
+import com.devgroup.commons.databinding.ItemSimpleListBinding
+import com.devgroup.commons.fragments.BaseBottomSheetDialogFragment
+import com.devgroup.commons.models.SimpleListItem
 
 open class BottomSheetChooserDialog(collection: Boolean = false) : BaseBottomSheetDialogFragment() {
 

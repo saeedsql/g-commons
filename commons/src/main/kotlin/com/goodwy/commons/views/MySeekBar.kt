@@ -1,10 +1,10 @@
-package com.goodwy.commons.views
+package com.devgroup.commons.views
 
 import android.content.Context
 import android.graphics.Color
 import android.util.AttributeSet
 import androidx.appcompat.widget.AppCompatSeekBar
-import com.goodwy.commons.extensions.applyColorFilter
+import com.devgroup.commons.extensions.applyColorFilter
 
 class MySeekBar : AppCompatSeekBar {
     constructor(context: Context) : super(context)

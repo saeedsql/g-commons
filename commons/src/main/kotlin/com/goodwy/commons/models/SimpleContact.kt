@@ -1,10 +1,10 @@
-package com.goodwy.commons.models
+package com.devgroup.commons.models
 
 import android.telephony.PhoneNumberUtils
-import com.goodwy.commons.extensions.normalizePhoneNumber
-import com.goodwy.commons.extensions.normalizeString
-import com.goodwy.commons.helpers.SORT_BY_FULL_NAME
-import com.goodwy.commons.helpers.SORT_DESCENDING
+import com.devgroup.commons.extensions.normalizePhoneNumber
+import com.devgroup.commons.extensions.normalizeString
+import com.devgroup.commons.helpers.SORT_BY_FULL_NAME
+import com.devgroup.commons.helpers.SORT_DESCENDING
 
 data class SimpleContact(
         val rawId: Int,

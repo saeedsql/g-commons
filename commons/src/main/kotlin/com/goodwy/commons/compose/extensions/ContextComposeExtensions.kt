@@ -1,12 +1,12 @@
-package com.goodwy.commons.compose.extensions
+package com.devgroup.commons.compose.extensions
 
 import android.app.Activity
 import android.content.Context
-import com.goodwy.commons.R
-import com.goodwy.commons.extensions.baseConfig
-import com.goodwy.commons.extensions.redirectToRateUs
-import com.goodwy.commons.extensions.toast
-import com.goodwy.commons.helpers.BaseConfig
+import com.devgroup.commons.R
+import com.devgroup.commons.extensions.baseConfig
+import com.devgroup.commons.extensions.redirectToRateUs
+import com.devgroup.commons.extensions.toast
+import com.devgroup.commons.helpers.BaseConfig
 
 val Context.config: BaseConfig get() = BaseConfig.newInstance(applicationContext)
 

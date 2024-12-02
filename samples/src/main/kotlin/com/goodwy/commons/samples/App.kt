@@ -1,8 +1,8 @@
-package com.goodwy.commons.samples
+package com.devgroup.commons.samples
 
 import com.github.ajalt.reprint.core.Reprint
-import com.goodwy.commons.RightApp
-import com.goodwy.commons.helpers.rustore.RuStoreModule
+import com.devgroup.commons.RightApp
+import com.devgroup.commons.helpers.rustore.RuStoreModule
 
 class App : RightApp() {
     override fun onCreate() {

@@ -1,11 +1,11 @@
-package com.goodwy.commons.dialogs
+package com.devgroup.commons.dialogs
 
 import android.annotation.SuppressLint
 import android.app.Activity
 import androidx.appcompat.app.AlertDialog
-import com.goodwy.commons.R
-import com.goodwy.commons.databinding.DialogIconListBinding
-import com.goodwy.commons.extensions.*
+import com.devgroup.commons.R
+import com.devgroup.commons.databinding.DialogIconListBinding
+import com.devgroup.commons.extensions.*
 
 @SuppressLint("UseCompatLoadingForDrawables")
 class IconListDialog(

@@ -1,12 +1,12 @@
-package com.goodwy.commons.extensions
+package com.devgroup.commons.extensions
 
 import android.annotation.SuppressLint
 import android.content.Context
 import android.view.HapticFeedbackConstants
 import android.view.View
 import android.view.ViewTreeObserver
-import com.goodwy.commons.R
-import com.goodwy.commons.helpers.SHORT_ANIMATION_DURATION
+import com.devgroup.commons.R
+import com.devgroup.commons.helpers.SHORT_ANIMATION_DURATION
 
 fun View.beInvisibleIf(beInvisible: Boolean) = if (beInvisible) beInvisible() else beVisible()
 

@@ -1,12 +1,12 @@
-package com.goodwy.commons.compose.extensions
+package com.devgroup.commons.compose.extensions
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.platform.LocalContext
-import com.goodwy.commons.R
-import com.goodwy.commons.compose.alert_dialog.rememberAlertDialogState
-import com.goodwy.commons.dialogs.ConfirmationAlertDialog
-import com.goodwy.commons.extensions.launchViewIntent
+import com.devgroup.commons.R
+import com.devgroup.commons.compose.alert_dialog.rememberAlertDialogState
+import com.devgroup.commons.dialogs.ConfirmationAlertDialog
+import com.devgroup.commons.extensions.launchViewIntent
 
 @Composable
 fun FakeVersionCheck() {

@@ -1,4 +1,4 @@
-package com.goodwy.commons.extensions
+package com.devgroup.commons.extensions
 
 import android.annotation.SuppressLint
 import android.content.ComponentName
@@ -10,13 +10,13 @@ import android.graphics.Color
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.loader.content.CursorLoader
-import com.goodwy.commons.R
-import com.goodwy.commons.helpers.*
-import com.goodwy.commons.helpers.MyContentProvider.GLOBAL_THEME_SYSTEM
-import com.goodwy.commons.helpers.MyContentProvider.PERMISSION_WRITE_GLOBAL_SETTINGS
-import com.goodwy.commons.models.GlobalConfig
-import com.goodwy.commons.models.isGlobalThemingEnabled
-import com.goodwy.commons.views.*
+import com.devgroup.commons.R
+import com.devgroup.commons.helpers.*
+import com.devgroup.commons.helpers.MyContentProvider.GLOBAL_THEME_SYSTEM
+import com.devgroup.commons.helpers.MyContentProvider.PERMISSION_WRITE_GLOBAL_SETTINGS
+import com.devgroup.commons.models.GlobalConfig
+import com.devgroup.commons.models.isGlobalThemingEnabled
+import com.devgroup.commons.views.*
 
 fun Context.isDynamicTheme() = isSPlus() && baseConfig.isSystemThemeEnabled
 

@@ -1,4 +1,4 @@
-package com.goodwy.commons.extensions
+package com.devgroup.commons.extensions
 
 import android.content.Context
 import android.net.Uri
@@ -6,10 +6,10 @@ import android.os.Environment
 import android.provider.DocumentsContract
 import android.provider.MediaStore
 import androidx.documentfile.provider.DocumentFile
-import com.goodwy.commons.helpers.EXTERNAL_STORAGE_PROVIDER_AUTHORITY
-import com.goodwy.commons.helpers.isRPlus
-import com.goodwy.commons.helpers.isSPlus
-import com.goodwy.commons.models.FileDirItem
+import com.devgroup.commons.helpers.EXTERNAL_STORAGE_PROVIDER_AUTHORITY
+import com.devgroup.commons.helpers.isRPlus
+import com.devgroup.commons.helpers.isSPlus
+import com.devgroup.commons.models.FileDirItem
 import java.io.File
 
 private const val DOWNLOAD_DIR = "Download"

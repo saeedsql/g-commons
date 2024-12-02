@@ -1,4 +1,4 @@
-package com.goodwy.commons.views
+package com.devgroup.commons.views
 
 import android.content.Context
 import android.util.AttributeSet
@@ -6,9 +6,9 @@ import android.view.View
 import android.widget.AdapterView
 import android.widget.TextView
 import androidx.appcompat.widget.AppCompatSpinner
-import com.goodwy.commons.R
-import com.goodwy.commons.adapters.MyArrayAdapter
-import com.goodwy.commons.extensions.applyColorFilter
+import com.devgroup.commons.R
+import com.devgroup.commons.adapters.MyArrayAdapter
+import com.devgroup.commons.extensions.applyColorFilter
 
 class MyAppCompatSpinner : AppCompatSpinner {
     constructor(context: Context) : super(context)

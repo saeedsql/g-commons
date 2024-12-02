@@ -1,13 +1,13 @@
-package com.goodwy.commons.adapters
+package com.devgroup.commons.adapters
 
 import android.util.TypedValue
 import android.view.Menu
 import android.view.ViewGroup
-import com.goodwy.commons.R
-import com.goodwy.commons.activities.BaseSimpleActivity
-import com.goodwy.commons.databinding.FilepickerFavoriteBinding
-import com.goodwy.commons.extensions.getTextSize
-import com.goodwy.commons.views.MyRecyclerView
+import com.devgroup.commons.R
+import com.devgroup.commons.activities.BaseSimpleActivity
+import com.devgroup.commons.databinding.FilepickerFavoriteBinding
+import com.devgroup.commons.extensions.getTextSize
+import com.devgroup.commons.views.MyRecyclerView
 
 class FilepickerFavoritesAdapter(
     activity: BaseSimpleActivity, val paths: List<String>, recyclerView: MyRecyclerView,

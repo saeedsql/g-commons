@@ -1,4 +1,4 @@
-package com.goodwy.commons.dialogs
+package com.devgroup.commons.dialogs
 
 import android.app.Activity
 import android.net.Uri
@@ -9,12 +9,12 @@ import android.widget.LinearLayout
 import android.widget.RelativeLayout
 import androidx.appcompat.app.AlertDialog
 import androidx.exifinterface.media.ExifInterface
-import com.goodwy.commons.R
-import com.goodwy.commons.activities.BaseSimpleActivity
-import com.goodwy.commons.extensions.*
-import com.goodwy.commons.helpers.*
-import com.goodwy.commons.models.FileDirItem
-import com.goodwy.commons.views.MyTextView
+import com.devgroup.commons.R
+import com.devgroup.commons.activities.BaseSimpleActivity
+import com.devgroup.commons.extensions.*
+import com.devgroup.commons.helpers.*
+import com.devgroup.commons.models.FileDirItem
+import com.devgroup.commons.views.MyTextView
 import java.io.File
 import java.util.*
 
@@ -172,7 +172,7 @@ class PropertiesDialog : BasePropertiesDialog {
                 return
             }
 
-            if (mActivity.baseConfig.appId.removeSuffix(".debug") == "com.goodwy.filemanager") {
+            if (mActivity.baseConfig.appId.removeSuffix(".debug") == "com.devgroup.filemanager") {
                 addProperty(R.string.md5, "…", R.id.properties_md5)
                 ensureBackgroundThread {
                     val md5 = if (mActivity.isRestrictedSAFOnlyRoot(path)) {

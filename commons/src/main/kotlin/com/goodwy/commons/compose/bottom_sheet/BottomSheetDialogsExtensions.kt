@@ -1,4 +1,4 @@
-package com.goodwy.commons.compose.bottom_sheet
+package com.devgroup.commons.compose.bottom_sheet
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
@@ -10,12 +10,12 @@ import androidx.compose.runtime.ReadOnlyComposable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
-import com.goodwy.commons.compose.alert_dialog.dialogContainerColor
-import com.goodwy.commons.compose.alert_dialog.dialogElevation
-import com.goodwy.commons.compose.theme.LocalTheme
-import com.goodwy.commons.compose.theme.Shapes
-import com.goodwy.commons.compose.theme.light_grey_stroke
-import com.goodwy.commons.compose.theme.model.Theme
+import com.devgroup.commons.compose.alert_dialog.dialogContainerColor
+import com.devgroup.commons.compose.alert_dialog.dialogElevation
+import com.devgroup.commons.compose.theme.LocalTheme
+import com.devgroup.commons.compose.theme.Shapes
+import com.devgroup.commons.compose.theme.light_grey_stroke
+import com.devgroup.commons.compose.theme.model.Theme
 
 val bottomSheetDialogShape = Shapes.extraLarge.copy(
     bottomEnd = CornerSize(0f),

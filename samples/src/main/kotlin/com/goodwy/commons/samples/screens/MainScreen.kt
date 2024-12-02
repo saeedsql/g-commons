@@ -1,4 +1,4 @@
-package com.goodwy.commons.samples.screens
+package com.devgroup.commons.samples.screens
 
 import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.Arrangement
@@ -14,20 +14,20 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.toImmutableList
-import com.goodwy.commons.R
-import com.goodwy.commons.compose.extensions.MyDevices
-import com.goodwy.commons.compose.lists.SimpleScaffold
-import com.goodwy.commons.compose.lists.simpleTopAppBarColors
-import com.goodwy.commons.compose.lists.topAppBarInsets
-import com.goodwy.commons.compose.lists.topAppBarPaddings
-import com.goodwy.commons.compose.menus.ActionItem
-import com.goodwy.commons.compose.menus.ActionMenu
-import com.goodwy.commons.compose.menus.OverflowMode
-import com.goodwy.commons.compose.theme.AppThemeSurface
-import com.goodwy.commons.compose.theme.LocalTheme
-import com.goodwy.commons.compose.theme.SimpleTheme
-import com.goodwy.commons.compose.theme.actionModeColor
-import com.goodwy.commons.compose.theme.model.Theme
+import com.devgroup.commons.R
+import com.devgroup.commons.compose.extensions.MyDevices
+import com.devgroup.commons.compose.lists.SimpleScaffold
+import com.devgroup.commons.compose.lists.simpleTopAppBarColors
+import com.devgroup.commons.compose.lists.topAppBarInsets
+import com.devgroup.commons.compose.lists.topAppBarPaddings
+import com.devgroup.commons.compose.menus.ActionItem
+import com.devgroup.commons.compose.menus.ActionMenu
+import com.devgroup.commons.compose.menus.OverflowMode
+import com.devgroup.commons.compose.theme.AppThemeSurface
+import com.devgroup.commons.compose.theme.LocalTheme
+import com.devgroup.commons.compose.theme.SimpleTheme
+import com.devgroup.commons.compose.theme.actionModeColor
+import com.devgroup.commons.compose.theme.model.Theme
 
 @Composable
 fun MainScreen(

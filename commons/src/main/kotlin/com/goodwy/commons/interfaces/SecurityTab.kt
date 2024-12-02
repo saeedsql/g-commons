@@ -1,7 +1,7 @@
-package com.goodwy.commons.interfaces
+package com.devgroup.commons.interfaces
 
 import androidx.biometric.auth.AuthPromptHost
-import com.goodwy.commons.views.MyScrollView
+import com.devgroup.commons.views.MyScrollView
 
 interface SecurityTab {
     fun initTab(

@@ -1,16 +1,16 @@
-package com.goodwy.commons.dialogs
+package com.devgroup.commons.dialogs
 
 import android.view.LayoutInflater
 import android.view.WindowManager
 import androidx.appcompat.app.AlertDialog
-import com.goodwy.commons.R
-import com.goodwy.commons.activities.BaseSimpleActivity
-import com.goodwy.commons.adapters.RenameAdapter
-import com.goodwy.commons.databinding.DialogRenameBinding
-import com.goodwy.commons.extensions.*
-import com.goodwy.commons.helpers.RENAME_PATTERN
-import com.goodwy.commons.helpers.RENAME_SIMPLE
-import com.goodwy.commons.views.MyViewPager
+import com.devgroup.commons.R
+import com.devgroup.commons.activities.BaseSimpleActivity
+import com.devgroup.commons.adapters.RenameAdapter
+import com.devgroup.commons.databinding.DialogRenameBinding
+import com.devgroup.commons.extensions.*
+import com.devgroup.commons.helpers.RENAME_PATTERN
+import com.devgroup.commons.helpers.RENAME_SIMPLE
+import com.devgroup.commons.views.MyViewPager
 
 
 class RenameDialog(val activity: BaseSimpleActivity, val paths: ArrayList<String>, val useMediaFileExtension: Boolean, val callback: () -> Unit) {

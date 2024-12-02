@@ -1,4 +1,4 @@
-package com.goodwy.commons.compose.components
+package com.devgroup.commons.compose.components
 
 import androidx.compose.foundation.LocalIndication
 import androidx.compose.foundation.clickable
@@ -10,11 +10,11 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.goodwy.commons.compose.alert_dialog.dialogTextColor
-import com.goodwy.commons.compose.extensions.MyDevices
-import com.goodwy.commons.compose.extensions.rememberMutableInteractionSource
-import com.goodwy.commons.compose.theme.AppThemeSurface
-import com.goodwy.commons.compose.theme.SimpleTheme
+import com.devgroup.commons.compose.alert_dialog.dialogTextColor
+import com.devgroup.commons.compose.extensions.MyDevices
+import com.devgroup.commons.compose.extensions.rememberMutableInteractionSource
+import com.devgroup.commons.compose.theme.AppThemeSurface
+import com.devgroup.commons.compose.theme.SimpleTheme
 
 @Composable
 fun RadioButtonDialogComponent(

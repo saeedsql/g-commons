@@ -1,12 +1,12 @@
-package com.goodwy.commons.compose.extensions
+package com.devgroup.commons.compose.extensions
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
-import com.goodwy.commons.compose.theme.LocalTheme
-import com.goodwy.commons.compose.theme.model.Theme
-import com.goodwy.commons.extensions.baseConfig
-import com.goodwy.commons.extensions.getProperPrimaryColor
+import com.devgroup.commons.compose.theme.LocalTheme
+import com.devgroup.commons.compose.theme.model.Theme
+import com.devgroup.commons.extensions.baseConfig
+import com.devgroup.commons.extensions.getProperPrimaryColor
 
 @Composable
 fun linkColor(): Color {

@@ -1,9 +1,9 @@
-package com.goodwy.commons.compose.theme
+package com.devgroup.commons.compose.theme
 
 import androidx.compose.runtime.ProvidableCompositionLocal
 import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.ui.unit.dp
-import com.goodwy.commons.compose.theme.model.Dimensions
+import com.devgroup.commons.compose.theme.model.Dimensions
 
 internal val CommonDimensions = Dimensions(
     padding = Dimensions.Paddings(

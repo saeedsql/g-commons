@@ -1,4 +1,4 @@
-package com.goodwy.commons.dialogs
+package com.devgroup.commons.dialogs
 
 import android.app.Activity
 import android.content.Context
@@ -18,28 +18,28 @@ import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import kotlinx.collections.immutable.toImmutableList
-import com.goodwy.commons.R
-import com.goodwy.commons.compose.alert_dialog.AlertDialogState
-import com.goodwy.commons.compose.alert_dialog.DialogSurface
-import com.goodwy.commons.compose.alert_dialog.dialogTextColor
-import com.goodwy.commons.compose.alert_dialog.rememberAlertDialogState
-import com.goodwy.commons.compose.components.RadioGroupDialogComponent
-import com.goodwy.commons.compose.extensions.MyDevices
-import com.goodwy.commons.compose.settings.SettingsHorizontalDivider
-import com.goodwy.commons.compose.theme.AppThemeSurface
-import com.goodwy.commons.compose.theme.SimpleTheme
-import com.goodwy.commons.databinding.DialogFileConflictBinding
-import com.goodwy.commons.extensions.baseConfig
-import com.goodwy.commons.extensions.beVisibleIf
-import com.goodwy.commons.extensions.getAlertDialogBuilder
-import com.goodwy.commons.extensions.setupDialogStuff
-import com.goodwy.commons.helpers.CONFLICT_KEEP_BOTH
-import com.goodwy.commons.helpers.CONFLICT_MERGE
-import com.goodwy.commons.helpers.CONFLICT_OVERWRITE
-import com.goodwy.commons.helpers.CONFLICT_SKIP
-import com.goodwy.commons.models.FileDirItem
-import com.goodwy.commons.models.FileDirItemReadOnly
-import com.goodwy.commons.models.asReadOnly
+import com.devgroup.commons.R
+import com.devgroup.commons.compose.alert_dialog.AlertDialogState
+import com.devgroup.commons.compose.alert_dialog.DialogSurface
+import com.devgroup.commons.compose.alert_dialog.dialogTextColor
+import com.devgroup.commons.compose.alert_dialog.rememberAlertDialogState
+import com.devgroup.commons.compose.components.RadioGroupDialogComponent
+import com.devgroup.commons.compose.extensions.MyDevices
+import com.devgroup.commons.compose.settings.SettingsHorizontalDivider
+import com.devgroup.commons.compose.theme.AppThemeSurface
+import com.devgroup.commons.compose.theme.SimpleTheme
+import com.devgroup.commons.databinding.DialogFileConflictBinding
+import com.devgroup.commons.extensions.baseConfig
+import com.devgroup.commons.extensions.beVisibleIf
+import com.devgroup.commons.extensions.getAlertDialogBuilder
+import com.devgroup.commons.extensions.setupDialogStuff
+import com.devgroup.commons.helpers.CONFLICT_KEEP_BOTH
+import com.devgroup.commons.helpers.CONFLICT_MERGE
+import com.devgroup.commons.helpers.CONFLICT_OVERWRITE
+import com.devgroup.commons.helpers.CONFLICT_SKIP
+import com.devgroup.commons.models.FileDirItem
+import com.devgroup.commons.models.FileDirItemReadOnly
+import com.devgroup.commons.models.asReadOnly
 
 
 class FileConflictDialog(

@@ -1,6 +1,6 @@
-package com.goodwy.commons.models
+package com.devgroup.commons.models
 
-import com.goodwy.commons.helpers.MyContentProvider
+import com.devgroup.commons.helpers.MyContentProvider
 
 data class GlobalConfig(
     val themeType: Int,

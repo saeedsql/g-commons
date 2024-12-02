@@ -1,10 +1,10 @@
-package com.goodwy.commons.interfaces
+package com.devgroup.commons.interfaces
 
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.goodwy.commons.models.contacts.Group
+import com.devgroup.commons.models.contacts.Group
 
 @Dao
 interface GroupsDao {

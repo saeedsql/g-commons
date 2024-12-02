@@ -1,7 +1,7 @@
-package com.goodwy.commons.activities
+package com.devgroup.commons.activities
 
 import androidx.activity.ComponentActivity
-import com.goodwy.commons.helpers.REQUEST_APP_UNLOCK
+import com.devgroup.commons.helpers.REQUEST_APP_UNLOCK
 
 abstract class BaseComposeActivity : ComponentActivity() {
 

@@ -1,4 +1,4 @@
-package com.goodwy.commons.views
+package com.devgroup.commons.views
 
 import android.content.Context
 import android.util.AttributeSet

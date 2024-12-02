@@ -1,4 +1,4 @@
-package com.goodwy.commons.dialogs
+package com.devgroup.commons.dialogs
 
 import android.app.Activity
 import android.view.View
@@ -24,21 +24,21 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.toImmutableList
-import com.goodwy.commons.R
-import com.goodwy.commons.compose.alert_dialog.AlertDialogState
-import com.goodwy.commons.compose.alert_dialog.DialogSurface
-import com.goodwy.commons.compose.alert_dialog.dialogTextColor
-import com.goodwy.commons.compose.alert_dialog.rememberAlertDialogState
-import com.goodwy.commons.compose.components.RadioGroupDialogComponent
-import com.goodwy.commons.compose.extensions.BooleanPreviewParameterProvider
-import com.goodwy.commons.compose.extensions.MyDevices
-import com.goodwy.commons.compose.theme.AppThemeSurface
-import com.goodwy.commons.compose.theme.SimpleTheme
-import com.goodwy.commons.databinding.DialogRadioGroupBinding
-import com.goodwy.commons.extensions.getAlertDialogBuilder
-import com.goodwy.commons.extensions.onGlobalLayout
-import com.goodwy.commons.extensions.setupDialogStuff
-import com.goodwy.commons.models.RadioItem
+import com.devgroup.commons.R
+import com.devgroup.commons.compose.alert_dialog.AlertDialogState
+import com.devgroup.commons.compose.alert_dialog.DialogSurface
+import com.devgroup.commons.compose.alert_dialog.dialogTextColor
+import com.devgroup.commons.compose.alert_dialog.rememberAlertDialogState
+import com.devgroup.commons.compose.components.RadioGroupDialogComponent
+import com.devgroup.commons.compose.extensions.BooleanPreviewParameterProvider
+import com.devgroup.commons.compose.extensions.MyDevices
+import com.devgroup.commons.compose.theme.AppThemeSurface
+import com.devgroup.commons.compose.theme.SimpleTheme
+import com.devgroup.commons.databinding.DialogRadioGroupBinding
+import com.devgroup.commons.extensions.getAlertDialogBuilder
+import com.devgroup.commons.extensions.onGlobalLayout
+import com.devgroup.commons.extensions.setupDialogStuff
+import com.devgroup.commons.models.RadioItem
 
 class RadioGroupDialog(
     val activity: Activity, val items: ArrayList<RadioItem>, val checkedItemId: Int = -1, val titleId: Int = 0,

@@ -1,4 +1,4 @@
-package com.goodwy.commons.dialogs
+package com.devgroup.commons.dialogs
 
 import android.app.Activity
 import androidx.appcompat.app.AlertDialog
@@ -11,13 +11,13 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.DialogProperties
-import com.goodwy.commons.R
-import com.goodwy.commons.compose.alert_dialog.*
-import com.goodwy.commons.compose.extensions.MyDevices
-import com.goodwy.commons.compose.theme.AppThemeSurface
-import com.goodwy.commons.databinding.DialogMessageBinding
-import com.goodwy.commons.extensions.getAlertDialogBuilder
-import com.goodwy.commons.extensions.setupDialogStuff
+import com.devgroup.commons.R
+import com.devgroup.commons.compose.alert_dialog.*
+import com.devgroup.commons.compose.extensions.MyDevices
+import com.devgroup.commons.compose.theme.AppThemeSurface
+import com.devgroup.commons.databinding.DialogMessageBinding
+import com.devgroup.commons.extensions.getAlertDialogBuilder
+import com.devgroup.commons.extensions.setupDialogStuff
 
 /**
  * A simple dialog without any view, just a messageId, a positive button and optionally a negative button

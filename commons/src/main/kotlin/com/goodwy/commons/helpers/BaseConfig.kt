@@ -1,15 +1,15 @@
-package com.goodwy.commons.helpers
+package com.devgroup.commons.helpers
 
 import android.content.Context
 import android.content.res.Configuration
 import android.os.Environment
 import android.text.format.DateFormat
 import androidx.core.content.ContextCompat
-import com.goodwy.commons.R
-import com.goodwy.commons.extensions.getInternalStoragePath
-import com.goodwy.commons.extensions.getSDCardPath
-import com.goodwy.commons.extensions.getSharedPrefs
-import com.goodwy.commons.extensions.sharedPreferencesCallback
+import com.devgroup.commons.R
+import com.devgroup.commons.extensions.getInternalStoragePath
+import com.devgroup.commons.extensions.getSDCardPath
+import com.devgroup.commons.extensions.getSharedPrefs
+import com.devgroup.commons.extensions.sharedPreferencesCallback
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.LinkedList

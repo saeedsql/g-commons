@@ -1,4 +1,4 @@
-package com.goodwy.commons.asynctasks
+package com.devgroup.commons.asynctasks
 
 import android.app.NotificationChannel
 import android.app.NotificationManager
@@ -9,15 +9,15 @@ import android.provider.MediaStore
 import androidx.core.app.NotificationCompat
 import androidx.core.util.Pair
 import androidx.documentfile.provider.DocumentFile
-import com.goodwy.commons.R
-import com.goodwy.commons.activities.BaseSimpleActivity
-import com.goodwy.commons.extensions.*
-import com.goodwy.commons.helpers.CONFLICT_KEEP_BOTH
-import com.goodwy.commons.helpers.CONFLICT_SKIP
-import com.goodwy.commons.helpers.getConflictResolution
-import com.goodwy.commons.helpers.isOreoPlus
-import com.goodwy.commons.interfaces.CopyMoveListener
-import com.goodwy.commons.models.FileDirItem
+import com.devgroup.commons.R
+import com.devgroup.commons.activities.BaseSimpleActivity
+import com.devgroup.commons.extensions.*
+import com.devgroup.commons.helpers.CONFLICT_KEEP_BOTH
+import com.devgroup.commons.helpers.CONFLICT_SKIP
+import com.devgroup.commons.helpers.getConflictResolution
+import com.devgroup.commons.helpers.isOreoPlus
+import com.devgroup.commons.interfaces.CopyMoveListener
+import com.devgroup.commons.models.FileDirItem
 import java.io.File
 import java.io.InputStream
 import java.io.OutputStream

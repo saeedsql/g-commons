@@ -1,4 +1,4 @@
-package com.goodwy.commons.views
+package com.devgroup.commons.views
 
 import android.content.ContentValues
 import android.content.Context
@@ -7,14 +7,14 @@ import android.text.format.DateFormat
 import android.util.AttributeSet
 import android.widget.RelativeLayout
 import androidx.exifinterface.media.ExifInterface
-import com.goodwy.commons.R
-import com.goodwy.commons.databinding.DialogRenameItemsPatternBinding
-import com.goodwy.commons.activities.BaseSimpleActivity
-import com.goodwy.commons.extensions.*
-import com.goodwy.commons.helpers.isNougatPlus
-import com.goodwy.commons.interfaces.RenameTab
-import com.goodwy.commons.models.Android30RenameFormat
-import com.goodwy.commons.models.FileDirItem
+import com.devgroup.commons.R
+import com.devgroup.commons.databinding.DialogRenameItemsPatternBinding
+import com.devgroup.commons.activities.BaseSimpleActivity
+import com.devgroup.commons.extensions.*
+import com.devgroup.commons.helpers.isNougatPlus
+import com.devgroup.commons.interfaces.RenameTab
+import com.devgroup.commons.models.Android30RenameFormat
+import com.devgroup.commons.models.FileDirItem
 import java.io.File
 import java.text.SimpleDateFormat
 import java.util.Calendar

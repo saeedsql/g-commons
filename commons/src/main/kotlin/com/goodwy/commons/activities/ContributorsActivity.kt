@@ -1,18 +1,18 @@
-package com.goodwy.commons.activities
+package com.devgroup.commons.activities
 
 import android.content.res.Configuration
 import android.os.Bundle
 import androidx.activity.compose.setContent
 import androidx.compose.runtime.remember
-import com.goodwy.commons.R
-import com.goodwy.commons.compose.extensions.enableEdgeToEdgeSimple
-import com.goodwy.commons.compose.screens.ContributorsScreen
-import com.goodwy.commons.compose.theme.AppThemeSurface
-import com.goodwy.commons.extensions.baseConfig
-import com.goodwy.commons.extensions.isAutoTheme
-import com.goodwy.commons.extensions.isSystemInDarkMode
-import com.goodwy.commons.extensions.syncGlobalConfig
-import com.goodwy.commons.models.LanguageContributor
+import com.devgroup.commons.R
+import com.devgroup.commons.compose.extensions.enableEdgeToEdgeSimple
+import com.devgroup.commons.compose.screens.ContributorsScreen
+import com.devgroup.commons.compose.theme.AppThemeSurface
+import com.devgroup.commons.extensions.baseConfig
+import com.devgroup.commons.extensions.isAutoTheme
+import com.devgroup.commons.extensions.isSystemInDarkMode
+import com.devgroup.commons.extensions.syncGlobalConfig
+import com.devgroup.commons.models.LanguageContributor
 import kotlinx.collections.immutable.toImmutableList
 
 class ContributorsActivity : BaseComposeActivity() {

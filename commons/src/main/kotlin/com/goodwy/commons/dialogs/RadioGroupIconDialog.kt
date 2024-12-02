@@ -1,12 +1,12 @@
-package com.goodwy.commons.dialogs
+package com.devgroup.commons.dialogs
 
 import android.app.Activity
 import androidx.appcompat.app.AlertDialog
-import com.goodwy.commons.R
-import com.goodwy.commons.databinding.DialogRadioGroupBinding
-import com.goodwy.commons.databinding.RadioButtonIconBinding
-import com.goodwy.commons.extensions.*
-import com.goodwy.commons.models.RadioItem
+import com.devgroup.commons.R
+import com.devgroup.commons.databinding.DialogRadioGroupBinding
+import com.devgroup.commons.databinding.RadioButtonIconBinding
+import com.devgroup.commons.extensions.*
+import com.devgroup.commons.models.RadioItem
 
 class RadioGroupIconDialog(
     val activity: Activity, val items: ArrayList<RadioItem>, val checkedItemId: Int = -1, val titleId: Int = 0,

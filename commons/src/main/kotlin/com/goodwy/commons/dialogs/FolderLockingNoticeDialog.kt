@@ -1,4 +1,4 @@
-package com.goodwy.commons.dialogs
+package com.devgroup.commons.dialogs
 
 import android.app.Activity
 import androidx.compose.material3.AlertDialog
@@ -9,15 +9,15 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
-import com.goodwy.commons.R
-import com.goodwy.commons.compose.alert_dialog.*
-import com.goodwy.commons.compose.extensions.MyDevices
-import com.goodwy.commons.compose.extensions.andThen
-import com.goodwy.commons.compose.theme.AppThemeSurface
-import com.goodwy.commons.databinding.DialogTextviewBinding
-import com.goodwy.commons.extensions.baseConfig
-import com.goodwy.commons.extensions.getAlertDialogBuilder
-import com.goodwy.commons.extensions.setupDialogStuff
+import com.devgroup.commons.R
+import com.devgroup.commons.compose.alert_dialog.*
+import com.devgroup.commons.compose.extensions.MyDevices
+import com.devgroup.commons.compose.extensions.andThen
+import com.devgroup.commons.compose.theme.AppThemeSurface
+import com.devgroup.commons.databinding.DialogTextviewBinding
+import com.devgroup.commons.extensions.baseConfig
+import com.devgroup.commons.extensions.getAlertDialogBuilder
+import com.devgroup.commons.extensions.setupDialogStuff
 
 class FolderLockingNoticeDialog(val activity: Activity, val callback: () -> Unit) {
     init {

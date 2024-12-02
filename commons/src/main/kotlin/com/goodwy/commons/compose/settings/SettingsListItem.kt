@@ -1,4 +1,4 @@
-package com.goodwy.commons.compose.settings
+package com.devgroup.commons.compose.settings
 
 import androidx.annotation.DrawableRes
 import androidx.compose.foundation.Image
@@ -18,11 +18,11 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.unit.TextUnit
-import com.goodwy.commons.R
-import com.goodwy.commons.compose.extensions.BooleanPreviewParameterProvider
-import com.goodwy.commons.compose.extensions.MyDevices
-import com.goodwy.commons.compose.theme.AppThemeSurface
-import com.goodwy.commons.compose.theme.SimpleTheme
+import com.devgroup.commons.R
+import com.devgroup.commons.compose.extensions.BooleanPreviewParameterProvider
+import com.devgroup.commons.compose.extensions.MyDevices
+import com.devgroup.commons.compose.theme.AppThemeSurface
+import com.devgroup.commons.compose.theme.SimpleTheme
 
 @Composable
 fun SettingsListItem(

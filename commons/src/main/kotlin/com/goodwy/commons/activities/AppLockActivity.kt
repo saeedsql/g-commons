@@ -1,4 +1,4 @@
-package com.goodwy.commons.activities
+package com.devgroup.commons.activities
 
 import android.app.Activity
 import android.content.Intent
@@ -6,13 +6,13 @@ import android.os.Bundle
 import androidx.activity.addCallback
 import androidx.appcompat.app.AppCompatActivity
 import androidx.biometric.auth.AuthPromptHost
-import com.goodwy.commons.R
-import com.goodwy.commons.adapters.AppLockAdapter
-import com.goodwy.commons.databinding.ActivityAppLockBinding
-import com.goodwy.commons.extensions.*
-import com.goodwy.commons.helpers.PROTECTION_FINGERPRINT
-import com.goodwy.commons.helpers.isRPlus
-import com.goodwy.commons.interfaces.HashListener
+import com.devgroup.commons.R
+import com.devgroup.commons.adapters.AppLockAdapter
+import com.devgroup.commons.databinding.ActivityAppLockBinding
+import com.devgroup.commons.extensions.*
+import com.devgroup.commons.helpers.PROTECTION_FINGERPRINT
+import com.devgroup.commons.helpers.isRPlus
+import com.devgroup.commons.interfaces.HashListener
 
 class AppLockActivity : AppCompatActivity(), HashListener {
 

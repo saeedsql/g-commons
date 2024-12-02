@@ -1,4 +1,4 @@
-package com.goodwy.commons.extensions
+package com.devgroup.commons.extensions
 
 fun <T> ArrayList<T>.moveLastItemToFront() {
     val last = removeAt(size - 1)

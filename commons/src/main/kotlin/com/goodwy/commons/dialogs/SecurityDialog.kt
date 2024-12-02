@@ -1,17 +1,17 @@
-package com.goodwy.commons.dialogs
+package com.devgroup.commons.dialogs
 
 import android.app.Activity
 import android.view.LayoutInflater
 import androidx.appcompat.app.AlertDialog
 import androidx.biometric.auth.AuthPromptHost
 import androidx.fragment.app.FragmentActivity
-import com.goodwy.commons.R
-import com.goodwy.commons.adapters.PasswordTypesAdapter
-import com.goodwy.commons.databinding.DialogSecurityBinding
-import com.goodwy.commons.extensions.*
-import com.goodwy.commons.helpers.*
-import com.goodwy.commons.interfaces.HashListener
-import com.goodwy.commons.views.MyDialogViewPager
+import com.devgroup.commons.R
+import com.devgroup.commons.adapters.PasswordTypesAdapter
+import com.devgroup.commons.databinding.DialogSecurityBinding
+import com.devgroup.commons.extensions.*
+import com.devgroup.commons.helpers.*
+import com.devgroup.commons.interfaces.HashListener
+import com.devgroup.commons.views.MyDialogViewPager
 
 class SecurityDialog(
     private val activity: Activity,

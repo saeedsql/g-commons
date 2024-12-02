@@ -1,4 +1,4 @@
-package com.goodwy.commons.samples.activities
+package com.devgroup.commons.samples.activities
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,22 +7,22 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.goodwy.commons.activities.BaseSimpleActivity
-import com.goodwy.commons.activities.CustomizationActivity
-import com.goodwy.commons.activities.ManageBlockedNumbersActivity
-import com.goodwy.commons.compose.alert_dialog.AlertDialogState
-import com.goodwy.commons.compose.alert_dialog.rememberAlertDialogState
-import com.goodwy.commons.compose.extensions.*
-import com.goodwy.commons.compose.theme.AppThemeSurface
-import com.goodwy.commons.dialogs.ConfirmationDialog
-import com.goodwy.commons.dialogs.RateStarsAlertDialog
-import com.goodwy.commons.dialogs.SecurityDialog
-import com.goodwy.commons.extensions.*
-import com.goodwy.commons.helpers.*
-import com.goodwy.commons.models.FAQItem
-import com.goodwy.commons.samples.BuildConfig
-import com.goodwy.commons.samples.R
-import com.goodwy.commons.samples.screens.MainScreen
+import com.devgroup.commons.activities.BaseSimpleActivity
+import com.devgroup.commons.activities.CustomizationActivity
+import com.devgroup.commons.activities.ManageBlockedNumbersActivity
+import com.devgroup.commons.compose.alert_dialog.AlertDialogState
+import com.devgroup.commons.compose.alert_dialog.rememberAlertDialogState
+import com.devgroup.commons.compose.extensions.*
+import com.devgroup.commons.compose.theme.AppThemeSurface
+import com.devgroup.commons.dialogs.ConfirmationDialog
+import com.devgroup.commons.dialogs.RateStarsAlertDialog
+import com.devgroup.commons.dialogs.SecurityDialog
+import com.devgroup.commons.extensions.*
+import com.devgroup.commons.helpers.*
+import com.devgroup.commons.models.FAQItem
+import com.devgroup.commons.samples.BuildConfig
+import com.devgroup.commons.samples.R
+import com.devgroup.commons.samples.screens.MainScreen
 
 class MainActivity : BaseSimpleActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,7 +33,7 @@ class MainActivity : BaseSimpleActivity() {
         setContent {
             val isTopAppBarColorIcon by config.isTopAppBarColorIcon.collectAsStateWithLifecycle(initialValue = config.topAppBarColorIcon)
             AppThemeSurface {
-                val showMoreApps = onEventValue { !resources.getBoolean(com.goodwy.commons.R.bool.hide_google_relations) }
+                val showMoreApps = onEventValue { !resources.getBoolean(com.devgroup.commons.R.bool.hide_google_relations) }
 
                 MainScreen(
                     openColorCustomization = ::startCustomizationActivity,
@@ -110,14 +110,14 @@ class MainActivity : BaseSimpleActivity() {
         val licenses = LICENSE_AUTOFITTEXTVIEW
 
         val faqItems = arrayListOf(
-            FAQItem(com.goodwy.commons.R.string.faq_1_title_commons, com.goodwy.commons.R.string.faq_1_text_commons),
-            FAQItem(com.goodwy.commons.R.string.faq_1_title_commons, com.goodwy.commons.R.string.faq_1_text_commons),
-            FAQItem(com.goodwy.commons.R.string.faq_4_title_commons, com.goodwy.commons.R.string.faq_4_text_commons)
+            FAQItem(com.devgroup.commons.R.string.faq_1_title_commons, com.devgroup.commons.R.string.faq_1_text_commons),
+            FAQItem(com.devgroup.commons.R.string.faq_1_title_commons, com.devgroup.commons.R.string.faq_1_text_commons),
+            FAQItem(com.devgroup.commons.R.string.faq_4_title_commons, com.devgroup.commons.R.string.faq_4_text_commons)
         )
 
-        if (!resources.getBoolean(com.goodwy.commons.R.bool.hide_google_relations)) {
-            faqItems.add(FAQItem(com.goodwy.commons.R.string.faq_2_title_commons, com.goodwy.commons.R.string.faq_2_text_commons))
-            faqItems.add(FAQItem(com.goodwy.commons.R.string.faq_6_title_commons, com.goodwy.commons.R.string.faq_6_text_commons))
+        if (!resources.getBoolean(com.devgroup.commons.R.bool.hide_google_relations)) {
+            faqItems.add(FAQItem(com.devgroup.commons.R.string.faq_2_title_commons, com.devgroup.commons.R.string.faq_2_text_commons))
+            faqItems.add(FAQItem(com.devgroup.commons.R.string.faq_6_title_commons, com.devgroup.commons.R.string.faq_6_text_commons))
         }
 
         startAboutActivity(

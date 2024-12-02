@@ -1,13 +1,13 @@
-package com.goodwy.commons.views
+package com.devgroup.commons.views
 
 import android.content.Context
 import android.content.res.ColorStateList
 import android.util.AttributeSet
-import com.goodwy.commons.R
+import com.devgroup.commons.R
 import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.goodwy.commons.extensions.applyColorFilter
-import com.goodwy.commons.extensions.baseConfig
-import com.goodwy.commons.extensions.getContrastColor
+import com.devgroup.commons.extensions.applyColorFilter
+import com.devgroup.commons.extensions.baseConfig
+import com.devgroup.commons.extensions.getContrastColor
 import com.google.android.material.shape.CornerFamily
 import com.google.android.material.shape.ShapeAppearanceModel
 

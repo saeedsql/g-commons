@@ -1,4 +1,4 @@
-package com.goodwy.commons.overloads
+package com.devgroup.commons.overloads
 
 operator fun String.times(x: Int): String {
     val stringBuilder = StringBuilder()

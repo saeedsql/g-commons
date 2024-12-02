@@ -1,4 +1,4 @@
-package com.goodwy.commons.dialogs
+package com.devgroup.commons.dialogs
 
 import android.view.animation.AnimationUtils
 import androidx.compose.animation.core.*
@@ -28,13 +28,13 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.goodwy.commons.R
-import com.goodwy.commons.activities.BaseSimpleActivity
-import com.goodwy.commons.compose.alert_dialog.*
-import com.goodwy.commons.compose.extensions.MyDevices
-import com.goodwy.commons.compose.theme.AppThemeSurface
-import com.goodwy.commons.databinding.DialogCallConfirmationBinding
-import com.goodwy.commons.extensions.*
+import com.devgroup.commons.R
+import com.devgroup.commons.activities.BaseSimpleActivity
+import com.devgroup.commons.compose.alert_dialog.*
+import com.devgroup.commons.compose.extensions.MyDevices
+import com.devgroup.commons.compose.theme.AppThemeSurface
+import com.devgroup.commons.databinding.DialogCallConfirmationBinding
+import com.devgroup.commons.extensions.*
 
 class CallConfirmationDialog(val activity: BaseSimpleActivity, private val callee: String, private val callback: () -> Unit) {
     private var view = DialogCallConfirmationBinding.inflate(activity.layoutInflater, null, false)

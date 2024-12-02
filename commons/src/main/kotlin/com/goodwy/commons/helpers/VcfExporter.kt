@@ -1,4 +1,4 @@
-package com.goodwy.commons.helpers
+package com.devgroup.commons.helpers
 
 import android.net.Uri
 import android.provider.ContactsContract.CommonDataKinds
@@ -7,13 +7,13 @@ import android.provider.ContactsContract.CommonDataKinds.Im
 import android.provider.ContactsContract.CommonDataKinds.Phone
 import android.provider.ContactsContract.CommonDataKinds.StructuredPostal
 import android.provider.MediaStore
-import com.goodwy.commons.R
-import com.goodwy.commons.activities.BaseSimpleActivity
-import com.goodwy.commons.extensions.getByteArray
-import com.goodwy.commons.extensions.getDateTimeFromDateString
-import com.goodwy.commons.extensions.showErrorToast
-import com.goodwy.commons.extensions.toast
-import com.goodwy.commons.models.contacts.Contact
+import com.devgroup.commons.R
+import com.devgroup.commons.activities.BaseSimpleActivity
+import com.devgroup.commons.extensions.getByteArray
+import com.devgroup.commons.extensions.getDateTimeFromDateString
+import com.devgroup.commons.extensions.showErrorToast
+import com.devgroup.commons.extensions.toast
+import com.devgroup.commons.models.contacts.Contact
 import ezvcard.Ezvcard
 import ezvcard.VCard
 import ezvcard.VCardVersion

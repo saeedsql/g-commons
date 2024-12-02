@@ -1,4 +1,4 @@
-package com.goodwy.commons.views
+package com.devgroup.commons.views
 
 import android.content.Context
 import android.content.Intent
@@ -10,12 +10,12 @@ import androidx.biometric.auth.AuthPromptHost
 import com.github.ajalt.reprint.core.AuthenticationFailureReason
 import com.github.ajalt.reprint.core.AuthenticationListener
 import com.github.ajalt.reprint.core.Reprint
-import com.goodwy.commons.R
-import com.goodwy.commons.databinding.TabFingerprintBinding
-import com.goodwy.commons.extensions.*
-import com.goodwy.commons.helpers.PROTECTION_FINGERPRINT
-import com.goodwy.commons.interfaces.HashListener
-import com.goodwy.commons.interfaces.SecurityTab
+import com.devgroup.commons.R
+import com.devgroup.commons.databinding.TabFingerprintBinding
+import com.devgroup.commons.extensions.*
+import com.devgroup.commons.helpers.PROTECTION_FINGERPRINT
+import com.devgroup.commons.interfaces.HashListener
+import com.devgroup.commons.interfaces.SecurityTab
 
 class FingerprintTab(context: Context, attrs: AttributeSet) : RelativeLayout(context, attrs), SecurityTab {
     private val RECHECK_PERIOD = 3000L

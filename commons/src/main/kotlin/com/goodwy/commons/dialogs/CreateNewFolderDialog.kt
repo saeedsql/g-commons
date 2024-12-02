@@ -1,4 +1,4 @@
-package com.goodwy.commons.dialogs
+package com.devgroup.commons.dialogs
 
 import android.view.View
 import androidx.appcompat.app.AlertDialog
@@ -16,15 +16,15 @@ import androidx.compose.ui.platform.LocalView
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
-import com.goodwy.commons.R
-import com.goodwy.commons.activities.BaseSimpleActivity
-import com.goodwy.commons.compose.alert_dialog.*
-import com.goodwy.commons.compose.extensions.MyDevices
-import com.goodwy.commons.compose.theme.AppThemeSurface
-import com.goodwy.commons.compose.theme.SimpleTheme
-import com.goodwy.commons.databinding.DialogCreateNewFolderBinding
-import com.goodwy.commons.extensions.*
-import com.goodwy.commons.helpers.isRPlus
+import com.devgroup.commons.R
+import com.devgroup.commons.activities.BaseSimpleActivity
+import com.devgroup.commons.compose.alert_dialog.*
+import com.devgroup.commons.compose.extensions.MyDevices
+import com.devgroup.commons.compose.theme.AppThemeSurface
+import com.devgroup.commons.compose.theme.SimpleTheme
+import com.devgroup.commons.databinding.DialogCreateNewFolderBinding
+import com.devgroup.commons.extensions.*
+import com.devgroup.commons.helpers.isRPlus
 import java.io.File
 
 class CreateNewFolderDialog(val activity: BaseSimpleActivity, val path: String, val callback: (path: String) -> Unit) {

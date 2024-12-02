@@ -1,20 +1,20 @@
-package com.goodwy.commons.helpers
+package com.devgroup.commons.helpers
 
 import android.content.Context
 import android.database.Cursor
 import android.net.Uri
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import com.goodwy.commons.extensions.getIntValue
-import com.goodwy.commons.extensions.getStringValue
-import com.goodwy.commons.models.PhoneNumber
-import com.goodwy.commons.models.SimpleContact
-import com.goodwy.commons.models.contacts.*
+import com.devgroup.commons.extensions.getIntValue
+import com.devgroup.commons.extensions.getStringValue
+import com.devgroup.commons.models.PhoneNumber
+import com.devgroup.commons.models.SimpleContact
+import com.devgroup.commons.models.contacts.*
 
 // used for sharing privately stored contacts in Simple Contacts with Simple Dialer, Simple SMS Messenger and Simple Calendar Pro
 class MyContactsContentProvider {
     companion object {
-        private const val AUTHORITY = "com.goodwy.commons.contactsprovider"
+        private const val AUTHORITY = "com.devgroup.commons.contactsprovider"
         val CONTACTS_CONTENT_URI = Uri.parse("content://$AUTHORITY/contacts")
 
         const val FAVORITES_ONLY = "favorites_only"
@@ -29,7 +29,7 @@ class MyContactsContentProvider {
         fun getSimpleContacts(context: Context, cursor: Cursor?): ArrayList<SimpleContact> {
             val contacts = ArrayList<SimpleContact>()
             val packageName = context.packageName.removeSuffix(".debug")
-            if (packageName != "com.goodwy.dialer" && packageName != "com.goodwy.smsmessenger" && packageName != "com.goodwy.calendar") {
+            if (packageName != "com.devgroup.dialer" && packageName != "com.devgroup.smsmessenger" && packageName != "com.devgroup.calendar") {
                 return contacts
             }
 
@@ -64,8 +64,8 @@ class MyContactsContentProvider {
         fun getContacts(context: Context, cursor: Cursor?): ArrayList<Contact> {
             val contacts = ArrayList<Contact>()
             val packageName = context.packageName.removeSuffix(".debug")
-            if (packageName != "com.goodwy.dialer" && packageName != "com.goodwy.smsmessenger" && packageName != "com.goodwy.calendar"
-                && packageName != "com.goodwy.dialer.debug" && packageName != "com.goodwy.smsmessenger.debug" && packageName != "com.goodwy.calendar.debug") {
+            if (packageName != "com.devgroup.dialer" && packageName != "com.devgroup.smsmessenger" && packageName != "com.devgroup.calendar"
+                && packageName != "com.devgroup.dialer.debug" && packageName != "com.devgroup.smsmessenger.debug" && packageName != "com.devgroup.calendar.debug") {
                 return contacts
             }
 

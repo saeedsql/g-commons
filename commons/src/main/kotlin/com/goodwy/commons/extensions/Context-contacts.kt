@@ -1,4 +1,4 @@
-package com.goodwy.commons.extensions
+package com.devgroup.commons.extensions
 
 import android.annotation.TargetApi
 import android.content.Context
@@ -10,19 +10,19 @@ import android.os.Handler
 import android.os.Looper
 import android.provider.ContactsContract
 import android.telephony.PhoneNumberUtils
-import com.goodwy.commons.R
-import com.goodwy.commons.activities.BaseSimpleActivity
-import com.goodwy.commons.databases.ContactsDatabase
-import com.goodwy.commons.dialogs.CallConfirmationDialog
-import com.goodwy.commons.dialogs.RadioGroupDialog
-import com.goodwy.commons.helpers.*
-import com.goodwy.commons.interfaces.ContactsDao
-import com.goodwy.commons.interfaces.GroupsDao
-import com.goodwy.commons.models.RadioItem
-import com.goodwy.commons.models.contacts.Contact
-import com.goodwy.commons.models.contacts.ContactSource
-import com.goodwy.commons.models.contacts.Organization
-import com.goodwy.commons.models.contacts.SocialAction
+import com.devgroup.commons.R
+import com.devgroup.commons.activities.BaseSimpleActivity
+import com.devgroup.commons.databases.ContactsDatabase
+import com.devgroup.commons.dialogs.CallConfirmationDialog
+import com.devgroup.commons.dialogs.RadioGroupDialog
+import com.devgroup.commons.helpers.*
+import com.devgroup.commons.interfaces.ContactsDao
+import com.devgroup.commons.interfaces.GroupsDao
+import com.devgroup.commons.models.RadioItem
+import com.devgroup.commons.models.contacts.Contact
+import com.devgroup.commons.models.contacts.ContactSource
+import com.devgroup.commons.models.contacts.Organization
+import com.devgroup.commons.models.contacts.SocialAction
 import java.io.File
 
 val Context.contactsDB: ContactsDao get() = ContactsDatabase.getInstance(applicationContext).ContactsDao()

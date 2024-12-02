@@ -1,9 +1,9 @@
-package com.goodwy.commons.helpers
+package com.devgroup.commons.helpers
 
 import android.app.Application
 import androidx.lifecycle.DefaultLifecycleObserver
 import androidx.lifecycle.LifecycleOwner
-import com.goodwy.commons.compose.extensions.config
+import com.devgroup.commons.compose.extensions.config
 
 class AppLockManager(
     private val context: Application,

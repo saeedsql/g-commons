@@ -1,11 +1,11 @@
-package com.goodwy.commons.views
+package com.devgroup.commons.views
 
 import android.annotation.SuppressLint
 import android.content.Context
 import android.content.res.ColorStateList
 import android.util.AttributeSet
 import androidx.appcompat.widget.AppCompatCheckBox
-import com.goodwy.commons.extensions.adjustAlpha
+import com.devgroup.commons.extensions.adjustAlpha
 
 class MyAppCompatCheckbox : AppCompatCheckBox {
     constructor(context: Context) : super(context)

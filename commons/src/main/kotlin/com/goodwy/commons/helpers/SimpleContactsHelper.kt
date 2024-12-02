@@ -1,4 +1,4 @@
-package com.goodwy.commons.helpers
+package com.devgroup.commons.helpers
 
 import android.content.Context
 import android.database.Cursor
@@ -18,10 +18,10 @@ import com.bumptech.glide.load.DecodeFormat
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.bumptech.glide.request.RequestOptions
-import com.goodwy.commons.R
-import com.goodwy.commons.extensions.*
-import com.goodwy.commons.models.PhoneNumber
-import com.goodwy.commons.models.SimpleContact
+import com.devgroup.commons.R
+import com.devgroup.commons.extensions.*
+import com.devgroup.commons.models.PhoneNumber
+import com.devgroup.commons.models.SimpleContact
 import android.graphics.Bitmap
 import androidx.core.content.res.ResourcesCompat
 import kotlin.math.abs

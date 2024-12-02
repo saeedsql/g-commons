@@ -1,4 +1,4 @@
-package com.goodwy.commons.interfaces
+package com.devgroup.commons.interfaces
 
 import android.content.Context
 import android.os.Handler
@@ -8,12 +8,12 @@ import android.widget.TextView
 import androidx.annotation.ColorInt
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.os.postDelayed
-import com.goodwy.commons.R
-import com.goodwy.commons.extensions.baseConfig
-import com.goodwy.commons.extensions.countdown
-import com.goodwy.commons.extensions.getProperTextColor
-import com.goodwy.commons.helpers.DEFAULT_PASSWORD_COUNTDOWN
-import com.goodwy.commons.helpers.MAX_PASSWORD_RETRY_COUNT
+import com.devgroup.commons.R
+import com.devgroup.commons.extensions.baseConfig
+import com.devgroup.commons.extensions.countdown
+import com.devgroup.commons.extensions.getProperTextColor
+import com.devgroup.commons.helpers.DEFAULT_PASSWORD_COUNTDOWN
+import com.devgroup.commons.helpers.MAX_PASSWORD_RETRY_COUNT
 
 abstract class BaseSecurityTab(context: Context, attrs: AttributeSet) : ConstraintLayout(context, attrs), SecurityTab {
 

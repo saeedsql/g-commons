@@ -1,10 +1,10 @@
-package com.goodwy.commons.dialogs
+package com.devgroup.commons.dialogs
 
 import androidx.appcompat.app.AlertDialog
-import com.goodwy.commons.R
-import com.goodwy.commons.activities.BaseSimpleActivity
-import com.goodwy.commons.databinding.DialogExportSettingsBinding
-import com.goodwy.commons.extensions.*
+import com.devgroup.commons.R
+import com.devgroup.commons.activities.BaseSimpleActivity
+import com.devgroup.commons.databinding.DialogExportSettingsBinding
+import com.devgroup.commons.extensions.*
 
 class ExportSettingsDialog(
     val activity: BaseSimpleActivity, val defaultFilename: String, val hidePath: Boolean,

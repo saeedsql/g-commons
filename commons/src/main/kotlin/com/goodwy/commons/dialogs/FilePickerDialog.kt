@@ -1,4 +1,4 @@
-package com.goodwy.commons.dialogs
+package com.devgroup.commons.dialogs
 
 import android.os.Environment
 import android.os.Parcelable
@@ -8,15 +8,15 @@ import androidx.appcompat.app.AlertDialog
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.documentfile.provider.DocumentFile
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.goodwy.commons.R
-import com.goodwy.commons.activities.BaseSimpleActivity
-import com.goodwy.commons.adapters.FilepickerFavoritesAdapter
-import com.goodwy.commons.adapters.FilepickerItemsAdapter
-import com.goodwy.commons.databinding.DialogFilepickerBinding
-import com.goodwy.commons.extensions.*
-import com.goodwy.commons.helpers.ensureBackgroundThread
-import com.goodwy.commons.models.FileDirItem
-import com.goodwy.commons.views.Breadcrumbs
+import com.devgroup.commons.R
+import com.devgroup.commons.activities.BaseSimpleActivity
+import com.devgroup.commons.adapters.FilepickerFavoritesAdapter
+import com.devgroup.commons.adapters.FilepickerItemsAdapter
+import com.devgroup.commons.databinding.DialogFilepickerBinding
+import com.devgroup.commons.extensions.*
+import com.devgroup.commons.helpers.ensureBackgroundThread
+import com.devgroup.commons.models.FileDirItem
+import com.devgroup.commons.views.Breadcrumbs
 import java.io.File
 
 /**

@@ -1,6 +1,6 @@
-package com.goodwy.commons.extensions
+package com.devgroup.commons.extensions
 
-import com.goodwy.commons.helpers.MD5
+import com.devgroup.commons.helpers.MD5
 import java.io.InputStream
 import java.security.MessageDigest
 

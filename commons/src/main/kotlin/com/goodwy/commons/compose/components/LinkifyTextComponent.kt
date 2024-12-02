@@ -1,4 +1,4 @@
-package com.goodwy.commons.compose.components
+package com.devgroup.commons.compose.components
 
 import android.text.Spanned
 import android.text.method.LinkMovementMethod
@@ -12,12 +12,12 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.viewinterop.AndroidView
-import com.goodwy.commons.R
-import com.goodwy.commons.compose.extensions.MyDevices
-import com.goodwy.commons.compose.theme.AppThemeSurface
-import com.goodwy.commons.compose.theme.SimpleTheme
-import com.goodwy.commons.extensions.fromHtml
-import com.goodwy.commons.extensions.removeUnderlines
+import com.devgroup.commons.R
+import com.devgroup.commons.compose.extensions.MyDevices
+import com.devgroup.commons.compose.theme.AppThemeSurface
+import com.devgroup.commons.compose.theme.SimpleTheme
+import com.devgroup.commons.extensions.fromHtml
+import com.devgroup.commons.extensions.removeUnderlines
 
 @Composable
 fun LinkifyTextComponent(

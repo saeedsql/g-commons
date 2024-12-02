@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.goodwy.commons.views.MySearchMenu
+    <com.devgroup.commons.views.MySearchMenu
         android:id="@+id/mainToolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -95,7 +95,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.goodwy.commons.views.MyFloatingActionButton
+        <com.devgroup.commons.views.MyFloatingActionButton
             android:id="@+id/mini_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -110,7 +110,7 @@
             app:fabSize="mini"
             app:rippleColor="@color/pressed_item_foreground" />
 
-        <com.goodwy.commons.views.MyFloatingActionButton
+        <com.devgroup.commons.views.MyFloatingActionButton
             android:id="@+id/big_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

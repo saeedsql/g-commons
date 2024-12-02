@@ -1,4 +1,4 @@
-package com.goodwy.commons.compose.screens
+package com.devgroup.commons.compose.screens
 
 import android.text.Spanned
 import androidx.compose.foundation.background
@@ -16,15 +16,15 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.goodwy.commons.R
-import com.goodwy.commons.compose.components.LinkifyTextComponent
-import com.goodwy.commons.compose.extensions.MyDevices
-import com.goodwy.commons.compose.lists.SimpleLazyListScaffold
-import com.goodwy.commons.compose.theme.AppThemeSurface
-import com.goodwy.commons.compose.theme.SimpleTheme
-import com.goodwy.commons.extensions.fromHtml
-import com.goodwy.commons.models.FAQItem
-import com.goodwy.strings.R as stringsR
+import com.devgroup.commons.R
+import com.devgroup.commons.compose.components.LinkifyTextComponent
+import com.devgroup.commons.compose.extensions.MyDevices
+import com.devgroup.commons.compose.lists.SimpleLazyListScaffold
+import com.devgroup.commons.compose.theme.AppThemeSurface
+import com.devgroup.commons.compose.theme.SimpleTheme
+import com.devgroup.commons.extensions.fromHtml
+import com.devgroup.commons.models.FAQItem
+import com.devgroup.strings.R as stringsR
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.toImmutableList
 

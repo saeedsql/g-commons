@@ -1,4 +1,4 @@
-package com.goodwy.commons.extensions
+package com.devgroup.commons.extensions
 
 import android.content.Context
 import android.content.res.Resources
@@ -8,8 +8,8 @@ import android.graphics.PorterDuff
 import android.graphics.PorterDuffColorFilter
 import android.graphics.drawable.Drawable
 import androidx.appcompat.content.res.AppCompatResources
-import com.goodwy.commons.R
-import com.goodwy.commons.helpers.*
+import com.devgroup.commons.R
+import com.devgroup.commons.helpers.*
 
 fun Resources.getColoredBitmap(resourceId: Int, newColor: Int): Bitmap {
     val drawable = getDrawable(resourceId)

@@ -1,17 +1,17 @@
-package com.goodwy.commons.views
+package com.devgroup.commons.views
 
 import android.content.ContentValues
 import android.content.Context
 import android.provider.MediaStore
 import android.util.AttributeSet
 import android.widget.RelativeLayout
-import com.goodwy.commons.R
-import com.goodwy.commons.activities.BaseSimpleActivity
-import com.goodwy.commons.databinding.TabRenameSimpleBinding
-import com.goodwy.commons.extensions.*
-import com.goodwy.commons.interfaces.RenameTab
-import com.goodwy.commons.models.Android30RenameFormat
-import com.goodwy.commons.models.FileDirItem
+import com.devgroup.commons.R
+import com.devgroup.commons.activities.BaseSimpleActivity
+import com.devgroup.commons.databinding.TabRenameSimpleBinding
+import com.devgroup.commons.extensions.*
+import com.devgroup.commons.interfaces.RenameTab
+import com.devgroup.commons.models.Android30RenameFormat
+import com.devgroup.commons.models.FileDirItem
 import java.io.File
 
 class RenameSimpleTab(context: Context, attrs: AttributeSet) : RelativeLayout(context, attrs), RenameTab {

@@ -1,4 +1,4 @@
-package com.goodwy.commons.compose.theme.model
+package com.devgroup.commons.compose.theme.model
 
 import androidx.compose.runtime.Immutable
 import androidx.compose.ui.graphics.Color

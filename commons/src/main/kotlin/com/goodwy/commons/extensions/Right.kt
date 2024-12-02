@@ -1,4 +1,4 @@
-package com.goodwy.commons.extensions
+package com.devgroup.commons.extensions
 
 import android.content.pm.PackageManager
 import android.content.pm.PackageManager.GET_SIGNATURES
@@ -6,7 +6,7 @@ import android.content.pm.PackageManager.GET_SIGNING_CERTIFICATES
 import android.content.pm.Signature
 import android.util.Base64
 import android.util.Base64.NO_PADDING
-import com.goodwy.commons.helpers.isPiePlus
+import com.devgroup.commons.helpers.isPiePlus
 import java.nio.charset.StandardCharsets.UTF_8
 import java.security.MessageDigest
 

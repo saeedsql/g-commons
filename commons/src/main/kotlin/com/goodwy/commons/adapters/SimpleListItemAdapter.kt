@@ -1,4 +1,4 @@
-package com.goodwy.commons.adapters
+package com.devgroup.commons.adapters
 
 import android.app.Activity
 import android.view.View
@@ -6,11 +6,11 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.goodwy.commons.R
-import com.goodwy.commons.databinding.ItemSimpleListBinding
-import com.goodwy.commons.extensions.*
-import com.goodwy.commons.models.SimpleListItem
-import com.goodwy.strings.R as stringsR
+import com.devgroup.commons.R
+import com.devgroup.commons.databinding.ItemSimpleListBinding
+import com.devgroup.commons.extensions.*
+import com.devgroup.commons.models.SimpleListItem
+import com.devgroup.strings.R as stringsR
 
 open class SimpleListItemAdapter(val activity: Activity, val onItemClicked: (SimpleListItem) -> Unit) :
     ListAdapter<SimpleListItem, SimpleListItemAdapter.SimpleItemViewHolder>(SimpleListItemDiffCallback()) {

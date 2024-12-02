@@ -1,4 +1,4 @@
-package com.goodwy.commons.views
+package com.devgroup.commons.views
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -13,15 +13,15 @@ import androidx.core.widget.TextViewCompat
 import com.andrognito.patternlockview.PatternLockView
 import com.andrognito.patternlockview.listener.PatternLockViewListener
 import com.andrognito.patternlockview.utils.PatternLockUtils
-import com.goodwy.commons.R
-import com.goodwy.commons.databinding.TabPatternBinding
-import com.goodwy.commons.extensions.getProperPrimaryColor
-import com.goodwy.commons.extensions.getProperTextColor
-import com.goodwy.commons.extensions.performHapticFeedback
-import com.goodwy.commons.extensions.updateTextColors
-import com.goodwy.commons.helpers.PROTECTION_PATTERN
-import com.goodwy.commons.interfaces.BaseSecurityTab
-import com.goodwy.commons.interfaces.HashListener
+import com.devgroup.commons.R
+import com.devgroup.commons.databinding.TabPatternBinding
+import com.devgroup.commons.extensions.getProperPrimaryColor
+import com.devgroup.commons.extensions.getProperTextColor
+import com.devgroup.commons.extensions.performHapticFeedback
+import com.devgroup.commons.extensions.updateTextColors
+import com.devgroup.commons.helpers.PROTECTION_PATTERN
+import com.devgroup.commons.interfaces.BaseSecurityTab
+import com.devgroup.commons.interfaces.HashListener
 
 class PatternTab(context: Context, attrs: AttributeSet) : BaseSecurityTab(context, attrs) {
     private var scrollView: MyScrollView? = null
@@ -79,7 +79,7 @@ class PatternTab(context: Context, attrs: AttributeSet) : BaseSecurityTab(contex
         this.scrollView = scrollView
         computedHash = requiredHash
         hashListener = listener
-        if (computedHash != "") binding.patternLockTitle.setText(com.goodwy.strings.R.string.enter_pattern)
+        if (computedHash != "") binding.patternLockTitle.setText(com.devgroup.strings.R.string.enter_pattern)
     }
 
     override fun onLockedOutChange(lockedOut: Boolean) {

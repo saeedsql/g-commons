@@ -1,6 +1,6 @@
-package com.goodwy.commons.helpers
+package com.devgroup.commons.helpers
 
-import com.goodwy.commons.models.BlockedNumber
+import com.devgroup.commons.models.BlockedNumber
 import java.io.OutputStream
 
 object BlockedNumbersExporter {

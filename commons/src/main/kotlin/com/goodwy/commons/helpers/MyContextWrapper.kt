@@ -1,4 +1,4 @@
-package com.goodwy.commons.helpers
+package com.devgroup.commons.helpers
 
 import android.annotation.TargetApi
 import android.content.Context

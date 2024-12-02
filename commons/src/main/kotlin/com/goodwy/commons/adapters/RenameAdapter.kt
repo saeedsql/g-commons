@@ -1,13 +1,13 @@
-package com.goodwy.commons.adapters
+package com.devgroup.commons.adapters
 
 import android.util.SparseArray
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.viewpager.widget.PagerAdapter
-import com.goodwy.commons.R
-import com.goodwy.commons.activities.BaseSimpleActivity
-import com.goodwy.commons.interfaces.RenameTab
+import com.devgroup.commons.R
+import com.devgroup.commons.activities.BaseSimpleActivity
+import com.devgroup.commons.interfaces.RenameTab
 
 class RenameAdapter(val activity: BaseSimpleActivity, val paths: ArrayList<String>) : PagerAdapter() {
     private val tabs = SparseArray<RenameTab>()

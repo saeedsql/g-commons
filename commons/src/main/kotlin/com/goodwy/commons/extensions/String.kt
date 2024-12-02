@@ -1,4 +1,4 @@
-package com.goodwy.commons.extensions
+package com.devgroup.commons.extensions
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -13,7 +13,7 @@ import android.text.*
 import android.text.style.ForegroundColorSpan
 import android.widget.TextView
 import com.bumptech.glide.signature.ObjectKey
-import com.goodwy.commons.helpers.*
+import com.devgroup.commons.helpers.*
 import org.joda.time.DateTime
 import org.joda.time.Years
 import org.joda.time.format.DateTimeFormat

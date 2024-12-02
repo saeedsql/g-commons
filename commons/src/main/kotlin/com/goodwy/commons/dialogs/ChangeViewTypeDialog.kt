@@ -1,4 +1,4 @@
-package com.goodwy.commons.dialogs
+package com.devgroup.commons.dialogs
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
@@ -14,21 +14,21 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.toImmutableList
-import com.goodwy.commons.R
-import com.goodwy.commons.activities.BaseSimpleActivity
-import com.goodwy.commons.compose.alert_dialog.AlertDialogState
-import com.goodwy.commons.compose.alert_dialog.DialogSurface
-import com.goodwy.commons.compose.alert_dialog.rememberAlertDialogState
-import com.goodwy.commons.compose.components.RadioGroupDialogComponent
-import com.goodwy.commons.compose.extensions.MyDevices
-import com.goodwy.commons.compose.theme.AppThemeSurface
-import com.goodwy.commons.compose.theme.SimpleTheme
-import com.goodwy.commons.databinding.DialogChangeViewTypeBinding
-import com.goodwy.commons.extensions.baseConfig
-import com.goodwy.commons.extensions.getAlertDialogBuilder
-import com.goodwy.commons.extensions.setupDialogStuff
-import com.goodwy.commons.helpers.VIEW_TYPE_GRID
-import com.goodwy.commons.helpers.VIEW_TYPE_LIST
+import com.devgroup.commons.R
+import com.devgroup.commons.activities.BaseSimpleActivity
+import com.devgroup.commons.compose.alert_dialog.AlertDialogState
+import com.devgroup.commons.compose.alert_dialog.DialogSurface
+import com.devgroup.commons.compose.alert_dialog.rememberAlertDialogState
+import com.devgroup.commons.compose.components.RadioGroupDialogComponent
+import com.devgroup.commons.compose.extensions.MyDevices
+import com.devgroup.commons.compose.theme.AppThemeSurface
+import com.devgroup.commons.compose.theme.SimpleTheme
+import com.devgroup.commons.databinding.DialogChangeViewTypeBinding
+import com.devgroup.commons.extensions.baseConfig
+import com.devgroup.commons.extensions.getAlertDialogBuilder
+import com.devgroup.commons.extensions.setupDialogStuff
+import com.devgroup.commons.helpers.VIEW_TYPE_GRID
+import com.devgroup.commons.helpers.VIEW_TYPE_LIST
 
 class ChangeViewTypeDialog(val activity: BaseSimpleActivity, val callback: () -> Unit) {
     private var view: DialogChangeViewTypeBinding

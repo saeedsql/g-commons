@@ -1,7 +1,7 @@
-package com.goodwy.commons.extensions
+package com.devgroup.commons.extensions
 
 import android.content.Context
-import com.goodwy.commons.models.FileDirItem
+import com.devgroup.commons.models.FileDirItem
 
 fun FileDirItem.isRecycleBinPath(context: Context): Boolean {
     return path.startsWith(context.recycleBinPath)

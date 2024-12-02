@@ -1,4 +1,4 @@
-package com.goodwy.commons.activities
+package com.devgroup.commons.activities
 
 import android.content.res.Configuration
 import android.os.Bundle
@@ -6,13 +6,13 @@ import androidx.activity.compose.setContent
 import androidx.compose.runtime.derivedStateOf
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
-import com.goodwy.commons.R
-import com.goodwy.commons.compose.extensions.enableEdgeToEdgeSimple
-import com.goodwy.commons.compose.screens.LicenseScreen
-import com.goodwy.commons.compose.theme.AppThemeSurface
-import com.goodwy.commons.extensions.*
-import com.goodwy.commons.helpers.*
-import com.goodwy.commons.models.License
+import com.devgroup.commons.R
+import com.devgroup.commons.compose.extensions.enableEdgeToEdgeSimple
+import com.devgroup.commons.compose.screens.LicenseScreen
+import com.devgroup.commons.compose.theme.AppThemeSurface
+import com.devgroup.commons.extensions.*
+import com.devgroup.commons.helpers.*
+import com.devgroup.commons.models.License
 import kotlinx.collections.immutable.toImmutableList
 
 class LicenseActivity : BaseComposeActivity() {

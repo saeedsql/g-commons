@@ -1,4 +1,4 @@
-package com.goodwy.commons.activities
+package com.devgroup.commons.activities
 
 import android.content.ContentValues
 import android.content.res.ColorStateList
@@ -6,26 +6,26 @@ import android.graphics.Color
 import android.os.Bundle
 import android.view.View
 import androidx.core.content.res.ResourcesCompat
-import com.goodwy.commons.R
-import com.goodwy.commons.compose.extensions.config
-import com.goodwy.commons.databinding.ActivityCustomizationBinding
-import com.goodwy.commons.dialogs.*
-import com.goodwy.commons.extensions.*
-import com.goodwy.commons.helpers.*
-import com.goodwy.commons.helpers.MyContentProvider.COL_ACCENT_COLOR
-import com.goodwy.commons.helpers.MyContentProvider.COL_APP_ICON_COLOR
-import com.goodwy.commons.helpers.MyContentProvider.COL_BACKGROUND_COLOR
-import com.goodwy.commons.helpers.MyContentProvider.COL_PRIMARY_COLOR
-import com.goodwy.commons.helpers.MyContentProvider.COL_TEXT_COLOR
-import com.goodwy.commons.helpers.MyContentProvider.COL_THEME_TYPE
-import com.goodwy.commons.helpers.MyContentProvider.GLOBAL_THEME_CUSTOM
-import com.goodwy.commons.helpers.MyContentProvider.GLOBAL_THEME_DISABLED
-import com.goodwy.commons.helpers.MyContentProvider.GLOBAL_THEME_SYSTEM
-import com.goodwy.commons.models.GlobalConfig
-import com.goodwy.commons.models.MyTheme
-import com.goodwy.commons.models.RadioItem
-import com.goodwy.commons.models.isGlobalThemingEnabled
-import com.goodwy.strings.R as stringsR
+import com.devgroup.commons.R
+import com.devgroup.commons.compose.extensions.config
+import com.devgroup.commons.databinding.ActivityCustomizationBinding
+import com.devgroup.commons.dialogs.*
+import com.devgroup.commons.extensions.*
+import com.devgroup.commons.helpers.*
+import com.devgroup.commons.helpers.MyContentProvider.COL_ACCENT_COLOR
+import com.devgroup.commons.helpers.MyContentProvider.COL_APP_ICON_COLOR
+import com.devgroup.commons.helpers.MyContentProvider.COL_BACKGROUND_COLOR
+import com.devgroup.commons.helpers.MyContentProvider.COL_PRIMARY_COLOR
+import com.devgroup.commons.helpers.MyContentProvider.COL_TEXT_COLOR
+import com.devgroup.commons.helpers.MyContentProvider.COL_THEME_TYPE
+import com.devgroup.commons.helpers.MyContentProvider.GLOBAL_THEME_CUSTOM
+import com.devgroup.commons.helpers.MyContentProvider.GLOBAL_THEME_DISABLED
+import com.devgroup.commons.helpers.MyContentProvider.GLOBAL_THEME_SYSTEM
+import com.devgroup.commons.models.GlobalConfig
+import com.devgroup.commons.models.MyTheme
+import com.devgroup.commons.models.RadioItem
+import com.devgroup.commons.models.isGlobalThemingEnabled
+import com.devgroup.strings.R as stringsR
 import com.google.android.material.snackbar.Snackbar
 import com.mikhaellopez.rxanimation.RxAnimation
 import com.mikhaellopez.rxanimation.shake
@@ -621,7 +621,7 @@ class CustomizationActivity : BaseSimpleActivity() {
                 if (baseConfig.wasAppIconCustomizationWarningShown) {
                     pickAppIconColor()
                 } else {
-                    ConfirmationDialog(this, "", com.goodwy.strings.R.string.app_icon_color_warning_g, R.string.ok, 0) {
+                    ConfirmationDialog(this, "", com.devgroup.strings.R.string.app_icon_color_warning_g, R.string.ok, 0) {
                         baseConfig.wasAppIconCustomizationWarningShown = true
                         pickAppIconColor()
                     }
@@ -728,7 +728,7 @@ class CustomizationActivity : BaseSimpleActivity() {
     }
 
     private fun pickPrimaryColor() {
-        if (!packageName.startsWith("com.goodwy.", true) && baseConfig.appRunCount > 50) {
+        if (!packageName.startsWith("com.devgroup.", true) && baseConfig.appRunCount > 50) {
             finish()
             return
         }
@@ -785,7 +785,7 @@ class CustomizationActivity : BaseSimpleActivity() {
             checkedItemId = curAppIconColor + 1,
             defaultItemId = APP_ICON_ORIGINAL + 1,
             titleId = R.string.app_icon_color,
-            descriptionId = com.goodwy.strings.R.string.app_icon_color_warning_g
+            descriptionId = com.devgroup.strings.R.string.app_icon_color_warning_g
         ) { wasPositivePressed, newValue ->
             if (wasPositivePressed) {
                 if (curAppIconColor != newValue - 1) {
@@ -808,7 +808,7 @@ class CustomizationActivity : BaseSimpleActivity() {
 
             isPro() -> {
                 binding.applyToAll.isChecked = true
-                ConfirmationDialog(this, "", com.goodwy.strings.R.string.global_theme_success_g, R.string.ok, 0) {
+                ConfirmationDialog(this, "", com.devgroup.strings.R.string.global_theme_success_g, R.string.ok, 0) {
                     updateColorTheme(getCurrentThemeId())
                     saveChanges(false)
                 }
@@ -973,7 +973,7 @@ class CustomizationActivity : BaseSimpleActivity() {
             }
             customizationUseAccentColorFaq.imageTintList = ColorStateList.valueOf(getProperTextColor())
             customizationUseAccentColorFaq.setOnClickListener {
-                ConfirmationDialog(this@CustomizationActivity, messageId = com.goodwy.strings.R.string.use_accent_color_summary, positive = com.goodwy.commons.R.string.ok, negative = 0) {}
+                ConfirmationDialog(this@CustomizationActivity, messageId = com.devgroup.strings.R.string.use_accent_color_summary, positive = com.devgroup.commons.R.string.ok, negative = 0) {}
             }
         }
     }

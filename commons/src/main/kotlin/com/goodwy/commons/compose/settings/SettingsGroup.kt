@@ -1,4 +1,4 @@
-package com.goodwy.commons.compose.settings
+package com.devgroup.commons.compose.settings
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.MaterialTheme
@@ -8,8 +8,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.goodwy.commons.compose.extensions.MyDevices
-import com.goodwy.commons.compose.theme.SimpleTheme
+import com.devgroup.commons.compose.extensions.MyDevices
+import com.devgroup.commons.compose.theme.SimpleTheme
 
 @Composable
 fun SettingsGroup(

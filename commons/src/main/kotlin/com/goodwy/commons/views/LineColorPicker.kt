@@ -1,14 +1,14 @@
-package com.goodwy.commons.views
+package com.devgroup.commons.views
 
 import android.content.Context
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.view.MotionEvent
 import android.widget.LinearLayout
-import com.goodwy.commons.R
-import com.goodwy.commons.extensions.isRTLLayout
-import com.goodwy.commons.extensions.onGlobalLayout
-import com.goodwy.commons.interfaces.LineColorPickerListener
+import com.devgroup.commons.R
+import com.devgroup.commons.extensions.isRTLLayout
+import com.devgroup.commons.extensions.onGlobalLayout
+import com.devgroup.commons.interfaces.LineColorPickerListener
 
 class LineColorPicker @JvmOverloads constructor(
     context: Context,

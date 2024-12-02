@@ -1,4 +1,4 @@
-package com.goodwy.commons.views
+package com.devgroup.commons.views
 
 import android.content.Context
 import android.os.Handler
@@ -7,8 +7,8 @@ import android.view.MotionEvent
 import android.view.ScaleGestureDetector
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.goodwy.commons.R
-import com.goodwy.commons.interfaces.RecyclerScrollCallback
+import com.devgroup.commons.R
+import com.devgroup.commons.interfaces.RecyclerScrollCallback
 
 // drag selection is based on https://github.com/afollestad/drag-select-recyclerview
 open class MyRecyclerView : RecyclerView {

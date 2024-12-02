@@ -1,4 +1,4 @@
-package com.goodwy.commons.compose.theme
+package com.devgroup.commons.compose.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.*
@@ -7,11 +7,11 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalView
-import com.goodwy.commons.compose.extensions.config
-import com.goodwy.commons.compose.theme.model.Theme
-import com.goodwy.commons.compose.theme.model.Theme.Companion.systemDefaultMaterialYou
-import com.goodwy.commons.extensions.getContrastColor
-import com.goodwy.commons.helpers.isSPlus
+import com.devgroup.commons.compose.extensions.config
+import com.devgroup.commons.compose.theme.model.Theme
+import com.devgroup.commons.compose.theme.model.Theme.Companion.systemDefaultMaterialYou
+import com.devgroup.commons.extensions.getContrastColor
+import com.devgroup.commons.helpers.isSPlus
 
 @Composable
 internal fun Theme(

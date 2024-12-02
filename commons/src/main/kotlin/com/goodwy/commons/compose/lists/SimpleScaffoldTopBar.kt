@@ -1,4 +1,4 @@
-package com.goodwy.commons.compose.lists
+package com.devgroup.commons.compose.lists
 
 import android.annotation.SuppressLint
 import androidx.compose.foundation.clickable
@@ -16,11 +16,11 @@ import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalLayoutDirection
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
-import com.goodwy.commons.R
-import com.goodwy.commons.compose.extensions.MyDevices
-import com.goodwy.commons.compose.extensions.rememberMutableInteractionSource
-import com.goodwy.commons.compose.theme.AppThemeSurface
-import com.goodwy.commons.compose.theme.SimpleTheme
+import com.devgroup.commons.R
+import com.devgroup.commons.compose.extensions.MyDevices
+import com.devgroup.commons.compose.extensions.rememberMutableInteractionSource
+import com.devgroup.commons.compose.theme.AppThemeSurface
+import com.devgroup.commons.compose.theme.SimpleTheme
 
 @Composable
 fun SimpleScaffoldTopBar(

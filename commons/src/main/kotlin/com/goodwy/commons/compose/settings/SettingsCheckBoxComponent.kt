@@ -1,4 +1,4 @@
-package com.goodwy.commons.compose.settings
+package com.devgroup.commons.compose.settings
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.LocalIndication
@@ -12,13 +12,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.goodwy.commons.compose.extensions.BooleanPreviewParameterProvider
-import com.goodwy.commons.compose.extensions.MyDevices
-import com.goodwy.commons.compose.extensions.rememberMutableInteractionSource
-import com.goodwy.commons.compose.theme.AppThemeSurface
-import com.goodwy.commons.compose.theme.SimpleTheme
-import com.goodwy.commons.compose.theme.preferenceLabelColor
-import com.goodwy.commons.compose.theme.preferenceValueColor
+import com.devgroup.commons.compose.extensions.BooleanPreviewParameterProvider
+import com.devgroup.commons.compose.extensions.MyDevices
+import com.devgroup.commons.compose.extensions.rememberMutableInteractionSource
+import com.devgroup.commons.compose.theme.AppThemeSurface
+import com.devgroup.commons.compose.theme.SimpleTheme
+import com.devgroup.commons.compose.theme.preferenceLabelColor
+import com.devgroup.commons.compose.theme.preferenceValueColor
 
 @Composable
 fun SettingsCheckBoxComponent(

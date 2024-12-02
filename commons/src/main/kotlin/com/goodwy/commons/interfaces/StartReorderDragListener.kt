@@ -1,4 +1,4 @@
-package com.goodwy.commons.interfaces
+package com.devgroup.commons.interfaces
 
 import androidx.recyclerview.widget.RecyclerView
 

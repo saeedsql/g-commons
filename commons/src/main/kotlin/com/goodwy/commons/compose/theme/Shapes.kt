@@ -1,4 +1,4 @@
-package com.goodwy.commons.compose.theme
+package com.devgroup.commons.compose.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Shapes

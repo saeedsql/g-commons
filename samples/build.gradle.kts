@@ -15,7 +15,7 @@ if (keystorePropertiesFile.exists()) {
 }
 
 android {
-    namespace = "com.goodwy.commons.samples"
+    namespace = "com.devgroup.commons.samples"
 
     compileSdk = libs.versions.app.build.compileSDKVersion.get().toInt()
 
@@ -31,7 +31,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.goodwy.commons.samples"
+        applicationId = "com.devgroup.commons.samples"
         minSdk = libs.versions.app.build.minimumSDK.get().toInt()
         targetSdk = libs.versions.app.build.targetSDK.get().toInt()
         versionCode = 550

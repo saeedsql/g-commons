@@ -1,4 +1,4 @@
-package com.goodwy.commons.helpers
+package com.devgroup.commons.helpers
 
 import android.content.Context
 import android.graphics.drawable.Drawable
@@ -8,10 +8,10 @@ import android.provider.ContactsContract
 import android.util.Log
 import androidx.annotation.ChecksSdkIntAtLeast
 import androidx.annotation.StringRes
-import com.goodwy.commons.R
-import com.goodwy.commons.extensions.normalizeString
-import com.goodwy.commons.models.contacts.LocalContact
-import com.goodwy.commons.overloads.times
+import com.devgroup.commons.R
+import com.devgroup.commons.extensions.normalizeString
+import com.devgroup.commons.models.contacts.LocalContact
+import com.devgroup.commons.overloads.times
 
 const val EXTERNAL_STORAGE_PROVIDER_AUTHORITY = "com.android.externalstorage.documents"
 const val EXTRA_SHOW_ADVANCED = "android.content.extra.SHOW_ADVANCED"
@@ -25,7 +25,7 @@ const val APP_ID = "app_id"
 const val APP_LAUNCHER_NAME = "app_launcher_name"
 const val REAL_FILE_PATH = "real_file_path_2"
 const val IS_FROM_GALLERY = "is_from_gallery"
-const val BROADCAST_REFRESH_MEDIA = "com.goodwy.REFRESH_MEDIA"
+const val BROADCAST_REFRESH_MEDIA = "com.devgroup.REFRESH_MEDIA"
 const val REFRESH_PATH = "refresh_path"
 const val IS_CUSTOMIZING_COLORS = "is_customizing_colors"
 const val BLOCKED_NUMBERS_EXPORT_DELIMITER = ","

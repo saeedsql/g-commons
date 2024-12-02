@@ -1,4 +1,4 @@
-package com.goodwy.commons.views
+package com.devgroup.commons.views
 
 import android.content.Context
 import android.content.res.ColorStateList
@@ -11,11 +11,11 @@ import android.widget.HorizontalScrollView
 import android.widget.LinearLayout
 import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
-import com.goodwy.commons.R
-import com.goodwy.commons.databinding.ItemBreadcrumbBinding
-import com.goodwy.commons.databinding.ItemBreadcrumbFirstBinding
-import com.goodwy.commons.extensions.*
-import com.goodwy.commons.models.FileDirItem
+import com.devgroup.commons.R
+import com.devgroup.commons.databinding.ItemBreadcrumbBinding
+import com.devgroup.commons.databinding.ItemBreadcrumbFirstBinding
+import com.devgroup.commons.extensions.*
+import com.devgroup.commons.models.FileDirItem
 
 class Breadcrumbs(context: Context, attrs: AttributeSet) : HorizontalScrollView(context, attrs) {
     private val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater

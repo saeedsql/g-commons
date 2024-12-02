@@ -1,4 +1,4 @@
-package com.goodwy.commons.compose.theme
+package com.devgroup.commons.compose.theme
 
 import android.content.Context
 import android.content.res.Configuration
@@ -8,7 +8,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.ReadOnlyComposable
 import androidx.compose.ui.graphics.luminance
 import androidx.compose.ui.platform.LocalContext
-import com.goodwy.commons.compose.theme.model.Theme.Companion.systemDefaultMaterialYou
+import com.devgroup.commons.compose.theme.model.Theme.Companion.systemDefaultMaterialYou
 
 
 @Composable

@@ -1,11 +1,11 @@
-package com.goodwy.commons.views.bottomactionmenu
+package com.devgroup.commons.views.bottomactionmenu
 
 import android.content.Context
 import android.util.AttributeSet
 import android.util.Xml
 import android.view.MenuItem
 import android.view.View
-import com.goodwy.commons.R
+import com.devgroup.commons.R
 import org.xmlpull.v1.XmlPullParser
 
 internal class BottomActionMenuParser(private val context: Context) {

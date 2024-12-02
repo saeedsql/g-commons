@@ -1,4 +1,4 @@
-package com.goodwy.commons.dialogs
+package com.devgroup.commons.dialogs
 
 import android.app.Activity
 import android.content.Context
@@ -27,20 +27,20 @@ import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.DialogProperties
 import kotlinx.collections.immutable.toImmutableList
-import com.goodwy.commons.R
-import com.goodwy.commons.compose.alert_dialog.AlertDialogState
-import com.goodwy.commons.compose.alert_dialog.DialogSurface
-import com.goodwy.commons.compose.alert_dialog.ShowKeyboardWhenDialogIsOpenedAndRequestFocus
-import com.goodwy.commons.compose.alert_dialog.rememberAlertDialogState
-import com.goodwy.commons.compose.components.RadioGroupDialogComponent
-import com.goodwy.commons.compose.extensions.MyDevices
-import com.goodwy.commons.compose.theme.AppThemeSurface
-import com.goodwy.commons.compose.theme.SimpleTheme
-import com.goodwy.commons.databinding.DialogCustomIntervalPickerBinding
-import com.goodwy.commons.extensions.*
-import com.goodwy.commons.helpers.DAY_SECONDS
-import com.goodwy.commons.helpers.HOUR_SECONDS
-import com.goodwy.commons.helpers.MINUTE_SECONDS
+import com.devgroup.commons.R
+import com.devgroup.commons.compose.alert_dialog.AlertDialogState
+import com.devgroup.commons.compose.alert_dialog.DialogSurface
+import com.devgroup.commons.compose.alert_dialog.ShowKeyboardWhenDialogIsOpenedAndRequestFocus
+import com.devgroup.commons.compose.alert_dialog.rememberAlertDialogState
+import com.devgroup.commons.compose.components.RadioGroupDialogComponent
+import com.devgroup.commons.compose.extensions.MyDevices
+import com.devgroup.commons.compose.theme.AppThemeSurface
+import com.devgroup.commons.compose.theme.SimpleTheme
+import com.devgroup.commons.databinding.DialogCustomIntervalPickerBinding
+import com.devgroup.commons.extensions.*
+import com.devgroup.commons.helpers.DAY_SECONDS
+import com.devgroup.commons.helpers.HOUR_SECONDS
+import com.devgroup.commons.helpers.MINUTE_SECONDS
 
 class CustomIntervalPickerDialog(val activity: Activity, val selectedSeconds: Int = 0, val showSeconds: Boolean = false, val callback: (minutes: Int) -> Unit) {
     private var dialog: AlertDialog? = null

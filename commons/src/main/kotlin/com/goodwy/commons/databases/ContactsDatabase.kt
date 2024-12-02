@@ -1,4 +1,4 @@
-package com.goodwy.commons.databases
+package com.devgroup.commons.databases
 
 import android.content.Context
 import androidx.room.Database
@@ -7,14 +7,14 @@ import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
 import androidx.room.migration.Migration
 import androidx.sqlite.db.SupportSQLiteDatabase
-import com.goodwy.commons.helpers.Converters
-import com.goodwy.commons.helpers.FIRST_CONTACT_ID
-import com.goodwy.commons.helpers.FIRST_GROUP_ID
-import com.goodwy.commons.helpers.getEmptyLocalContact
-import com.goodwy.commons.interfaces.ContactsDao
-import com.goodwy.commons.interfaces.GroupsDao
-import com.goodwy.commons.models.contacts.Group
-import com.goodwy.commons.models.contacts.LocalContact
+import com.devgroup.commons.helpers.Converters
+import com.devgroup.commons.helpers.FIRST_CONTACT_ID
+import com.devgroup.commons.helpers.FIRST_GROUP_ID
+import com.devgroup.commons.helpers.getEmptyLocalContact
+import com.devgroup.commons.interfaces.ContactsDao
+import com.devgroup.commons.interfaces.GroupsDao
+import com.devgroup.commons.models.contacts.Group
+import com.devgroup.commons.models.contacts.LocalContact
 import java.util.concurrent.Executors
 
 @Database(entities = [LocalContact::class, Group::class], version = 4, exportSchema = true)

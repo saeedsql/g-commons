@@ -1,4 +1,4 @@
-package com.goodwy.commons.helpers
+package com.devgroup.commons.helpers
 
 import android.view.View
 import androidx.viewpager.widget.ViewPager

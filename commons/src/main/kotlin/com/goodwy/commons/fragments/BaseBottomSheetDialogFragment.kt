@@ -1,4 +1,4 @@
-package com.goodwy.commons.fragments
+package com.devgroup.commons.fragments
 
 import android.graphics.drawable.LayerDrawable
 import android.os.Bundle
@@ -7,9 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.res.ResourcesCompat
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
-import com.goodwy.commons.R
-import com.goodwy.commons.databinding.DialogBottomSheetBinding
-import com.goodwy.commons.extensions.*
+import com.devgroup.commons.R
+import com.devgroup.commons.databinding.DialogBottomSheetBinding
+import com.devgroup.commons.extensions.*
 
 abstract class BaseBottomSheetDialogFragment : BottomSheetDialogFragment() {
 

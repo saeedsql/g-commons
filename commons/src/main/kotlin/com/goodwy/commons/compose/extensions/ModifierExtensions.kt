@@ -1,4 +1,4 @@
-package com.goodwy.commons.compose.extensions
+package com.devgroup.commons.compose.extensions
 
 import androidx.compose.ui.Modifier
 

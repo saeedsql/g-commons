@@ -1,4 +1,4 @@
-package com.goodwy.commons.compose.alert_dialog
+package com.devgroup.commons.compose.alert_dialog
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
@@ -16,14 +16,14 @@ import androidx.compose.ui.platform.SoftwareKeyboardController
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.unit.dp
 import kotlinx.coroutines.android.awaitFrame
-import com.goodwy.commons.R
-import com.goodwy.commons.compose.theme.LocalTheme
-import com.goodwy.commons.compose.theme.Shapes
-import com.goodwy.commons.compose.theme.SimpleTheme
-import com.goodwy.commons.compose.theme.light_grey_stroke
-import com.goodwy.commons.compose.theme.model.Theme
-import com.goodwy.commons.extensions.baseConfig
-import com.goodwy.commons.helpers.isSPlus
+import com.devgroup.commons.R
+import com.devgroup.commons.compose.theme.LocalTheme
+import com.devgroup.commons.compose.theme.Shapes
+import com.devgroup.commons.compose.theme.SimpleTheme
+import com.devgroup.commons.compose.theme.light_grey_stroke
+import com.devgroup.commons.compose.theme.model.Theme
+import com.devgroup.commons.extensions.baseConfig
+import com.devgroup.commons.helpers.isSPlus
 
 val dialogContainerColor
     @ReadOnlyComposable

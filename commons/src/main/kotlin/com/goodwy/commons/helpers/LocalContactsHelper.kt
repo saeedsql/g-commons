@@ -1,18 +1,18 @@
-package com.goodwy.commons.helpers
+package com.devgroup.commons.helpers
 
 import android.content.Context
 import android.graphics.BitmapFactory
 import android.net.Uri
 import android.provider.ContactsContract.CommonDataKinds.Event
 import android.provider.MediaStore
-import com.goodwy.commons.extensions.contactsDB
-import com.goodwy.commons.extensions.getByteArray
-import com.goodwy.commons.extensions.getEmptyContact
-import com.goodwy.commons.models.SimpleContact
-import com.goodwy.commons.models.contacts.Contact
-import com.goodwy.commons.models.contacts.Group
-import com.goodwy.commons.models.contacts.LocalContact
-import com.goodwy.commons.models.contacts.Organization
+import com.devgroup.commons.extensions.contactsDB
+import com.devgroup.commons.extensions.getByteArray
+import com.devgroup.commons.extensions.getEmptyContact
+import com.devgroup.commons.models.SimpleContact
+import com.devgroup.commons.models.contacts.Contact
+import com.devgroup.commons.models.contacts.Group
+import com.devgroup.commons.models.contacts.LocalContact
+import com.devgroup.commons.models.contacts.Organization
 
 class LocalContactsHelper(val context: Context) {
     fun getAllContacts(favoritesOnly: Boolean = false): ArrayList<Contact> {

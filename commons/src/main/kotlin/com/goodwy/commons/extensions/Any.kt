@@ -1,4 +1,4 @@
-package com.goodwy.commons.extensions
+package com.devgroup.commons.extensions
 
 // extensions used mostly at importing app settings for now
 fun Any.toBoolean() = toString() == "true"

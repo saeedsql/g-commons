@@ -1,14 +1,14 @@
-package com.goodwy.commons.compose.theme
+package com.devgroup.commons.compose.theme
 
 import android.app.Activity
 import android.app.ActivityManager
 import android.content.Context
 import android.graphics.BitmapFactory
-import com.goodwy.commons.R
-import com.goodwy.commons.compose.extensions.getActivity
-import com.goodwy.commons.helpers.APP_ICON_IDS
-import com.goodwy.commons.helpers.APP_LAUNCHER_NAME
-import com.goodwy.commons.helpers.BaseConfig
+import com.devgroup.commons.R
+import com.devgroup.commons.compose.extensions.getActivity
+import com.devgroup.commons.helpers.APP_ICON_IDS
+import com.devgroup.commons.helpers.APP_LAUNCHER_NAME
+import com.devgroup.commons.helpers.BaseConfig
 
 fun Activity.getAppIconIds(): ArrayList<Int> = ArrayList(intent.getIntegerArrayListExtra(APP_ICON_IDS).orEmpty())
 fun Activity.getAppLauncherName(): String = intent.getStringExtra(APP_LAUNCHER_NAME).orEmpty()

@@ -1,4 +1,4 @@
-package com.goodwy.commons.activities
+package com.devgroup.commons.activities
 
 import android.animation.ArgbEvaluator
 import android.animation.ValueAnimator
@@ -44,16 +44,16 @@ import androidx.core.view.ScrollingView
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.widget.NestedScrollView
 import androidx.recyclerview.widget.RecyclerView
-import com.goodwy.commons.R
-import com.goodwy.commons.asynctasks.CopyMoveTask
-import com.goodwy.commons.dialogs.*
-import com.goodwy.commons.dialogs.WritePermissionDialog.WritePermissionDialogMode
-import com.goodwy.commons.extensions.*
-import com.goodwy.commons.helpers.*
-import com.goodwy.commons.interfaces.CopyMoveListener
-import com.goodwy.commons.models.FAQItem
-import com.goodwy.commons.models.FileDirItem
-import com.goodwy.commons.views.MySearchMenu
+import com.devgroup.commons.R
+import com.devgroup.commons.asynctasks.CopyMoveTask
+import com.devgroup.commons.dialogs.*
+import com.devgroup.commons.dialogs.WritePermissionDialog.WritePermissionDialogMode
+import com.devgroup.commons.extensions.*
+import com.devgroup.commons.helpers.*
+import com.devgroup.commons.interfaces.CopyMoveListener
+import com.devgroup.commons.models.FAQItem
+import com.devgroup.commons.models.FileDirItem
+import com.devgroup.commons.views.MySearchMenu
 import com.google.android.material.appbar.AppBarLayout
 import java.io.File
 import java.io.OutputStream
@@ -106,7 +106,7 @@ abstract class BaseSimpleActivity : AppCompatActivity() {
         }
 
         super.onCreate(savedInstanceState)
-        if (!packageName.startsWith("com.goodwy.", true)) {
+        if (!packageName.startsWith("com.devgroup.", true)) {
             if ((0..50).random() == 10 || baseConfig.appRunCount % 100 == 0) {
                 val label = "Heyghghghghghghghgh. Thanks"
                 ConfirmationDialog(this, label, positive = R.string.ok, negative = 0) {
@@ -1295,7 +1295,7 @@ abstract class BaseSimpleActivity : AppCompatActivity() {
     }
 
     private fun getExportSettingsFilename(): String {
-        val appName = baseConfig.appId.removeSuffix(".debug").removeSuffix(".pro").removePrefix("com.goodwy.")
+        val appName = baseConfig.appId.removeSuffix(".debug").removeSuffix(".pro").removePrefix("com.devgroup.")
         return "$appName-settings_${getCurrentFormattedDateTime()}"
     }
 

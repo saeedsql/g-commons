@@ -1,14 +1,14 @@
-package com.goodwy.commons.views
+package com.devgroup.commons.views
 
 import android.content.Context
 import android.content.res.ColorStateList
 import android.util.AttributeSet
 import androidx.appcompat.content.res.AppCompatResources
 import com.google.android.material.materialswitch.MaterialSwitch
-import com.goodwy.commons.R
-import com.goodwy.commons.extensions.adjustAlpha
-import com.goodwy.commons.extensions.baseConfig
-import com.goodwy.commons.extensions.getContrastColor
+import com.devgroup.commons.R
+import com.devgroup.commons.extensions.adjustAlpha
+import com.devgroup.commons.extensions.baseConfig
+import com.devgroup.commons.extensions.getContrastColor
 
 class MyMaterialSwitch : MaterialSwitch {
     constructor(context: Context) : super(context)

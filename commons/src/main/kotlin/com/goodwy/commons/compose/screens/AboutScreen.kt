@@ -1,4 +1,4 @@
-package com.goodwy.commons.compose.screens
+package com.devgroup.commons.compose.screens
 
 import android.widget.TextView
 import androidx.compose.foundation.clickable
@@ -24,16 +24,16 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.core.text.HtmlCompat
-import com.goodwy.commons.R
-import com.goodwy.commons.compose.extensions.MyDevices
-import com.goodwy.commons.compose.lists.SimpleColumnScaffold
-import com.goodwy.commons.compose.settings.SettingsGroup
-import com.goodwy.commons.compose.settings.SettingsHorizontalDivider
-import com.goodwy.commons.compose.settings.SettingsListItem
-import com.goodwy.commons.compose.settings.SettingsTitleTextComponent
-import com.goodwy.commons.compose.theme.AppThemeSurface
-import com.goodwy.commons.compose.theme.SimpleTheme
-import com.goodwy.strings.R as stringsR
+import com.devgroup.commons.R
+import com.devgroup.commons.compose.extensions.MyDevices
+import com.devgroup.commons.compose.lists.SimpleColumnScaffold
+import com.devgroup.commons.compose.settings.SettingsGroup
+import com.devgroup.commons.compose.settings.SettingsHorizontalDivider
+import com.devgroup.commons.compose.settings.SettingsListItem
+import com.devgroup.commons.compose.settings.SettingsTitleTextComponent
+import com.devgroup.commons.compose.theme.AppThemeSurface
+import com.devgroup.commons.compose.theme.SimpleTheme
+import com.devgroup.strings.R as stringsR
 
 private val startingTitlePadding = Modifier.padding(start = 56.dp)
 

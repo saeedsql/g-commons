@@ -1,13 +1,13 @@
-package com.goodwy.commons.helpers
+package com.devgroup.commons.helpers
 
 import android.net.Uri
 
 object MyContentProvider {
-    private const val AUTHORITY = "com.goodwy.commons.provider"
+    private const val AUTHORITY = "com.devgroup.commons.provider"
     val MY_CONTENT_URI: Uri = Uri.parse("content://$AUTHORITY/settings")
 
-    const val ACTION_GLOBAL_CONFIG_UPDATED = "com.goodwy.android.GLOBAL_CONFIG_UPDATED"
-    const val PERMISSION_WRITE_GLOBAL_SETTINGS = "com.goodwy.android.permission.WRITE_GLOBAL_SETTINGS"
+    const val ACTION_GLOBAL_CONFIG_UPDATED = "com.devgroup.android.GLOBAL_CONFIG_UPDATED"
+    const val PERMISSION_WRITE_GLOBAL_SETTINGS = "com.devgroup.android.permission.WRITE_GLOBAL_SETTINGS"
 
     const val COL_ID = "_id"    // used in Goodwy Thank You
     const val COL_THEME_TYPE = "theme_type"

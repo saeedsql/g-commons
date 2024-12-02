@@ -1,10 +1,10 @@
-package com.goodwy.commons.helpers
+package com.devgroup.commons.helpers
 
 import androidx.room.TypeConverter
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import com.goodwy.commons.models.PhoneNumber
-import com.goodwy.commons.models.contacts.*
+import com.devgroup.commons.models.PhoneNumber
+import com.devgroup.commons.models.contacts.*
 
 class Converters {
     private val gson = Gson()

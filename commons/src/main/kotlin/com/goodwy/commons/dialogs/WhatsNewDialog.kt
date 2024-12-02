@@ -1,4 +1,4 @@
-package com.goodwy.commons.dialogs
+package com.devgroup.commons.dialogs
 
 import android.app.Activity
 import android.view.LayoutInflater
@@ -17,15 +17,15 @@ import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.DialogProperties
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.toImmutableList
-import com.goodwy.commons.R
-import com.goodwy.commons.compose.alert_dialog.*
-import com.goodwy.commons.compose.extensions.MyDevices
-import com.goodwy.commons.compose.settings.SettingsHorizontalDivider
-import com.goodwy.commons.compose.theme.AppThemeSurface
-import com.goodwy.commons.databinding.DialogWhatsNewBinding
-import com.goodwy.commons.extensions.getAlertDialogBuilder
-import com.goodwy.commons.extensions.setupDialogStuff
-import com.goodwy.commons.models.Release
+import com.devgroup.commons.R
+import com.devgroup.commons.compose.alert_dialog.*
+import com.devgroup.commons.compose.extensions.MyDevices
+import com.devgroup.commons.compose.settings.SettingsHorizontalDivider
+import com.devgroup.commons.compose.theme.AppThemeSurface
+import com.devgroup.commons.databinding.DialogWhatsNewBinding
+import com.devgroup.commons.extensions.getAlertDialogBuilder
+import com.devgroup.commons.extensions.setupDialogStuff
+import com.devgroup.commons.models.Release
 
 class WhatsNewDialog(val activity: Activity, val releases: List<Release>) {
     init {

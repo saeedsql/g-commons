@@ -1,4 +1,4 @@
-package com.goodwy.commons.helpers
+package com.devgroup.commons.helpers
 
 // taken from https://gist.github.com/MichaelRocks/1b94bb44c7804e999dbf31dac86955ec
 // make IMG_5.jpg come before IMG_10.jpg

@@ -1,4 +1,4 @@
-package com.goodwy.commons.views
+package com.devgroup.commons.views
 
 import android.content.Context
 import android.content.res.ColorStateList
@@ -7,13 +7,13 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.biometric.auth.AuthPromptHost
 import androidx.core.widget.TextViewCompat
-import com.goodwy.commons.R
-import com.goodwy.commons.databinding.TabPinBinding
-import com.goodwy.commons.extensions.*
-import com.goodwy.commons.helpers.MINIMUM_PIN_LENGTH
-import com.goodwy.commons.helpers.PROTECTION_PIN
-import com.goodwy.commons.interfaces.BaseSecurityTab
-import com.goodwy.commons.interfaces.HashListener
+import com.devgroup.commons.R
+import com.devgroup.commons.databinding.TabPinBinding
+import com.devgroup.commons.extensions.*
+import com.devgroup.commons.helpers.MINIMUM_PIN_LENGTH
+import com.devgroup.commons.helpers.PROTECTION_PIN
+import com.devgroup.commons.interfaces.BaseSecurityTab
+import com.devgroup.commons.interfaces.HashListener
 import java.math.BigInteger
 import java.security.MessageDigest
 import java.util.Locale

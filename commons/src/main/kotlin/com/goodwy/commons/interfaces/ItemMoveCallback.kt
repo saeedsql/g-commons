@@ -1,8 +1,8 @@
-package com.goodwy.commons.interfaces
+package com.devgroup.commons.interfaces
 
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
-import com.goodwy.commons.adapters.MyRecyclerViewAdapter
+import com.devgroup.commons.adapters.MyRecyclerViewAdapter
 
 open class ItemMoveCallback(private val mAdapter: ItemTouchHelperContract, private val allowHorizontalDrag: Boolean = false) : ItemTouchHelper.Callback() {
     override fun isLongPressDragEnabled() = false

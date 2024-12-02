@@ -1,4 +1,4 @@
-package com.goodwy.commons.models.contacts
+package com.devgroup.commons.models.contacts
 
 import kotlinx.serialization.Serializable
 

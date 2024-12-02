@@ -1,9 +1,9 @@
-package com.goodwy.commons.extensions
+package com.devgroup.commons.extensions
 
 import android.app.Activity
 import android.graphics.Color
-import com.goodwy.commons.R
-import com.goodwy.commons.helpers.DARK_GREY
+import com.devgroup.commons.R
+import com.devgroup.commons.helpers.DARK_GREY
 
 fun Activity.getThemeId(color: Int = baseConfig.primaryColor, showTransparentTop: Boolean = false) = when {
     isDynamicTheme() -> if (isSystemInDarkMode()) R.style.AppTheme_Base_System else R.style.AppTheme_Base_System_Light

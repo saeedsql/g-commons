@@ -1,4 +1,4 @@
-package com.goodwy.commons.activities
+package com.devgroup.commons.activities
 
 import android.annotation.SuppressLint
 import android.content.ActivityNotFoundException
@@ -11,20 +11,20 @@ import androidx.appcompat.content.res.AppCompatResources
 import androidx.core.net.toUri
 import androidx.lifecycle.flowWithLifecycle
 import androidx.lifecycle.lifecycleScope
-import com.goodwy.commons.R
-import com.goodwy.commons.databinding.ActivityPurchaseBinding
-import com.goodwy.commons.dialogs.BottomSheetChooserDialog
-import com.goodwy.commons.dialogs.ConfirmationAdvancedDialog
-import com.goodwy.commons.dialogs.ConfirmationDialog
-import com.goodwy.commons.extensions.*
-import com.goodwy.commons.helpers.*
-import com.goodwy.commons.helpers.rustore.RuStoreHelper
-import com.goodwy.commons.helpers.rustore.RuStoreModule
-import com.goodwy.commons.helpers.rustore.model.BillingEvent
-import com.goodwy.commons.helpers.rustore.model.BillingState
-import com.goodwy.commons.helpers.rustore.model.StartPurchasesEvent
-import com.goodwy.commons.models.SimpleListItem
-import com.goodwy.strings.R as stringsR
+import com.devgroup.commons.R
+import com.devgroup.commons.databinding.ActivityPurchaseBinding
+import com.devgroup.commons.dialogs.BottomSheetChooserDialog
+import com.devgroup.commons.dialogs.ConfirmationAdvancedDialog
+import com.devgroup.commons.dialogs.ConfirmationDialog
+import com.devgroup.commons.extensions.*
+import com.devgroup.commons.helpers.*
+import com.devgroup.commons.helpers.rustore.RuStoreHelper
+import com.devgroup.commons.helpers.rustore.RuStoreModule
+import com.devgroup.commons.helpers.rustore.model.BillingEvent
+import com.devgroup.commons.helpers.rustore.model.BillingState
+import com.devgroup.commons.helpers.rustore.model.StartPurchasesEvent
+import com.devgroup.commons.models.SimpleListItem
+import com.devgroup.strings.R as stringsR
 import kotlinx.coroutines.*
 import ru.rustore.sdk.billingclient.RuStoreBillingClient
 import ru.rustore.sdk.billingclient.utils.resolveForBilling
@@ -553,22 +553,22 @@ class PurchaseActivity : BaseSimpleActivity() {
     @SuppressLint("NewApi", "SetTextI18n", "UseCompatTextViewDrawableApis")
     private fun setupCollection() {
         binding.collectionHolder.beVisible()
-        val appDialerPackage = "com.goodwy.dialer"
-        val appContactsPackage = "com.goodwy.contacts"
-        val appSmsMessengerPackage = "com.goodwy.smsmessenger"
-        val appGalleryPackage = "com.goodwy.gallery"
-        //val appVoiceRecorderPackage = "com.goodwy.voicerecorder"
-        val appAudiobookLitePackage = "com.goodwy.audiobooklite"
-        val appFilesPackage = "com.goodwy.filemanager"
-        val appKeyboardPackage = "com.goodwy.keyboard"
+        val appDialerPackage = "com.devgroup.dialer"
+        val appContactsPackage = "com.devgroup.contacts"
+        val appSmsMessengerPackage = "com.devgroup.smsmessenger"
+        val appGalleryPackage = "com.devgroup.gallery"
+        //val appVoiceRecorderPackage = "com.devgroup.voicerecorder"
+        val appAudiobookLitePackage = "com.devgroup.audiobooklite"
+        val appFilesPackage = "com.devgroup.filemanager"
+        val appKeyboardPackage = "com.devgroup.keyboard"
 
-        val appDialerInstalled = isPackageInstalled(appDialerPackage)// || isPackageInstalled("com.goodwy.dialer.debug")
-        val appContactsInstalled = isPackageInstalled(appContactsPackage)// || isPackageInstalled("com.goodwy.contacts.debug")
-        val appSmsMessengerInstalled = isPackageInstalled(appSmsMessengerPackage)// || isPackageInstalled("com.goodwy.smsmessenger.debug")
-        val appGalleryInstalled = isPackageInstalled(appGalleryPackage)// || isPackageInstalled("com.goodwy.voicerecorder.debug")
-        //val appVoiceRecorderInstalled = isPackageInstalled(appVoiceRecorderPackage)// || isPackageInstalled("com.goodwy.voicerecorder.debug")
-        val appAudiobookLiteInstalled = isPackageInstalled(appAudiobookLitePackage)// || isPackageInstalled("com.goodwy.voicerecorder.debug")
-        val appFilesInstalled = isPackageInstalled(appFilesPackage)// || isPackageInstalled("com.goodwy.filemanager.debug")
+        val appDialerInstalled = isPackageInstalled(appDialerPackage)// || isPackageInstalled("com.devgroup.dialer.debug")
+        val appContactsInstalled = isPackageInstalled(appContactsPackage)// || isPackageInstalled("com.devgroup.contacts.debug")
+        val appSmsMessengerInstalled = isPackageInstalled(appSmsMessengerPackage)// || isPackageInstalled("com.devgroup.smsmessenger.debug")
+        val appGalleryInstalled = isPackageInstalled(appGalleryPackage)// || isPackageInstalled("com.devgroup.voicerecorder.debug")
+        //val appVoiceRecorderInstalled = isPackageInstalled(appVoiceRecorderPackage)// || isPackageInstalled("com.devgroup.voicerecorder.debug")
+        val appAudiobookLiteInstalled = isPackageInstalled(appAudiobookLitePackage)// || isPackageInstalled("com.devgroup.voicerecorder.debug")
+        val appFilesInstalled = isPackageInstalled(appFilesPackage)// || isPackageInstalled("com.devgroup.filemanager.debug")
         val appKeyboardInstalled = isPackageInstalled(appKeyboardPackage)
 
         val appAllInstalled = appDialerInstalled && appContactsInstalled && appSmsMessengerInstalled && appGalleryInstalled && appAudiobookLiteInstalled && appFilesInstalled && appKeyboardInstalled

@@ -1,4 +1,4 @@
-package com.goodwy.commons.extensions
+package com.devgroup.commons.extensions
 
 import android.Manifest
 import android.accessibilityservice.AccessibilityServiceInfo
@@ -44,12 +44,12 @@ import androidx.core.os.bundleOf
 import androidx.exifinterface.media.ExifInterface
 import androidx.loader.content.CursorLoader
 import com.github.ajalt.reprint.core.Reprint
-import com.goodwy.commons.R
-import com.goodwy.commons.helpers.*
-import com.goodwy.commons.models.AlarmSound
-import com.goodwy.commons.models.BlockedNumber
-import com.goodwy.commons.models.contacts.ContactRelation
-import com.goodwy.strings.R as stringsR
+import com.devgroup.commons.R
+import com.devgroup.commons.helpers.*
+import com.devgroup.commons.models.AlarmSound
+import com.devgroup.commons.models.BlockedNumber
+import com.devgroup.commons.models.contacts.ContactRelation
+import com.devgroup.strings.R as stringsR
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import java.io.BufferedReader
@@ -285,7 +285,7 @@ fun Context.launchActivityIntent(intent: Intent) {
 
 fun Context.getFilePublicUri(file: File, applicationId: String): Uri {
     // for images/videos/gifs try getting a media content uri first, like content://media/external/images/media/438
-    // if media content uri is null, get our custom uri like content://com.goodwy.gallery.provider/external_files/emulated/0/DCIM/IMG_20171104_233915.jpg
+    // if media content uri is null, get our custom uri like content://com.devgroup.gallery.provider/external_files/emulated/0/DCIM/IMG_20171104_233915.jpg
     var uri = if (file.isMediaFile()) {
         getMediaContentUri(file.absolutePath)
     } else {
@@ -495,14 +495,14 @@ fun Context.getUriMimeType(path: String, newUri: Uri): String {
     return mimeType
 }
 // TODO thank you = SharedTheme
-fun Context.isSharedThemeInstalled() = isPackageInstalled("com.goodwy.sharedtheme")
+fun Context.isSharedThemeInstalled() = isPackageInstalled("com.devgroup.sharedtheme")
 
 fun Context.isOrWasThankYouInstalled(): Boolean {
     return when {
         resources.getBoolean(R.bool.pretend_thank_you_installed) -> true
-        isPackageInstalled("com.goodwy.audiobook") -> true
-        isPackageInstalled("com.goodwy.voicerecorder") -> true
-        isPackageInstalled("com.goodwy.files") -> true
+        isPackageInstalled("com.devgroup.audiobook") -> true
+        isPackageInstalled("com.devgroup.voicerecorder") -> true
+        isPackageInstalled("com.devgroup.files") -> true
         else -> false
     }
 }
@@ -718,7 +718,7 @@ fun Context.saveExifRotation(exif: ExifInterface, degrees: Int) {
 
 fun Context.getLaunchIntent() = packageManager.getLaunchIntentForPackage(baseConfig.appId)
 
-fun Context.getCanAppBeUpgraded() = proPackages.contains(baseConfig.appId.removeSuffix(".debug").removePrefix("com.goodwy."))
+fun Context.getCanAppBeUpgraded() = proPackages.contains(baseConfig.appId.removeSuffix(".debug").removePrefix("com.devgroup."))
 
 fun Context.getProUrl() = "https://play.google.com/store/apps/details?id=${baseConfig.appId.removeSuffix(".debug")}.pro"
 
@@ -1022,9 +1022,9 @@ fun Context.getCornerRadiusBig() = resources.getDimension(R.dimen.rounded_corner
 
 // we need the Default Dialer functionality only in Simple Dialer and in Simple Contacts for now
 fun Context.isDefaultDialer(): Boolean {
-    return if (!packageName.startsWith("com.goodwy.contacts") && !packageName.startsWith("com.goodwy.dialer")) {
+    return if (!packageName.startsWith("com.devgroup.contacts") && !packageName.startsWith("com.devgroup.dialer")) {
         true
-    } else if ((packageName.startsWith("com.goodwy.contacts") || packageName.startsWith("com.goodwy.dialer")) && isQPlus()) {
+    } else if ((packageName.startsWith("com.devgroup.contacts") || packageName.startsWith("com.devgroup.dialer")) && isQPlus()) {
         val roleManager = getSystemService(RoleManager::class.java)
         roleManager!!.isRoleAvailable(RoleManager.ROLE_DIALER) && roleManager.isRoleHeld(RoleManager.ROLE_DIALER)
     } else {
@@ -1299,66 +1299,66 @@ fun Context.getRelationTypeText(type: Int, label: String): String {
     } else {
         getString(
             when (type) {
-                // Relation.TYPE_CUSTOM   -> com.goodwy.strings.R.string.custom
-                Relation.TYPE_ASSISTANT   -> com.goodwy.strings.R.string.relation_assistant_g
-                Relation.TYPE_BROTHER     -> com.goodwy.strings.R.string.relation_brother_g
-                Relation.TYPE_CHILD       -> com.goodwy.strings.R.string.relation_child_g
-                Relation.TYPE_DOMESTIC_PARTNER -> com.goodwy.strings.R.string.relation_domestic_partner_g
-                Relation.TYPE_FATHER      -> com.goodwy.strings.R.string.relation_father_g
-                Relation.TYPE_FRIEND      -> com.goodwy.strings.R.string.relation_friend_g
-                Relation.TYPE_MANAGER     -> com.goodwy.strings.R.string.relation_manager_g
-                Relation.TYPE_MOTHER      -> com.goodwy.strings.R.string.relation_mother_g
-                Relation.TYPE_PARENT      -> com.goodwy.strings.R.string.relation_parent_g
-                Relation.TYPE_PARTNER     -> com.goodwy.strings.R.string.relation_partner_g
-                Relation.TYPE_REFERRED_BY -> com.goodwy.strings.R.string.relation_referred_by_g
-                Relation.TYPE_RELATIVE    -> com.goodwy.strings.R.string.relation_relative_g
-                Relation.TYPE_SISTER      -> com.goodwy.strings.R.string.relation_sister_g
-                Relation.TYPE_SPOUSE      -> com.goodwy.strings.R.string.relation_spouse_g
+                // Relation.TYPE_CUSTOM   -> com.devgroup.strings.R.string.custom
+                Relation.TYPE_ASSISTANT   -> com.devgroup.strings.R.string.relation_assistant_g
+                Relation.TYPE_BROTHER     -> com.devgroup.strings.R.string.relation_brother_g
+                Relation.TYPE_CHILD       -> com.devgroup.strings.R.string.relation_child_g
+                Relation.TYPE_DOMESTIC_PARTNER -> com.devgroup.strings.R.string.relation_domestic_partner_g
+                Relation.TYPE_FATHER      -> com.devgroup.strings.R.string.relation_father_g
+                Relation.TYPE_FRIEND      -> com.devgroup.strings.R.string.relation_friend_g
+                Relation.TYPE_MANAGER     -> com.devgroup.strings.R.string.relation_manager_g
+                Relation.TYPE_MOTHER      -> com.devgroup.strings.R.string.relation_mother_g
+                Relation.TYPE_PARENT      -> com.devgroup.strings.R.string.relation_parent_g
+                Relation.TYPE_PARTNER     -> com.devgroup.strings.R.string.relation_partner_g
+                Relation.TYPE_REFERRED_BY -> com.devgroup.strings.R.string.relation_referred_by_g
+                Relation.TYPE_RELATIVE    -> com.devgroup.strings.R.string.relation_relative_g
+                Relation.TYPE_SISTER      -> com.devgroup.strings.R.string.relation_sister_g
+                Relation.TYPE_SPOUSE      -> com.devgroup.strings.R.string.relation_spouse_g
 
                 // Relation types defined in vCard 4.0
-                ContactRelation.TYPE_CONTACT -> com.goodwy.strings.R.string.relation_contact_g
-                ContactRelation.TYPE_ACQUAINTANCE -> com.goodwy.strings.R.string.relation_acquaintance_g
-                // ContactRelation.TYPE_FRIEND -> com.goodwy.strings.R.string.relation_friend
-                ContactRelation.TYPE_MET -> com.goodwy.strings.R.string.relation_met_g
-                ContactRelation.TYPE_CO_WORKER -> com.goodwy.strings.R.string.relation_co_worker_g
-                ContactRelation.TYPE_COLLEAGUE -> com.goodwy.strings.R.string.relation_colleague_g
-                ContactRelation.TYPE_CO_RESIDENT -> com.goodwy.strings.R.string.relation_co_resident_g
-                ContactRelation.TYPE_NEIGHBOR -> com.goodwy.strings.R.string.relation_neighbor_g
-                // ContactRelation.TYPE_CHILD -> com.goodwy.strings.R.string.relation_child
-                // ContactRelation.TYPE_PARENT -> com.goodwy.strings.R.string.relation_parent
-                ContactRelation.TYPE_SIBLING -> com.goodwy.strings.R.string.relation_sibling_g
-                // ContactRelation.TYPE_SPOUSE -> com.goodwy.strings.R.string.relation_spouse
-                ContactRelation.TYPE_KIN -> com.goodwy.strings.R.string.relation_kin_g
-                ContactRelation.TYPE_MUSE -> com.goodwy.strings.R.string.relation_muse_g
-                ContactRelation.TYPE_CRUSH -> com.goodwy.strings.R.string.relation_crush_g
-                ContactRelation.TYPE_DATE -> com.goodwy.strings.R.string.relation_date_g
-                ContactRelation.TYPE_SWEETHEART -> com.goodwy.strings.R.string.relation_sweetheart_g
-                ContactRelation.TYPE_ME -> com.goodwy.strings.R.string.relation_me_g
-                ContactRelation.TYPE_AGENT -> com.goodwy.strings.R.string.relation_agent_g
-                ContactRelation.TYPE_EMERGENCY -> com.goodwy.strings.R.string.relation_emergency_g
+                ContactRelation.TYPE_CONTACT -> com.devgroup.strings.R.string.relation_contact_g
+                ContactRelation.TYPE_ACQUAINTANCE -> com.devgroup.strings.R.string.relation_acquaintance_g
+                // ContactRelation.TYPE_FRIEND -> com.devgroup.strings.R.string.relation_friend
+                ContactRelation.TYPE_MET -> com.devgroup.strings.R.string.relation_met_g
+                ContactRelation.TYPE_CO_WORKER -> com.devgroup.strings.R.string.relation_co_worker_g
+                ContactRelation.TYPE_COLLEAGUE -> com.devgroup.strings.R.string.relation_colleague_g
+                ContactRelation.TYPE_CO_RESIDENT -> com.devgroup.strings.R.string.relation_co_resident_g
+                ContactRelation.TYPE_NEIGHBOR -> com.devgroup.strings.R.string.relation_neighbor_g
+                // ContactRelation.TYPE_CHILD -> com.devgroup.strings.R.string.relation_child
+                // ContactRelation.TYPE_PARENT -> com.devgroup.strings.R.string.relation_parent
+                ContactRelation.TYPE_SIBLING -> com.devgroup.strings.R.string.relation_sibling_g
+                // ContactRelation.TYPE_SPOUSE -> com.devgroup.strings.R.string.relation_spouse
+                ContactRelation.TYPE_KIN -> com.devgroup.strings.R.string.relation_kin_g
+                ContactRelation.TYPE_MUSE -> com.devgroup.strings.R.string.relation_muse_g
+                ContactRelation.TYPE_CRUSH -> com.devgroup.strings.R.string.relation_crush_g
+                ContactRelation.TYPE_DATE -> com.devgroup.strings.R.string.relation_date_g
+                ContactRelation.TYPE_SWEETHEART -> com.devgroup.strings.R.string.relation_sweetheart_g
+                ContactRelation.TYPE_ME -> com.devgroup.strings.R.string.relation_me_g
+                ContactRelation.TYPE_AGENT -> com.devgroup.strings.R.string.relation_agent_g
+                ContactRelation.TYPE_EMERGENCY -> com.devgroup.strings.R.string.relation_emergency_g
 
-                ContactRelation.TYPE_SUPERIOR -> com.goodwy.strings.R.string.relation_superior_g
-                ContactRelation.TYPE_SUBORDINATE -> com.goodwy.strings.R.string.relation_subordinate_g
-                ContactRelation.TYPE_HUSBAND -> com.goodwy.strings.R.string.relation_husband_g
-                ContactRelation.TYPE_WIFE -> com.goodwy.strings.R.string.relation_wife_g
-                ContactRelation.TYPE_SON -> com.goodwy.strings.R.string.relation_son_g
-                ContactRelation.TYPE_DAUGHTER -> com.goodwy.strings.R.string.relation_daughter_g
-                ContactRelation.TYPE_GRANDPARENT -> com.goodwy.strings.R.string.relation_grandparent_g
-                ContactRelation.TYPE_GRANDFATHER -> com.goodwy.strings.R.string.relation_grandfather_g
-                ContactRelation.TYPE_GRANDMOTHER -> com.goodwy.strings.R.string.relation_grandmother_g
-                ContactRelation.TYPE_GRANDCHILD -> com.goodwy.strings.R.string.relation_grandchild_g
-                ContactRelation.TYPE_GRANDSON -> com.goodwy.strings.R.string.relation_grandson_g
-                ContactRelation.TYPE_GRANDDAUGHTER -> com.goodwy.strings.R.string.relation_granddaughter_g
-                ContactRelation.TYPE_UNCLE -> com.goodwy.strings.R.string.relation_uncle_g
-                ContactRelation.TYPE_AUNT -> com.goodwy.strings.R.string.relation_aunt_g
-                ContactRelation.TYPE_NEPHEW -> com.goodwy.strings.R.string.relation_nephew_g
-                ContactRelation.TYPE_NIECE -> com.goodwy.strings.R.string.relation_niece_g
-                ContactRelation.TYPE_FATHER_IN_LAW -> com.goodwy.strings.R.string.relation_father_in_law_g
-                ContactRelation.TYPE_MOTHER_IN_LAW -> com.goodwy.strings.R.string.relation_mother_in_law_g
-                ContactRelation.TYPE_SON_IN_LAW -> com.goodwy.strings.R.string.relation_son_in_law_g
-                ContactRelation.TYPE_DAUGHTER_IN_LAW -> com.goodwy.strings.R.string.relation_daughter_in_law_g
-                ContactRelation.TYPE_BROTHER_IN_LAW -> com.goodwy.strings.R.string.relation_brother_in_law_g
-                ContactRelation.TYPE_SISTER_IN_LAW -> com.goodwy.strings.R.string.relation_sister_in_law_g
+                ContactRelation.TYPE_SUPERIOR -> com.devgroup.strings.R.string.relation_superior_g
+                ContactRelation.TYPE_SUBORDINATE -> com.devgroup.strings.R.string.relation_subordinate_g
+                ContactRelation.TYPE_HUSBAND -> com.devgroup.strings.R.string.relation_husband_g
+                ContactRelation.TYPE_WIFE -> com.devgroup.strings.R.string.relation_wife_g
+                ContactRelation.TYPE_SON -> com.devgroup.strings.R.string.relation_son_g
+                ContactRelation.TYPE_DAUGHTER -> com.devgroup.strings.R.string.relation_daughter_g
+                ContactRelation.TYPE_GRANDPARENT -> com.devgroup.strings.R.string.relation_grandparent_g
+                ContactRelation.TYPE_GRANDFATHER -> com.devgroup.strings.R.string.relation_grandfather_g
+                ContactRelation.TYPE_GRANDMOTHER -> com.devgroup.strings.R.string.relation_grandmother_g
+                ContactRelation.TYPE_GRANDCHILD -> com.devgroup.strings.R.string.relation_grandchild_g
+                ContactRelation.TYPE_GRANDSON -> com.devgroup.strings.R.string.relation_grandson_g
+                ContactRelation.TYPE_GRANDDAUGHTER -> com.devgroup.strings.R.string.relation_granddaughter_g
+                ContactRelation.TYPE_UNCLE -> com.devgroup.strings.R.string.relation_uncle_g
+                ContactRelation.TYPE_AUNT -> com.devgroup.strings.R.string.relation_aunt_g
+                ContactRelation.TYPE_NEPHEW -> com.devgroup.strings.R.string.relation_nephew_g
+                ContactRelation.TYPE_NIECE -> com.devgroup.strings.R.string.relation_niece_g
+                ContactRelation.TYPE_FATHER_IN_LAW -> com.devgroup.strings.R.string.relation_father_in_law_g
+                ContactRelation.TYPE_MOTHER_IN_LAW -> com.devgroup.strings.R.string.relation_mother_in_law_g
+                ContactRelation.TYPE_SON_IN_LAW -> com.devgroup.strings.R.string.relation_son_in_law_g
+                ContactRelation.TYPE_DAUGHTER_IN_LAW -> com.devgroup.strings.R.string.relation_daughter_in_law_g
+                ContactRelation.TYPE_BROTHER_IN_LAW -> com.devgroup.strings.R.string.relation_brother_in_law_g
+                ContactRelation.TYPE_SISTER_IN_LAW -> com.devgroup.strings.R.string.relation_sister_in_law_g
 
                 else -> R.string.other
             }
@@ -1457,13 +1457,13 @@ fun Context.isRuStoreInstalled(): Boolean {
 fun Context.isPro() = baseConfig.isPro || baseConfig.isProSubs || baseConfig.isProRuStore
 
 fun Context.isCollection(): Boolean {
-    return isPackageInstalled("com.goodwy.dialer")
-        && isPackageInstalled("com.goodwy.contacts")
-        && isPackageInstalled("com.goodwy.smsmessenger")
-        && isPackageInstalled("com.goodwy.gallery")
-        && isPackageInstalled("com.goodwy.audiobooklite")
-        && isPackageInstalled("com.goodwy.filemanager")
-        && isPackageInstalled("com.goodwy.keyboard")
+    return isPackageInstalled("com.devgroup.dialer")
+        && isPackageInstalled("com.devgroup.contacts")
+        && isPackageInstalled("com.devgroup.smsmessenger")
+        && isPackageInstalled("com.devgroup.gallery")
+        && isPackageInstalled("com.devgroup.audiobooklite")
+        && isPackageInstalled("com.devgroup.filemanager")
+        && isPackageInstalled("com.devgroup.keyboard")
 }
 
 fun Context.isTalkBackOn(): Boolean {

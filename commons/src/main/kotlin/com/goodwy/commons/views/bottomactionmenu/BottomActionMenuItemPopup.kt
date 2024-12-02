@@ -1,4 +1,4 @@
-package com.goodwy.commons.views.bottomactionmenu
+package com.devgroup.commons.views.bottomactionmenu
 
 import android.content.Context
 import android.graphics.Color
@@ -11,11 +11,11 @@ import android.widget.ListView
 import android.widget.PopupWindow
 import androidx.core.content.ContextCompat
 import androidx.core.widget.PopupWindowCompat
-import com.goodwy.commons.R
-import com.goodwy.commons.databinding.ItemActionModePopupBinding
-import com.goodwy.commons.extensions.applyColorFilter
-import com.goodwy.commons.extensions.windowManager
-import com.goodwy.commons.helpers.isRPlus
+import com.devgroup.commons.R
+import com.devgroup.commons.databinding.ItemActionModePopupBinding
+import com.devgroup.commons.extensions.applyColorFilter
+import com.devgroup.commons.extensions.windowManager
+import com.devgroup.commons.helpers.isRPlus
 
 class BottomActionMenuItemPopup(
     private val context: Context,

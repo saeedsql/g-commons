@@ -1,4 +1,4 @@
-package com.goodwy.commons.dialogs
+package com.devgroup.commons.dialogs
 
 import androidx.appcompat.app.AlertDialog
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -18,14 +18,14 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.unit.sp
-import com.goodwy.commons.R
-import com.goodwy.commons.activities.BaseSimpleActivity
-import com.goodwy.commons.compose.alert_dialog.*
-import com.goodwy.commons.compose.extensions.MyDevices
-import com.goodwy.commons.compose.extensions.andThen
-import com.goodwy.commons.compose.theme.AppThemeSurface
-import com.goodwy.commons.databinding.DialogEnterPasswordBinding
-import com.goodwy.commons.extensions.*
+import com.devgroup.commons.R
+import com.devgroup.commons.activities.BaseSimpleActivity
+import com.devgroup.commons.compose.alert_dialog.*
+import com.devgroup.commons.compose.extensions.MyDevices
+import com.devgroup.commons.compose.extensions.andThen
+import com.devgroup.commons.compose.theme.AppThemeSurface
+import com.devgroup.commons.databinding.DialogEnterPasswordBinding
+import com.devgroup.commons.extensions.*
 
 class EnterPasswordDialog(
     val activity: BaseSimpleActivity,

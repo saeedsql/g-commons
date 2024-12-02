@@ -1,4 +1,4 @@
-package com.goodwy.commons.models
+package com.devgroup.commons.models
 
 import android.os.Parcelable
 import androidx.compose.runtime.Immutable

@@ -1,12 +1,12 @@
-package com.goodwy.commons.helpers
+package com.devgroup.commons.helpers
 
 import android.content.Context
 import android.util.AttributeSet
 import android.view.View
 import android.view.animation.LinearInterpolator
 import com.behaviorule.arturdumchev.library.*
-import com.goodwy.commons.R
-import com.goodwy.commons.databinding.ActivityPurchaseBinding
+import com.devgroup.commons.R
+import com.devgroup.commons.databinding.ActivityPurchaseBinding
 import com.google.android.material.appbar.AppBarLayout
 import com.google.android.material.appbar.CollapsingToolbarLayout
 

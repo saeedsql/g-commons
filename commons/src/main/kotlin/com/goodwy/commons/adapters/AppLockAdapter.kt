@@ -1,4 +1,4 @@
-package com.goodwy.commons.adapters
+package com.devgroup.commons.adapters
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -7,13 +7,13 @@ import android.view.ViewGroup
 import androidx.biometric.auth.AuthPromptHost
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
-import com.goodwy.commons.R
-import com.goodwy.commons.helpers.PROTECTION_FINGERPRINT
-import com.goodwy.commons.helpers.PROTECTION_PATTERN
-import com.goodwy.commons.helpers.PROTECTION_PIN
-import com.goodwy.commons.helpers.isRPlus
-import com.goodwy.commons.interfaces.HashListener
-import com.goodwy.commons.interfaces.SecurityTab
+import com.devgroup.commons.R
+import com.devgroup.commons.helpers.PROTECTION_FINGERPRINT
+import com.devgroup.commons.helpers.PROTECTION_PATTERN
+import com.devgroup.commons.helpers.PROTECTION_PIN
+import com.devgroup.commons.helpers.isRPlus
+import com.devgroup.commons.interfaces.HashListener
+import com.devgroup.commons.interfaces.SecurityTab
 
 class AppLockAdapter(
     private val context: Context,

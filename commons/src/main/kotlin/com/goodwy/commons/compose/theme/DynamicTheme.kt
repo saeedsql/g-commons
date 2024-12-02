@@ -1,11 +1,11 @@
-package com.goodwy.commons.compose.theme
+package com.devgroup.commons.compose.theme
 
 import android.content.Context
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
-import com.goodwy.commons.compose.extensions.config
-import com.goodwy.commons.compose.theme.model.Theme
-import com.goodwy.commons.extensions.*
+import com.devgroup.commons.compose.extensions.config
+import com.devgroup.commons.compose.theme.model.Theme
+import com.devgroup.commons.extensions.*
 
 fun getTheme(context: Context, materialYouTheme: Theme.SystemDefaultMaterialYou): Theme {
     val baseConfig = context.config

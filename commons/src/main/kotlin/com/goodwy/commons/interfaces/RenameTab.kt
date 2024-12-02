@@ -1,6 +1,6 @@
-package com.goodwy.commons.interfaces
+package com.devgroup.commons.interfaces
 
-import com.goodwy.commons.activities.BaseSimpleActivity
+import com.devgroup.commons.activities.BaseSimpleActivity
 
 interface RenameTab {
     fun initTab(activity: BaseSimpleActivity, paths: ArrayList<String>)

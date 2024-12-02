@@ -1,4 +1,4 @@
-package com.goodwy.commons.dialogs
+package com.devgroup.commons.dialogs
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -23,19 +23,19 @@ import androidx.compose.ui.window.DialogWindowProvider
 import androidx.core.content.ContextCompat
 import androidx.core.view.updateLayoutParams
 import com.google.android.material.appbar.MaterialToolbar
-import com.goodwy.commons.R
-import com.goodwy.commons.activities.BaseSimpleActivity
-import com.goodwy.commons.compose.alert_dialog.AlertDialogState
-import com.goodwy.commons.compose.alert_dialog.DialogSurface
-import com.goodwy.commons.compose.alert_dialog.dialogTextColor
-import com.goodwy.commons.compose.alert_dialog.rememberAlertDialogState
-import com.goodwy.commons.compose.extensions.MyDevices
-import com.goodwy.commons.compose.theme.AppThemeSurface
-import com.goodwy.commons.compose.theme.SimpleTheme
-import com.goodwy.commons.databinding.DialogGridColorPickerBinding
-import com.goodwy.commons.extensions.*
-import com.goodwy.commons.interfaces.LineColorPickerListener
-import com.goodwy.strings.R as stringsR
+import com.devgroup.commons.R
+import com.devgroup.commons.activities.BaseSimpleActivity
+import com.devgroup.commons.compose.alert_dialog.AlertDialogState
+import com.devgroup.commons.compose.alert_dialog.DialogSurface
+import com.devgroup.commons.compose.alert_dialog.dialogTextColor
+import com.devgroup.commons.compose.alert_dialog.rememberAlertDialogState
+import com.devgroup.commons.compose.extensions.MyDevices
+import com.devgroup.commons.compose.theme.AppThemeSurface
+import com.devgroup.commons.compose.theme.SimpleTheme
+import com.devgroup.commons.databinding.DialogGridColorPickerBinding
+import com.devgroup.commons.extensions.*
+import com.devgroup.commons.interfaces.LineColorPickerListener
+import com.devgroup.strings.R as stringsR
 
 class GridColorPickerDialog(val activity: BaseSimpleActivity, val color: Int, val colorBackground: Int, val isPrimaryColorPicker: Boolean, val primaryColors: Int = R.array.line_00,
                             val primaryColors50: Int = R.array.line_10, val primaryColors100: Int = R.array.line_20, val primaryColors200: Int = R.array.line_30,

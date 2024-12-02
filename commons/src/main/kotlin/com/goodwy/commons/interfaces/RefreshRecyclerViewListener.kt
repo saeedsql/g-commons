@@ -1,4 +1,4 @@
-package com.goodwy.commons.interfaces
+package com.devgroup.commons.interfaces
 
 interface RefreshRecyclerViewListener {
     fun refreshItems()

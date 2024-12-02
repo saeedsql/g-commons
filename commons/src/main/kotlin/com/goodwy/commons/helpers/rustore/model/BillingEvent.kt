@@ -1,4 +1,4 @@
-package com.goodwy.commons.helpers.rustore.model
+package com.devgroup.commons.helpers.rustore.model
 
 sealed class BillingEvent {
     data class ShowDialog(val dialogInfo: InfoDialogState): BillingEvent()

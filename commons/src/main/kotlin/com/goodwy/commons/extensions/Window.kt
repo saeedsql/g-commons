@@ -1,9 +1,9 @@
-package com.goodwy.commons.extensions
+package com.devgroup.commons.extensions
 
 import android.view.View
 import android.view.Window
-import com.goodwy.commons.helpers.DARK_GREY
-import com.goodwy.commons.helpers.isOreoPlus
+import com.devgroup.commons.helpers.DARK_GREY
+import com.devgroup.commons.helpers.isOreoPlus
 
 fun Window.updateStatusBarColors(backgroundColor: Int) {
     statusBarColor = backgroundColor

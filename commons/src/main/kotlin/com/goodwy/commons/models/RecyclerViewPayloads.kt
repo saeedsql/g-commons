@@ -1,3 +1,3 @@
-package com.goodwy.commons.models
+package com.devgroup.commons.models
 
 data class RecyclerSelectionPayload(val selected: Boolean)

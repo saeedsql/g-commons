@@ -1,4 +1,4 @@
-package com.goodwy.commons.compose.extensions
+package com.devgroup.commons.compose.extensions
 
 import android.app.Activity
 import android.content.Context
@@ -24,12 +24,12 @@ import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.compose.LifecycleEventEffect
 import androidx.lifecycle.compose.LifecycleResumeEffect
 import androidx.lifecycle.compose.LifecycleStartEffect
-import com.goodwy.commons.R
-import com.goodwy.commons.compose.system_ui_controller.rememberSystemUiController
-import com.goodwy.commons.compose.theme.SimpleTheme
-import com.goodwy.commons.compose.theme.isLitWell
-import com.goodwy.commons.extensions.darkenColor
-import com.goodwy.commons.extensions.launchViewIntent
+import com.devgroup.commons.R
+import com.devgroup.commons.compose.system_ui_controller.rememberSystemUiController
+import com.devgroup.commons.compose.theme.SimpleTheme
+import com.devgroup.commons.compose.theme.isLitWell
+import com.devgroup.commons.extensions.darkenColor
+import com.devgroup.commons.extensions.launchViewIntent
 
 fun Context.getActivity(): Activity {
     return when (this) {

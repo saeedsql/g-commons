@@ -1,4 +1,4 @@
-package com.goodwy.commons.adapters
+package com.devgroup.commons.adapters
 
 import android.content.pm.PackageManager
 import android.graphics.drawable.Drawable
@@ -12,13 +12,13 @@ import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions.withCrossFade
 import com.bumptech.glide.request.RequestOptions
 import com.qtalk.recyclerviewfastscroller.RecyclerViewFastScroller
-import com.goodwy.commons.R
-import com.goodwy.commons.activities.BaseSimpleActivity
-import com.goodwy.commons.databinding.ItemFilepickerListBinding
-import com.goodwy.commons.extensions.*
-import com.goodwy.commons.helpers.getFilePlaceholderDrawables
-import com.goodwy.commons.models.FileDirItem
-import com.goodwy.commons.views.MyRecyclerView
+import com.devgroup.commons.R
+import com.devgroup.commons.activities.BaseSimpleActivity
+import com.devgroup.commons.databinding.ItemFilepickerListBinding
+import com.devgroup.commons.extensions.*
+import com.devgroup.commons.helpers.getFilePlaceholderDrawables
+import com.devgroup.commons.models.FileDirItem
+import com.devgroup.commons.views.MyRecyclerView
 import java.util.Locale
 
 class FilepickerItemsAdapter(

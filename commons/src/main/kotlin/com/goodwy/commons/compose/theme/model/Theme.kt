@@ -1,4 +1,4 @@
-package com.goodwy.commons.compose.theme.model
+package com.devgroup.commons.compose.theme.model
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.Stable
@@ -7,10 +7,10 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.colorResource
-import com.goodwy.commons.R
-import com.goodwy.commons.compose.extensions.config
-import com.goodwy.commons.compose.theme.isInDarkThemeAndSurfaceIsNotLitWell
-import com.goodwy.commons.helpers.isSPlus
+import com.devgroup.commons.R
+import com.devgroup.commons.compose.extensions.config
+import com.devgroup.commons.compose.theme.isInDarkThemeAndSurfaceIsNotLitWell
+import com.devgroup.commons.helpers.isSPlus
 
 @Stable
 sealed class Theme : CommonTheme {

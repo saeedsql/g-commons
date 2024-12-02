@@ -1,4 +1,4 @@
-package com.goodwy.commons.compose.system_ui_controller
+package com.devgroup.commons.compose.system_ui_controller
 
 /*
  * Copyright 2022 The Android Open Source Project

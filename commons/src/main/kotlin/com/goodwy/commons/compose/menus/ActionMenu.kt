@@ -1,4 +1,4 @@
-package com.goodwy.commons.compose.menus
+package com.devgroup.commons.compose.menus
 
 import androidx.annotation.StringRes
 import androidx.compose.foundation.background
@@ -23,15 +23,15 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.goodwy.commons.R
-import com.goodwy.commons.compose.alert_dialog.dialogBorder
-import com.goodwy.commons.compose.alert_dialog.dialogContainerColor
-import com.goodwy.commons.compose.components.SimpleDropDownMenuItem
-import com.goodwy.commons.compose.extensions.MyDevices
-import com.goodwy.commons.compose.extensions.rememberMutableInteractionSource
-import com.goodwy.commons.compose.theme.AppThemeSurface
-import com.goodwy.commons.compose.theme.Shapes
-import com.goodwy.commons.compose.theme.SimpleTheme
+import com.devgroup.commons.R
+import com.devgroup.commons.compose.alert_dialog.dialogBorder
+import com.devgroup.commons.compose.alert_dialog.dialogContainerColor
+import com.devgroup.commons.compose.components.SimpleDropDownMenuItem
+import com.devgroup.commons.compose.extensions.MyDevices
+import com.devgroup.commons.compose.extensions.rememberMutableInteractionSource
+import com.devgroup.commons.compose.theme.AppThemeSurface
+import com.devgroup.commons.compose.theme.Shapes
+import com.devgroup.commons.compose.theme.SimpleTheme
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.toImmutableList
 

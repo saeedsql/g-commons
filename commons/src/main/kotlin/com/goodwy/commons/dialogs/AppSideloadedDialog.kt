@@ -1,4 +1,4 @@
-package com.goodwy.commons.dialogs
+package com.devgroup.commons.dialogs
 
 import android.app.Activity
 import android.text.Html
@@ -15,13 +15,13 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
-import com.goodwy.commons.R
-import com.goodwy.commons.compose.alert_dialog.*
-import com.goodwy.commons.compose.components.LinkifyTextComponent
-import com.goodwy.commons.compose.extensions.MyDevices
-import com.goodwy.commons.compose.theme.AppThemeSurface
-import com.goodwy.commons.databinding.DialogTextviewBinding
-import com.goodwy.commons.extensions.*
+import com.devgroup.commons.R
+import com.devgroup.commons.compose.alert_dialog.*
+import com.devgroup.commons.compose.components.LinkifyTextComponent
+import com.devgroup.commons.compose.extensions.MyDevices
+import com.devgroup.commons.compose.theme.AppThemeSurface
+import com.devgroup.commons.databinding.DialogTextviewBinding
+import com.devgroup.commons.extensions.*
 
 class AppSideloadedDialog(val activity: Activity, val callback: () -> Unit) {
     private var dialog: AlertDialog? = null

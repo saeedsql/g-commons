@@ -1,9 +1,9 @@
-package com.goodwy.commons
+package com.devgroup.commons
 
 import android.app.Application
 import androidx.lifecycle.ProcessLifecycleOwner
-import com.goodwy.commons.extensions.appLockManager
-import com.goodwy.commons.extensions.checkUseEnglish
+import com.devgroup.commons.extensions.appLockManager
+import com.devgroup.commons.extensions.checkUseEnglish
 
 open class RightApp : Application() {
 

@@ -1,7 +1,7 @@
-package com.goodwy.commons.samples.activities
+package com.devgroup.commons.samples.activities
 
 import android.content.Intent
-import com.goodwy.commons.activities.BaseSplashActivity
+import com.devgroup.commons.activities.BaseSplashActivity
 
 class SplashActivity : BaseSplashActivity() {
     override fun initActivity() {

@@ -1,4 +1,4 @@
-package com.goodwy.commons.models
+package com.devgroup.commons.models
 
 data class MyTheme(
     val labelId: Int,

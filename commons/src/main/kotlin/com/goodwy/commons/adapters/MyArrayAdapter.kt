@@ -1,4 +1,4 @@
-package com.goodwy.commons.adapters
+package com.devgroup.commons.adapters
 
 import android.content.Context
 import android.graphics.drawable.ColorDrawable

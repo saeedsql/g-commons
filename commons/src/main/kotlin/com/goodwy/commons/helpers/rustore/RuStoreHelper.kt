@@ -1,9 +1,9 @@
-package com.goodwy.commons.helpers.rustore
+package com.devgroup.commons.helpers.rustore
 
 import android.app.Activity
 import android.util.Log
-import com.goodwy.commons.helpers.rustore.model.*
-import com.goodwy.strings.R as stringsR
+import com.devgroup.commons.helpers.rustore.model.*
+import com.devgroup.strings.R as stringsR
 import kotlinx.coroutines.*
 import kotlinx.coroutines.channels.BufferOverflow
 import kotlinx.coroutines.flow.*

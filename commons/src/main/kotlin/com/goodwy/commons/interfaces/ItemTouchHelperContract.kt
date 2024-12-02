@@ -1,6 +1,6 @@
-package com.goodwy.commons.interfaces
+package com.devgroup.commons.interfaces
 
-import com.goodwy.commons.adapters.MyRecyclerViewAdapter
+import com.devgroup.commons.adapters.MyRecyclerViewAdapter
 
 interface ItemTouchHelperContract {
     fun onRowMoved(fromPosition: Int, toPosition: Int)

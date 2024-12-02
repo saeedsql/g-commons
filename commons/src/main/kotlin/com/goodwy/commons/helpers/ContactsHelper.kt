@@ -1,4 +1,4 @@
-package com.goodwy.commons.helpers
+package com.devgroup.commons.helpers
 
 import android.accounts.Account
 import android.accounts.AccountManager
@@ -11,11 +11,11 @@ import android.provider.ContactsContract.*
 import android.provider.MediaStore
 import android.text.TextUtils
 import android.util.SparseArray
-import com.goodwy.commons.R
-import com.goodwy.commons.extensions.*
-import com.goodwy.commons.models.PhoneNumber
-import com.goodwy.commons.models.contacts.*
-import com.goodwy.commons.overloads.times
+import com.devgroup.commons.R
+import com.devgroup.commons.extensions.*
+import com.devgroup.commons.models.PhoneNumber
+import com.devgroup.commons.models.contacts.*
+import com.devgroup.commons.overloads.times
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
 import java.io.OutputStream

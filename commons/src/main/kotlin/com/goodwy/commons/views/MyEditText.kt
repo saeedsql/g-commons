@@ -1,4 +1,4 @@
-package com.goodwy.commons.views
+package com.devgroup.commons.views
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -8,12 +8,12 @@ import android.widget.TextView
 import androidx.appcompat.widget.AppCompatEditText
 import androidx.core.content.ContextCompat
 import androidx.core.graphics.drawable.DrawableCompat
-import com.goodwy.commons.R
-import com.goodwy.commons.extensions.adjustAlpha
-import com.goodwy.commons.extensions.getColoredDrawableWithColor
-import com.goodwy.commons.extensions.isMiUi
-import com.goodwy.commons.helpers.MEDIUM_ALPHA
-import com.goodwy.commons.helpers.isQPlus
+import com.devgroup.commons.R
+import com.devgroup.commons.extensions.adjustAlpha
+import com.devgroup.commons.extensions.getColoredDrawableWithColor
+import com.devgroup.commons.extensions.isMiUi
+import com.devgroup.commons.helpers.MEDIUM_ALPHA
+import com.devgroup.commons.helpers.isQPlus
 import java.lang.reflect.Field
 
 

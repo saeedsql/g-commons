@@ -1,8 +1,8 @@
-package com.goodwy.commons.extensions
+package com.devgroup.commons.extensions
 
 import android.content.Context
-import com.goodwy.commons.helpers.*
-import com.goodwy.commons.models.FileDirItem
+import com.devgroup.commons.helpers.*
+import com.devgroup.commons.models.FileDirItem
 import java.io.File
 
 fun File.isMediaFile() = absolutePath.isMediaFile()

@@ -1,4 +1,4 @@
-package com.goodwy.commons.views.bottomactionmenu
+package com.devgroup.commons.views.bottomactionmenu
 
 interface BottomActionMenuCallback {
     fun onItemClicked(item: BottomActionMenuItem) {}

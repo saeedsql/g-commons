@@ -1,9 +1,9 @@
-package com.goodwy.commons.activities
+package com.devgroup.commons.activities
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.goodwy.commons.R
-import com.goodwy.commons.extensions.*
+import com.devgroup.commons.R
+import com.devgroup.commons.extensions.*
 
 abstract class BaseSplashActivity : AppCompatActivity() {
     abstract fun initActivity()

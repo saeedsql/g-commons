@@ -1,4 +1,4 @@
-package com.goodwy.commons.compose.lists
+package com.devgroup.commons.compose.lists
 
 import androidx.compose.foundation.ScrollState
 import androidx.compose.foundation.interaction.MutableInteractionSource
@@ -14,10 +14,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.ui.platform.LocalContext
-import com.goodwy.commons.compose.extensions.AdjustNavigationBarColors
-import com.goodwy.commons.compose.extensions.MyDevices
-import com.goodwy.commons.compose.extensions.rememberMutableInteractionSource
-import com.goodwy.commons.compose.theme.AppThemeSurface
+import com.devgroup.commons.compose.extensions.AdjustNavigationBarColors
+import com.devgroup.commons.compose.extensions.MyDevices
+import com.devgroup.commons.compose.extensions.rememberMutableInteractionSource
+import com.devgroup.commons.compose.theme.AppThemeSurface
 
 @Composable
 fun SimpleColumnScaffold(

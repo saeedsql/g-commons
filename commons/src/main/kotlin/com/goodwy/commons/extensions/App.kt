@@ -1,7 +1,7 @@
-package com.goodwy.commons.extensions
+package com.devgroup.commons.extensions
 
 import android.app.Application
-import com.goodwy.commons.helpers.isNougatPlus
+import com.devgroup.commons.helpers.isNougatPlus
 import java.util.Locale
 
 fun Application.checkUseEnglish() {

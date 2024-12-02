@@ -1,4 +1,4 @@
-package com.goodwy.commons.compose.screens
+package com.devgroup.commons.compose.screens
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
@@ -11,14 +11,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import com.goodwy.commons.R
-import com.goodwy.commons.compose.extensions.MyDevices
-import com.goodwy.commons.compose.lists.SimpleLazyListScaffold
-import com.goodwy.commons.compose.settings.SettingsHorizontalDivider
-import com.goodwy.commons.compose.theme.AppThemeSurface
-import com.goodwy.commons.compose.theme.SimpleTheme
-import com.goodwy.commons.helpers.*
-import com.goodwy.commons.models.License
+import com.devgroup.commons.R
+import com.devgroup.commons.compose.extensions.MyDevices
+import com.devgroup.commons.compose.lists.SimpleLazyListScaffold
+import com.devgroup.commons.compose.settings.SettingsHorizontalDivider
+import com.devgroup.commons.compose.theme.AppThemeSurface
+import com.devgroup.commons.compose.theme.SimpleTheme
+import com.devgroup.commons.helpers.*
+import com.devgroup.commons.models.License
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.toImmutableList
 

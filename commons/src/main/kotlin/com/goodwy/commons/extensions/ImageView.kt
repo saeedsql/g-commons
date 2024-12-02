@@ -1,9 +1,9 @@
-package com.goodwy.commons.extensions
+package com.devgroup.commons.extensions
 
 import android.graphics.PorterDuff
 import android.graphics.drawable.GradientDrawable
 import android.widget.ImageView
-import com.goodwy.commons.R
+import com.devgroup.commons.R
 import androidx.annotation.DrawableRes
 
 fun ImageView.setFillWithStroke(fillColor: Int, backgroundColor: Int, drawRectangle: Boolean = false) {

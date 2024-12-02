@@ -12,12 +12,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.goodwy.commons.views.MyRecyclerView
+        <com.devgroup.commons.views.MyRecyclerView
             android:id="@+id/media_grid"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scrollbars="none"
-            app:layoutManager="com.goodwy.commons.views.MyGridLayoutManager"
+            app:layoutManager="com.devgroup.commons.views.MyGridLayoutManager"
             app:spanCount="1" />
 
     </RelativeLayout>

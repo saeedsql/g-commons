@@ -1,4 +1,4 @@
-package com.goodwy.commons.adapters
+package com.devgroup.commons.adapters
 
 import android.annotation.SuppressLint
 import android.graphics.Color
@@ -8,14 +8,14 @@ import android.widget.TextView
 import androidx.appcompat.app.ActionBar
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.RecyclerView
-import com.goodwy.commons.R
-import com.goodwy.commons.activities.BaseSimpleActivity
-import com.goodwy.commons.extensions.*
-import com.goodwy.commons.helpers.CONTACT_THUMBNAILS_SIZE_EXTRA_LARGE
-import com.goodwy.commons.helpers.CONTACT_THUMBNAILS_SIZE_LARGE
-import com.goodwy.commons.helpers.CONTACT_THUMBNAILS_SIZE_SMALL
-import com.goodwy.commons.interfaces.MyActionModeCallback
-import com.goodwy.commons.views.MyRecyclerView
+import com.devgroup.commons.R
+import com.devgroup.commons.activities.BaseSimpleActivity
+import com.devgroup.commons.extensions.*
+import com.devgroup.commons.helpers.CONTACT_THUMBNAILS_SIZE_EXTRA_LARGE
+import com.devgroup.commons.helpers.CONTACT_THUMBNAILS_SIZE_LARGE
+import com.devgroup.commons.helpers.CONTACT_THUMBNAILS_SIZE_SMALL
+import com.devgroup.commons.interfaces.MyActionModeCallback
+import com.devgroup.commons.views.MyRecyclerView
 import kotlin.math.max
 import kotlin.math.min
 

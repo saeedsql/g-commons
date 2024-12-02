@@ -1,11 +1,11 @@
-package com.goodwy.commons.helpers.rustore
+package com.devgroup.commons.helpers.rustore
 
 import android.app.Application
 import android.graphics.Color
-import com.goodwy.commons.extensions.baseConfig
-import com.goodwy.commons.extensions.getContrastColor
-import com.goodwy.commons.extensions.isDynamicTheme
-import com.goodwy.commons.extensions.isSystemInDarkMode
+import com.devgroup.commons.extensions.baseConfig
+import com.devgroup.commons.extensions.getContrastColor
+import com.devgroup.commons.extensions.isDynamicTheme
+import com.devgroup.commons.extensions.isSystemInDarkMode
 import ru.rustore.sdk.billingclient.RuStoreBillingClient
 import ru.rustore.sdk.billingclient.RuStoreBillingClientFactory
 import ru.rustore.sdk.billingclient.presentation.BillingClientTheme

@@ -1,10 +1,10 @@
-package com.goodwy.commons.compose.alert_dialog
+package com.devgroup.commons.compose.alert_dialog
 
 import androidx.compose.runtime.*
 import androidx.compose.runtime.saveable.Saver
 import androidx.compose.runtime.saveable.SaverScope
 import androidx.compose.runtime.saveable.rememberSaveable
-import com.goodwy.commons.compose.alert_dialog.AlertDialogState.Companion.SAVER
+import com.devgroup.commons.compose.alert_dialog.AlertDialogState.Companion.SAVER
 
 /**
  * Use this function to control the state whenever you want its visibility to be retained

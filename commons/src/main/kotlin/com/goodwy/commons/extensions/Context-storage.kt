@@ -1,4 +1,4 @@
-package com.goodwy.commons.extensions
+package com.devgroup.commons.extensions
 
 import android.content.ContentUris
 import android.content.ContentValues
@@ -20,9 +20,9 @@ import androidx.annotation.RequiresApi
 import androidx.core.content.FileProvider
 import androidx.core.net.toUri
 import androidx.documentfile.provider.DocumentFile
-import com.goodwy.commons.R
-import com.goodwy.commons.helpers.*
-import com.goodwy.commons.models.FileDirItem
+import com.devgroup.commons.R
+import com.devgroup.commons.helpers.*
+import com.devgroup.commons.models.FileDirItem
 import java.io.*
 import java.net.URLDecoder
 import java.util.*

@@ -1,4 +1,4 @@
-package com.goodwy.commons.extensions
+package com.devgroup.commons.extensions
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -35,16 +35,16 @@ import androidx.core.content.res.ResourcesCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.FragmentActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import com.goodwy.commons.R
-import com.goodwy.commons.activities.BaseSimpleActivity
-import com.goodwy.commons.databinding.DialogTitleBinding
-import com.goodwy.commons.dialogs.*
-import com.goodwy.commons.dialogs.WritePermissionDialog.WritePermissionDialogMode
-import com.goodwy.commons.helpers.*
-import com.goodwy.commons.helpers.MyContentProvider.COL_LAST_UPDATED_TS
-import com.goodwy.commons.helpers.MyContentProvider.MY_CONTENT_URI
-import com.goodwy.commons.models.*
-import com.goodwy.commons.views.MyTextView
+import com.devgroup.commons.R
+import com.devgroup.commons.activities.BaseSimpleActivity
+import com.devgroup.commons.databinding.DialogTitleBinding
+import com.devgroup.commons.dialogs.*
+import com.devgroup.commons.dialogs.WritePermissionDialog.WritePermissionDialogMode
+import com.devgroup.commons.helpers.*
+import com.devgroup.commons.helpers.MyContentProvider.COL_LAST_UPDATED_TS
+import com.devgroup.commons.helpers.MyContentProvider.MY_CONTENT_URI
+import com.devgroup.commons.models.*
+import com.devgroup.commons.views.MyTextView
 import java.io.*
 import java.util.TreeSet
 
@@ -477,7 +477,7 @@ fun Activity.openPathIntent(
             setDataAndType(newUri, mimeType)
             addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
 
-            if (applicationId == "com.goodwy.gallery" || applicationId == "com.goodwy.gallery.debug") {
+            if (applicationId == "com.devgroup.gallery" || applicationId == "com.devgroup.gallery.debug") {
                 putExtra(IS_FROM_GALLERY, true)
             }
 
@@ -521,8 +521,8 @@ fun BaseSimpleActivity.launchCallIntent(recipient: String, handle: PhoneAccountH
             putExtra(IS_RIGHT_APP, key)
 
             if (isDefaultDialer()) {
-                val packageName = if (baseConfig.appId.contains(".debug", true)) "com.goodwy.dialer.debug" else "com.goodwy.dialer"
-                val className = "com.goodwy.dialer.activities.DialerActivity"
+                val packageName = if (baseConfig.appId.contains(".debug", true)) "com.devgroup.dialer.debug" else "com.devgroup.dialer"
+                val className = "com.devgroup.dialer.activities.DialerActivity"
                 setClassName(packageName, className)
             }
 

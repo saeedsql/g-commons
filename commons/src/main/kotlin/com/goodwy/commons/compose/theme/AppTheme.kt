@@ -1,4 +1,4 @@
-package com.goodwy.commons.compose.theme
+package com.devgroup.commons.compose.theme
 
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Surface
@@ -8,10 +8,10 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalView
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.compose.LifecycleEventEffect
-import com.goodwy.commons.compose.extensions.FakeVersionCheck
-import com.goodwy.commons.compose.extensions.TransparentSystemBars
-import com.goodwy.commons.compose.theme.model.Theme
-import com.goodwy.commons.compose.theme.model.Theme.Companion.systemDefaultMaterialYou
+import com.devgroup.commons.compose.extensions.FakeVersionCheck
+import com.devgroup.commons.compose.extensions.TransparentSystemBars
+import com.devgroup.commons.compose.theme.model.Theme
+import com.devgroup.commons.compose.theme.model.Theme.Companion.systemDefaultMaterialYou
 
 @Composable
 fun AppTheme(

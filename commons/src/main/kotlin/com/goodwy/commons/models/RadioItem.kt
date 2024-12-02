@@ -1,4 +1,4 @@
-package com.goodwy.commons.models
+package com.devgroup.commons.models
 
 import androidx.compose.runtime.Immutable
 import android.graphics.drawable.Drawable

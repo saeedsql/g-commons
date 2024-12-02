@@ -1,13 +1,13 @@
-package com.goodwy.commons.views
+package com.devgroup.commons.views
 
 import android.content.Context
 import android.content.res.ColorStateList
 import android.util.AttributeSet
 import com.google.android.material.textfield.TextInputLayout
-import com.goodwy.commons.extensions.adjustAlpha
-import com.goodwy.commons.extensions.value
-import com.goodwy.commons.helpers.HIGHER_ALPHA
-import com.goodwy.commons.helpers.MEDIUM_ALPHA
+import com.devgroup.commons.extensions.adjustAlpha
+import com.devgroup.commons.extensions.value
+import com.devgroup.commons.helpers.HIGHER_ALPHA
+import com.devgroup.commons.helpers.MEDIUM_ALPHA
 
 class MyTextInputLayout : TextInputLayout {
     constructor(context: Context) : super(context)

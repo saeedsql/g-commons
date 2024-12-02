@@ -12,7 +12,7 @@ group = "com.goodwy"
 version = "5.5.0"
 
 android {
-    namespace = "com.goodwy.commons"
+    namespace = "com.devgroup.commons"
 
     compileSdk = libs.versions.app.build.compileSDKVersion.get().toInt()
 

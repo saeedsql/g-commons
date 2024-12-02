@@ -1,14 +1,14 @@
-package com.goodwy.commons.dialogs
+package com.devgroup.commons.dialogs
 
 import android.app.Activity
 import android.graphics.drawable.Drawable
 import android.text.Html
-import com.goodwy.commons.R
-import com.goodwy.commons.databinding.DialogNewAppsBinding
-import com.goodwy.commons.extensions.baseConfig
-import com.goodwy.commons.extensions.getAlertDialogBuilder
-import com.goodwy.commons.extensions.launchViewIntent
-import com.goodwy.commons.extensions.setupDialogStuff
+import com.devgroup.commons.R
+import com.devgroup.commons.databinding.DialogNewAppsBinding
+import com.devgroup.commons.extensions.baseConfig
+import com.devgroup.commons.extensions.getAlertDialogBuilder
+import com.devgroup.commons.extensions.launchViewIntent
+import com.devgroup.commons.extensions.setupDialogStuff
 
 // run inside: runOnUiThread { }
 class NewAppDialog(

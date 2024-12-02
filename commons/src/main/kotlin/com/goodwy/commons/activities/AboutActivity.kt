@@ -1,4 +1,4 @@
-package com.goodwy.commons.activities
+package com.devgroup.commons.activities
 
 import android.annotation.SuppressLint
 import android.content.ActivityNotFoundException
@@ -16,18 +16,18 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.core.net.toUri
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.goodwy.commons.R
-import com.goodwy.commons.compose.alert_dialog.rememberAlertDialogState
-import com.goodwy.commons.compose.extensions.config
-import com.goodwy.commons.compose.extensions.enableEdgeToEdgeSimple
-import com.goodwy.commons.compose.extensions.rateStarsRedirectAndThankYou
-import com.goodwy.commons.compose.screens.*
-import com.goodwy.commons.compose.theme.AppThemeSurface
-import com.goodwy.commons.dialogs.ConfirmationAdvancedAlertDialog
-import com.goodwy.commons.dialogs.RateStarsAlertDialog
-import com.goodwy.commons.extensions.*
-import com.goodwy.commons.helpers.*
-import com.goodwy.commons.models.FAQItem
+import com.devgroup.commons.R
+import com.devgroup.commons.compose.alert_dialog.rememberAlertDialogState
+import com.devgroup.commons.compose.extensions.config
+import com.devgroup.commons.compose.extensions.enableEdgeToEdgeSimple
+import com.devgroup.commons.compose.extensions.rateStarsRedirectAndThankYou
+import com.devgroup.commons.compose.screens.*
+import com.devgroup.commons.compose.theme.AppThemeSurface
+import com.devgroup.commons.dialogs.ConfirmationAdvancedAlertDialog
+import com.devgroup.commons.dialogs.RateStarsAlertDialog
+import com.devgroup.commons.extensions.*
+import com.devgroup.commons.helpers.*
+import com.devgroup.commons.models.FAQItem
 
 class AboutActivity : BaseComposeActivity() {
     private val appName get() = intent.getStringExtra(APP_NAME) ?: ""
@@ -253,8 +253,8 @@ class AboutActivity : BaseComposeActivity() {
     private fun onPrivacyPolicyClick() {
         val appId = baseConfig.appId.removeSuffix(".debug")
         val url = when (appId) {
-            "com.goodwy.smsmessenger" -> "https://sites.google.com/view/goodwy/about/privacy-policy-right-messages"
-            "com.goodwy.contacts" -> "https://sites.google.com/view/goodwy/about/privacy-policy-right-contacts"
+            "com.devgroup.smsmessenger" -> "https://sites.google.com/view/goodwy/about/privacy-policy-right-messages"
+            "com.devgroup.contacts" -> "https://sites.google.com/view/goodwy/about/privacy-policy-right-contacts"
             else -> "https://sites.google.com/view/goodwy/about/privacy-policy"
         }
         launchViewIntent(url)

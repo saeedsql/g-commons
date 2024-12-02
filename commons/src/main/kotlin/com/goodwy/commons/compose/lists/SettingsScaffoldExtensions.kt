@@ -1,4 +1,4 @@
-package com.goodwy.commons.compose.lists
+package com.devgroup.commons.compose.lists
 
 import android.content.Context
 import androidx.compose.foundation.background
@@ -10,15 +10,15 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.lerp
 import androidx.compose.ui.platform.LocalLayoutDirection
-import com.goodwy.commons.compose.extensions.onEventValue
-import com.goodwy.commons.compose.system_ui_controller.rememberSystemUiController
-import com.goodwy.commons.compose.theme.LocalTheme
-import com.goodwy.commons.compose.theme.SimpleTheme
-import com.goodwy.commons.compose.theme.isNotLitWell
-import com.goodwy.commons.compose.theme.isSurfaceLitWell
-import com.goodwy.commons.compose.theme.model.Theme
-import com.goodwy.commons.extensions.getColoredMaterialStatusBarColor
-import com.goodwy.commons.extensions.getContrastColor
+import com.devgroup.commons.compose.extensions.onEventValue
+import com.devgroup.commons.compose.system_ui_controller.rememberSystemUiController
+import com.devgroup.commons.compose.theme.LocalTheme
+import com.devgroup.commons.compose.theme.SimpleTheme
+import com.devgroup.commons.compose.theme.isNotLitWell
+import com.devgroup.commons.compose.theme.isSurfaceLitWell
+import com.devgroup.commons.compose.theme.model.Theme
+import com.devgroup.commons.extensions.getColoredMaterialStatusBarColor
+import com.devgroup.commons.extensions.getContrastColor
 
 @Composable
 internal fun SystemUISettingsScaffoldStatusBarColor(scrolledColor: Color) {

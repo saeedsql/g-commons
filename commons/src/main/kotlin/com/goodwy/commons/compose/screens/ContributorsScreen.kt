@@ -1,4 +1,4 @@
-package com.goodwy.commons.compose.screens
+package com.devgroup.commons.compose.screens
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Spacer
@@ -15,18 +15,18 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.goodwy.commons.R
-import com.goodwy.commons.compose.components.LinkifyTextComponent
-import com.goodwy.commons.compose.extensions.MyDevices
-import com.goodwy.commons.compose.lists.SimpleLazyListScaffold
-import com.goodwy.commons.compose.settings.SettingsGroupTitle
-import com.goodwy.commons.compose.settings.SettingsHorizontalDivider
-import com.goodwy.commons.compose.settings.SettingsListItem
-import com.goodwy.commons.compose.settings.SettingsTitleTextComponent
-import com.goodwy.commons.compose.theme.AppThemeSurface
-import com.goodwy.commons.compose.theme.SimpleTheme
-import com.goodwy.commons.extensions.fromHtml
-import com.goodwy.commons.models.LanguageContributor
+import com.devgroup.commons.R
+import com.devgroup.commons.compose.components.LinkifyTextComponent
+import com.devgroup.commons.compose.extensions.MyDevices
+import com.devgroup.commons.compose.lists.SimpleLazyListScaffold
+import com.devgroup.commons.compose.settings.SettingsGroupTitle
+import com.devgroup.commons.compose.settings.SettingsHorizontalDivider
+import com.devgroup.commons.compose.settings.SettingsListItem
+import com.devgroup.commons.compose.settings.SettingsTitleTextComponent
+import com.devgroup.commons.compose.theme.AppThemeSurface
+import com.devgroup.commons.compose.theme.SimpleTheme
+import com.devgroup.commons.extensions.fromHtml
+import com.devgroup.commons.models.LanguageContributor
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.toImmutableList
 

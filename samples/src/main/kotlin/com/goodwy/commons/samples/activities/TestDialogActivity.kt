@@ -1,4 +1,4 @@
-package com.goodwy.commons.samples.activities
+package com.devgroup.commons.samples.activities
 
 import android.os.Bundle
 import android.os.Environment
@@ -16,17 +16,17 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import kotlinx.collections.immutable.toImmutableList
-import com.goodwy.commons.R
-import com.goodwy.commons.compose.alert_dialog.AlertDialogState
-import com.goodwy.commons.compose.alert_dialog.rememberAlertDialogState
-import com.goodwy.commons.compose.bottom_sheet.BottomSheetDialogState
-import com.goodwy.commons.compose.bottom_sheet.rememberBottomSheetDialogState
-import com.goodwy.commons.compose.extensions.config
-import com.goodwy.commons.compose.extensions.rateStarsRedirectAndThankYou
-import com.goodwy.commons.compose.theme.AppThemeSurface
-import com.goodwy.commons.dialogs.*
-import com.goodwy.commons.extensions.*
-import com.goodwy.commons.models.*
+import com.devgroup.commons.R
+import com.devgroup.commons.compose.alert_dialog.AlertDialogState
+import com.devgroup.commons.compose.alert_dialog.rememberAlertDialogState
+import com.devgroup.commons.compose.bottom_sheet.BottomSheetDialogState
+import com.devgroup.commons.compose.bottom_sheet.rememberBottomSheetDialogState
+import com.devgroup.commons.compose.extensions.config
+import com.devgroup.commons.compose.extensions.rateStarsRedirectAndThankYou
+import com.devgroup.commons.compose.theme.AppThemeSurface
+import com.devgroup.commons.dialogs.*
+import com.devgroup.commons.extensions.*
+import com.devgroup.commons.models.*
 
 class TestDialogActivity : ComponentActivity() {
 

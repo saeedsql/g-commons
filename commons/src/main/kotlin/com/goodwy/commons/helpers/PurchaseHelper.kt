@@ -1,12 +1,12 @@
-package com.goodwy.commons.helpers
+package com.devgroup.commons.helpers
 
 import android.app.Activity
 import androidx.lifecycle.MutableLiveData
 import com.android.billingclient.api.*
 import com.android.billingclient.api.BillingFlowParams.ProductDetailsParams
 import com.android.billingclient.api.QueryProductDetailsParams.Product
-import com.goodwy.commons.extensions.toast
-import com.goodwy.strings.R as stringsR
+import com.devgroup.commons.extensions.toast
+import com.devgroup.strings.R as stringsR
 import kotlinx.coroutines.*
 import java.util.*
 

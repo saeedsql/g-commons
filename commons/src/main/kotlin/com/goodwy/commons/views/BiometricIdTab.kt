@@ -1,14 +1,14 @@
-package com.goodwy.commons.views
+package com.devgroup.commons.views
 
 import android.content.Context
 import android.util.AttributeSet
 import androidx.biometric.auth.AuthPromptHost
 import androidx.constraintlayout.widget.ConstraintLayout
-import com.goodwy.commons.databinding.TabBiometricIdBinding
-import com.goodwy.commons.extensions.*
-import com.goodwy.commons.helpers.DARK_GREY
-import com.goodwy.commons.interfaces.HashListener
-import com.goodwy.commons.interfaces.SecurityTab
+import com.devgroup.commons.databinding.TabBiometricIdBinding
+import com.devgroup.commons.extensions.*
+import com.devgroup.commons.helpers.DARK_GREY
+import com.devgroup.commons.interfaces.HashListener
+import com.devgroup.commons.interfaces.SecurityTab
 
 class BiometricIdTab(context: Context, attrs: AttributeSet) : ConstraintLayout(context, attrs), SecurityTab {
     private lateinit var hashListener: HashListener

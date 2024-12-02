@@ -1,4 +1,4 @@
-package com.goodwy.commons.extensions
+package com.devgroup.commons.extensions
 
 fun List<String>.getMimeType(): String {
     val mimeGroups = HashSet<String>(size)
