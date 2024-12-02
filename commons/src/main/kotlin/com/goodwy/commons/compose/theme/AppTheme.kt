@@ -57,5 +57,5 @@ fun AppThemeSurface(
 
 @Composable
 private fun OnContentDisplayed() {
-    FakeVersionCheck()
+
 }

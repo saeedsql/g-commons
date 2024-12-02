@@ -752,15 +752,7 @@ abstract class BaseSimpleActivity : AppCompatActivity() {
                                    playStoreInstalled: Boolean = true, ruStoreInstalled: Boolean = false,
                                    showAppIconColor : Boolean = false
     ) {
-        if (!packageName.contains("ywdoog".reversed(), true)) {
-            if (baseConfig.appRunCount > 100) {
-                val label = "Heyghghghghghghghgh Thanks"
-                ConfirmationDialog(this, label, positive = R.string.ok, negative = 0) {
-                    launchMoreAppsFromUsIntent()
-                }
-                return
-            }
-        }
+
 
         Intent(applicationContext, CustomizationActivity::class.java).apply {
             putExtra(APP_ICON_IDS, getAppIconIDs())
