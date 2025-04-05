@@ -33,8 +33,8 @@
         ]]></string>
     <string name="lifebuoy_title">ما از شما حمایت خواهیم کرد</string>
     <string name="lifebuoy_summary">اگر به دلایلی شما می توانید برنامه ما استطاعت نیست، اما واقعا می خواهید به استفاده از تمام ویژگی ها، فقط به ما ایمیل</string>
-    <string name="participants_title">Participants</string>
-    <string name="special_thanks_to">Special thanks to</string>
+    <string name="participants_title">شرکت‌کنندگان</string>
+    <string name="special_thanks_to">تشکر ویژه از</string>
     <string name="tip_kind">پشتیبانی خوب</string>
     <string name="tip_excellent">پشتیبانی عالی</string>
     <string name="tip_incredible">پشتیبانی عالی</string>
@@ -43,20 +43,20 @@
     <string name="one_time_purchase">پشتیبانی یکبار مصرف</string>
     <string name="monthly">پشتیبانی ماهانه</string>
     <string name="yearly">پشتیبانی سالانه</string>
-    <string name="unlock">Unlock</string>
+    <string name="unlock">باز کردن قفل</string>
     <string name="donate_text_g">
-        <![CDATA[
-            For those who do not use Google Play, it is possible to unlock all functions of the application. <br>
-            If you like our apps which are offline, non-intrusive and have no ads, please consider supporting us in some way. We would be very grateful.<br><br>
-            Thank you!
-        ]]>
+    <![CDATA[
+    برای کسانی که از Google Play استفاده نمی‌کنند، امکان باز کردن تمام قابلیت‌های برنامه وجود دارد.<br>
+    اگر برنامه‌های ما را که آفلاین هستند، تبلیغات ندارند و مزاحم نیستند دوست دارید، لطفاً به نوعی از ما حمایت کنید. بسیار سپاسگزار خواهیم بود.<br><br>
+    متشکریم!
+    ]]>
     </string>
 
     <!--Billing-->
-    <string name="restored_previous_purchase_please_restart">Restored previous purchase. Please restart the app to make use of all features.</string>
-    <string name="no_purchase_found">No purchase found.</string>
-    <string name="restore_purchase">Restore purchase</string>
-    <string name="restoring_purchase">Restoring purchase…</string>
+    <string name="restored_previous_purchase_please_restart">خرید قبلی بازیابی شد. لطفاً برنامه را مجدداً راه‌اندازی کنید تا از همه قابلیت‌ها استفاده کنید.</string>
+    <string name="no_purchase_found">خریدی یافت نشد.</string>
+    <string name="restore_purchase">بازیابی خرید</string>
+    <string name="restoring_purchase">در حال بازیابی خرید...</string>
 
     <string name="no_connection">بدون اتصال</string>
     <string name="per_month">%s/ماه</string>
@@ -64,7 +64,7 @@
 
     <string name="use_accent_color_summary">یک رنگ اضافی که در برخی از عناصر رابط کاربری استفاده می شود.</string>
     <string name="app_icon_color_warning_g">توجه: برخی از راه اندازها ممکن است نماد برنامه سفارشی را به درستی نمایش ندهند. اگر نماد ناپدید شد، برنامه را از طریق Google Play یا از طریق ویجت آن (در صورت امکان) اجرا کنید.         پس از راه اندازی، رنگ نماد پیش فرض را بازیابی کنید. در موارد شدید، ممکن است لازم باشد برنامه را دوباره نصب کنید.</string>
-    <string name="show_contact_thumbnails_g">Show contact thumbnails</string>
+    <string name="show_contact_thumbnails_g">نمایش تصاویر کوچک مخاطبین</string>
     <string name="use_icon_tabs_summary">آیکون ها به جای متن بر روی زبانه ها</string>
     <string name="use_icon_tabs">استفاده از آیکون های زبانه</string>
     <string name="round_play_icon_summary">نماد بازی/ مکث در رنگ اولیه رنگ آمیزی شده است</string>
@@ -84,15 +84,15 @@
     <string name="show_dividers">نمایش تقسیم کننده ها</string>
     <string name="colored_contacts">نمادهای رنگی مخاطبین</string>
     <string name="contact_color_list">فهرست رنگهای اشنا</string>
-    <string name="transparent_navigation_bar">Transparent bottom navigation bar</string>
-    <string name="kids_mode">Kids mode</string>
-    <string name="kids_mode_summary">Simplified interface, choose coloring</string>
-    <string name="restart_required">Application restart required</string>
+    <string name="transparent_navigation_bar">نوار ناوبری پایین شفاف</string>
+    <string name="kids_mode">حالت کودک</string>
+    <string name="kids_mode_summary">رابط ساده‌شده، امکان انتخاب رنگ‌آمیزی</string>
+    <string name="restart_required">نیاز به راه‌اندازی مجدد برنامه است</string>
     <string name="transparent_bar">Transparent bars</string>
     <string name="material_design_3">Material Design 3</string>
-    <string name="material_design_3_summary">Changes the appearance of some elements of the application</string>
-    <string name="bottom_navigation_bar">Bottom navigation bar</string>
-    <string name="bottom_navigation_bar_summary">The tab bar will move to the bottom</string>
+    <string name="material_design_3_summary">ظاهر برخی عناصر برنامه را تغییر می‌دهد</string>
+    <string name="bottom_navigation_bar">نوار ناوبری پایین</string>
+    <string name="bottom_navigation_bar_summary">نوار برگه‌ها به پایین منتقل می‌شود</string>
     <string name="tab_navigation">ناوبری زبانه</string>
     <string name="top">بالا</string>
     <string name="bottom">زیر</string>
@@ -124,7 +124,7 @@
     <string name="primary_sim_card">سیم کارت اصلی</string>
     <string name="button_primary">دکمه اصلی</string>
     <string name="button_secondary">دکمه ثانویه</string>
-    <string name="skip_archive_confirmation">Always skip archive confirmation dialog</string>
+    <string name="skip_archive_confirmation">همیشه تأیید بایگانی را نادیده بگیر</string>
     <string name="swipe_gestures">حرکات تند وشدید زدن</string>
     <string name="swipe_left_action">ضربه تند وشدید زدن به چپ</string>
     <string name="swipe_right_action">ضربه تند وشدید زدن به راست</string>
@@ -150,32 +150,34 @@
 
     <!-- Other -->
     <string name="contact_thumbnails_size">اندازه تصاویر کوچک مخاطب</string>
-    <string name="purchase_simple_thank_you_g">Purchase Goodwy Thank You</string>
-    <string name="copyright_g">v %1$s\nCopyright © Goodwy %2$d</string>
-    <string name="update_thank_you_g">Please update Goodwy Thank You to the latest version</string>
+    <string name="purchase_simple_thank_you_g">سپاس از خرید</string>
+    <string name="copyright_g">v %1$s\nCopyright ©  %2$d</string>
+    <string name="update_thank_you_g">لطفاً برنامه را به آخرین نسخه به‌روزرسانی کنید</string>
     <string name="faq_2_text_commons_g">
-        <![CDATA[
-            Yes, of course. You can spread the word about the apps or give good feedback and ratings. You can also help by translating the apps in a new language, or just update some existing translations.
-        You can find the guide at https://github.com/Goodwy/Discussion , or just shoot me a message at goodwy.dev@gmail.com if you need help.
-        ]]>
+    <![CDATA[
+    بله، حتماً. می‌توانید درباره برنامه‌ها صحبت کنید یا بازخورد و امتیاز خوب بدهید. همچنین می‌توانید با ترجمه برنامه‌ها به زبان جدید یا به‌روزرسانی ترجمه‌های موجود کمک کنید.
+    راهنما را در https://github.com/Goodwy/Discussion پیدا خواهید کرد، یا اگر به کمک نیاز دارید، کافیست به goodwy.dev@gmail.com پیام دهید.
+    ]]>
     </string>
-    <string name="faq_8_text_commons_g">As your app version is no longer updated, the bugs you have maybe spotted will never be fixed. There will also be no new functions added. You can purchase the Pro version on Google Play for a small sum of money.
-        It is a one time payment, which means that once you purchase it, you will never have to pay again. Not even after getting a new device. If you won\'t like the Pro version, you can just uninstall it within a few hours and you will automatically get your money back.
-        If you want a refund anytime later, just contact us at goodwy.dev@gmail.com and you will get it.</string>
-    <string name="faq_100_title_commons_g">What is a private contact?</string>
-    <string name="faq_100_text_commons_g">A private contact is created within an application. This contact will not be visible to other applications.
-        If you uninstall the app, all private contacts will be deleted along with the app, so back up your contacts before uninstalling the app.</string>
-    <string name="faq_101_title_commons_g">How to create a private contact?</string>
-    <string name="faq_101_text_commons_g">When you create a contact, you must select the source of the contact: %s</string>
+    <string name="faq_8_text_commons_g">    از آنجا که نسخه برنامه شما دیگر به‌روزرسانی نمی‌شود، اشکالاتی که ممکن است مشاهده کرده باشید برطرف نخواهند شد. همچنین قابلیت‌های جدیدی هم اضافه نمی‌شود. می‌توانید نسخه Pro را با مبلغی کم از Google Play تهیه کنید.
+    این خرید فقط یکبار انجام می‌شود و پس از خرید، دیگر نیازی به پرداخت مجدد نیست؛ حتی اگر گوشی جدید تهیه کنید. اگر از نسخه Pro رضایت نداشتید، می‌توانید ظرف چند ساعت آن را حذف کرده و به صورت خودکار پولتان را پس بگیرید.
+    اگر بعداً نیز مایل به بازگشت وجه بودید، کافیست با ما در goodwy.dev@gmail.com تماس بگیرید.</string>
+    <string name="faq_100_title_commons_g">تماس خصوصی چیست؟</string>
+    <string name="faq_100_text_commons_g">    تماس خصوصی درون برنامه ایجاد می‌شود. این تماس در برنامه‌های دیگر قابل مشاهده نیست.
+    اگر برنامه را حذف کنید، تمام تماس‌های خصوصی نیز همراه با آن حذف می‌شوند؛ پس قبل از حذف، تماس‌ها را پشتیبان‌گیری کنید.
+</string>
+    <string name="faq_101_title_commons_g">چگونه یک تماس خصوصی ایجاد کنیم؟</string>
+    <string name="faq_101_text_commons_g">هنگام ایجاد تماس، باید منبع تماس را انتخاب کنید: %s</string>
     <string name="contributors_label_g">
-        <![CDATA[
-            This list contains everyone that noticeably helped any app within the Goodwy suite, not only this one. Translations are handled by volunteers,
-            let us know if you want to help too. The guide to translating is at <a href="https://github.com/Goodwy/Discussion">this website</a>, or just contact us at <a href="mailto:goodwy.dev@gmail.com">goodwy.dev@gmail.com</a> if you have any questions.
-            Thanks to all contributors and other supporters!
-        ]]>
+    <![CDATA[
+    این فهرست شامل تمام کسانی است که به‌طور قابل توجهی در توسعه هر یک از برنامه‌های Goodwy کمک کرده‌اند، نه فقط این برنامه. ترجمه‌ها توسط داوطلبان انجام می‌شود،
+    اگر شما هم علاقه‌مند به کمک هستید، به ما اطلاع دهید. راهنمای ترجمه در <a href="https://github.com/Goodwy/Discussion">این وب‌سایت</a> موجود است، یا اگر سوالی دارید به <a href="mailto:goodwy.dev@gmail.com">goodwy.dev@gmail.com</a> ایمیل بزنید.
+    از همه مشارکت‌کنندگان و حامیان دیگر سپاسگزاریم!
+    ]]>
     </string>
     <string name="deprecated_app_g">DEPRECATED: This version of the app is no longer maintained, get the Pro version at https://play.google.com/store/apps/details?id=com.devgroup.xxx.pro</string>
-    <string name="pro_app_refund_g">Don\'t forget that if you uninstall any paid app within 2 hours, you will automatically be refunded. If you want a refund anytime later, just contact us at goodwy.dev@gmail.com and you will get it. That makes it easy to try it out :)</string>
+    <string name="pro_app_refund_g">    فراموش نکنید اگر هر برنامه پولی را ظرف ۲ ساعت حذف کنید، به صورت خودکار وجه شما بازگردانده می‌شود. اگر بعدها درخواست بازگشت وجه داشتید، فقط با ما از طریق goodwy.dev@gmail.com تماس بگیرید و وجه خود را دریافت کنید. این یعنی راحت می‌توانید برنامه را امتحان کنید :)
+</string>
 
     <!-- Contacts -->
     <string name="add_number">افزودن شماره</string>
