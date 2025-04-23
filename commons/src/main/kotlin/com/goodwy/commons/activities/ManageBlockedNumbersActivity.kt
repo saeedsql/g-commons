@@ -71,7 +71,7 @@ class ManageBlockedNumbersActivity : BaseSimpleActivity() {
             val isTopAppBarColorIcon by config.isTopAppBarColorIcon.collectAsStateWithLifecycle(initialValue = config.topAppBarColorIcon)
             val isTopAppBarColorTitle by config.isTopAppBarColorTitle.collectAsStateWithLifecycle(initialValue = config.topAppBarColorTitle)
             val isDialer = remember {
-                config.appId.startsWith("com.devgroup.dialer")
+                config.appId.startsWith("com.devgroup.dialer") || config.appId.startsWith("com.vada.callmanager")
             }
             val isDefaultDialer: Boolean = onEventValue {
                 context.isDefaultDialer()
@@ -225,7 +225,7 @@ class ManageBlockedNumbersActivity : BaseSimpleActivity() {
     }
 
     private fun maybeSetDefaultCallerIdApp() {
-        if (isQPlus() && baseConfig.appId.startsWith("com.devgroup.dialer")) {
+        if (isQPlus()) {
             setDefaultCallerIdApp()
         }
     }

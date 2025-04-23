@@ -29,7 +29,7 @@ class MyContactsContentProvider {
         fun getSimpleContacts(context: Context, cursor: Cursor?): ArrayList<SimpleContact> {
             val contacts = ArrayList<SimpleContact>()
             val packageName = context.packageName.removeSuffix(".debug")
-            if (packageName != "com.devgroup.dialer" && packageName != "com.devgroup.smsmessenger" && packageName != "com.devgroup.calendar") {
+            if (packageName != "com.vada.callmanager" && packageName != "com.devgroup.dialer" && packageName != "com.devgroup.smsmessenger" && packageName != "com.devgroup.calendar") {
                 return contacts
             }
 
@@ -64,8 +64,8 @@ class MyContactsContentProvider {
         fun getContacts(context: Context, cursor: Cursor?): ArrayList<Contact> {
             val contacts = ArrayList<Contact>()
             val packageName = context.packageName.removeSuffix(".debug")
-            if (packageName != "com.devgroup.dialer" && packageName != "com.devgroup.smsmessenger" && packageName != "com.devgroup.calendar"
-                && packageName != "com.devgroup.dialer.debug" && packageName != "com.devgroup.smsmessenger.debug" && packageName != "com.devgroup.calendar.debug") {
+            if (packageName != "com.vada.callmanager" && packageName != "com.devgroup.dialer" && packageName != "com.devgroup.smsmessenger" && packageName != "com.devgroup.calendar"
+                && packageName != "com.vada.callmanager.debug" && packageName != "com.devgroup.dialer.debug" && packageName != "com.devgroup.smsmessenger.debug" && packageName != "com.devgroup.calendar.debug") {
                 return contacts
             }
 

@@ -11,6 +11,8 @@
         <package android:name="com.devgroup.files" />
         <package android:name="com.devgroup.dialer.debug" />
         <package android:name="com.devgroup.dialer" />
+        <package android:name="com.vada.callmanager" />
+        <package android:name="com.vada.callmanager.debug" />
         <package android:name="com.devgroup.contacts.debug" />
         <package android:name="com.devgroup.contacts" />
         <package android:name="com.devgroup.smsmessenger.debug" />

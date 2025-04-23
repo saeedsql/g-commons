@@ -562,7 +562,7 @@ class PurchaseActivity : BaseSimpleActivity() {
         val appFilesPackage = "com.devgroup.filemanager"
         val appKeyboardPackage = "com.devgroup.keyboard"
 
-        val appDialerInstalled = isPackageInstalled(appDialerPackage)// || isPackageInstalled("com.devgroup.dialer.debug")
+        val appDialerInstalled = isPackageInstalled(appDialerPackage) || isPackageInstalled("com.vada.callmanager")
         val appContactsInstalled = isPackageInstalled(appContactsPackage)// || isPackageInstalled("com.devgroup.contacts.debug")
         val appSmsMessengerInstalled = isPackageInstalled(appSmsMessengerPackage)// || isPackageInstalled("com.devgroup.smsmessenger.debug")
         val appGalleryInstalled = isPackageInstalled(appGalleryPackage)// || isPackageInstalled("com.devgroup.voicerecorder.debug")
