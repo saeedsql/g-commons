@@ -1022,15 +1022,22 @@ fun Context.getCornerRadiusBig() = resources.getDimension(R.dimen.rounded_corner
 
 // we need the Default Dialer functionality only in Simple Dialer and in Simple Contacts for now
 fun Context.isDefaultDialer(): Boolean {
-    return if (!packageName.startsWith("com.devgroup.contacts") && !packageName.startsWith("com.devgroup.dialer") && !packageName.startsWith("com.vada.callmanager")) {
-        true
-    } else if ((packageName.startsWith("com.devgroup.contacts") || packageName.startsWith("com.devgroup.dialer") || packageName.startsWith("com.vada.callmanager")) && isQPlus()) {
-        val roleManager = getSystemService(RoleManager::class.java)
-        roleManager!!.isRoleAvailable(RoleManager.ROLE_DIALER) && roleManager.isRoleHeld(RoleManager.ROLE_DIALER)
+    val isOurApp = packageName.startsWith("com.devgroup.contacts") ||
+                   packageName.startsWith("com.devgroup.dialer") ||
+                   packageName.startsWith("com.vada.callmanager")
+
+    return if (!isOurApp) {
+        false
+    } else if (isQPlus()) {
+        val roleManager = getSystemService(RoleManager::class.java) ?: return false
+        roleManager.isRoleAvailable(RoleManager.ROLE_DIALER) &&
+        roleManager.isRoleHeld(RoleManager.ROLE_DIALER)
     } else {
+        val telecomManager = getSystemService(Context.TELECOM_SERVICE) as? TelecomManager ?: return false
         telecomManager.defaultDialerPackage == packageName
     }
 }
+
 
 fun Context.getContactsHasMap(withComparableNumbers: Boolean = false, callback: (HashMap<String, String>) -> Unit) {
     ContactsHelper(this).getContacts(showOnlyContactsWithNumbers = true) { contactList ->
