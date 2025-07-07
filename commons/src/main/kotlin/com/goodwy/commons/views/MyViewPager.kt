@@ -1,34 +1,40 @@
 package com.devgroup.commons.views
 
-import android.annotation.SuppressLint
 import android.content.Context
 import android.util.AttributeSet
 import android.view.MotionEvent
-import androidx.viewpager2.widget.ViewPager2
+import androidx.viewpager.widget.ViewPager
 
-class MyViewPager : ViewPager2 {
-
+class MyViewPager : ViewPager {
     private var isPagingEnabled = true
 
     constructor(context: Context) : super(context)
-
     constructor(context: Context, attrs: AttributeSet) : super(context, attrs)
 
     override fun onInterceptTouchEvent(ev: MotionEvent): Boolean {
         return try {
-            this.isPagingEnabled && super.onInterceptTouchEvent(ev)
+            isPagingEnabled && super.onInterceptTouchEvent(ev)
         } catch (ignored: Exception) {
             false
         }
     }
 
-    @SuppressLint("ClickableViewAccessibility")
     override fun onTouchEvent(ev: MotionEvent): Boolean {
         return try {
-            this.isPagingEnabled && super.onTouchEvent(ev)
+            if (isPagingEnabled) {
+                performClick()
+                super.onTouchEvent(ev)
+            } else {
+                false
+            }
         } catch (ignored: Exception) {
             false
         }
+    }
+
+    override fun performClick(): Boolean {
+        super.performClick()
+        return true
     }
 
     fun setPagingEnabled(enable: Boolean) {

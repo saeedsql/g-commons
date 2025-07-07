@@ -17099,11 +17099,11 @@
 
     <issue
         id="ClickableViewAccessibility"
-        message="Custom view `MyViewPager` overrides `onTouchEvent` but not `performClick`"
+        message="Custom view `com.goodwy.commons.views.MyViewPager` overrides `onTouchEvent` but not `performClick`"
         errorLine1="    override fun onTouchEvent(ev: MotionEvent): Boolean {"
         errorLine2="                 ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/com/goodwy/commons/views/MyViewPager.kt"
+            file="src/main/kotlin/com/goodwy/commons/views/com.goodwy.commons.views.MyViewPager.kt"
             line="22"
             column="18"/>
     </issue>
