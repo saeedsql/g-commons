@@ -4,30 +4,35 @@ import android.util.SparseArray
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.viewpager.widget.PagerAdapter
+import androidx.recyclerview.widget.RecyclerView
 import com.devgroup.commons.R
 import com.devgroup.commons.activities.BaseSimpleActivity
 import com.devgroup.commons.interfaces.RenameTab
 
-class RenameAdapter(val activity: BaseSimpleActivity, val paths: ArrayList<String>) : PagerAdapter() {
+class RenameAdapter(
+    private val activity: BaseSimpleActivity,
+    private val paths: ArrayList<String>
+) : RecyclerView.Adapter<RenameAdapter.RenameTabViewHolder>() {
+
     private val tabs = SparseArray<RenameTab>()
 
-    override fun instantiateItem(container: ViewGroup, position: Int): Any {
-        val view = LayoutInflater.from(activity).inflate(layoutSelection(position), container, false)
-        container.addView(view)
-        tabs.put(position, view as RenameTab)
-        (view as RenameTab).initTab(activity, paths)
-        return view
+    inner class RenameTabViewHolder(val view: View) : RecyclerView.ViewHolder(view)
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RenameTabViewHolder {
+        val layoutId = layoutSelection(viewType)
+        val view = LayoutInflater.from(parent.context).inflate(layoutId, parent, false)
+        return RenameTabViewHolder(view)
     }
 
-    override fun destroyItem(container: ViewGroup, position: Int, item: Any) {
-        tabs.remove(position)
-        container.removeView(item as View)
+    override fun getItemCount(): Int = 2
+
+    override fun getItemViewType(position: Int): Int = position
+
+    override fun onBindViewHolder(holder: RenameTabViewHolder, position: Int) {
+        val renameTab = holder.view as RenameTab
+        renameTab.initTab(activity, paths)
+        tabs.put(position, renameTab)
     }
-
-    override fun getCount() = 2
-
-    override fun isViewFromObject(view: View, item: Any) = view == item
 
     private fun layoutSelection(position: Int): Int = when (position) {
         0 -> R.layout.tab_rename_simple
@@ -35,7 +40,7 @@ class RenameAdapter(val activity: BaseSimpleActivity, val paths: ArrayList<Strin
         else -> throw RuntimeException("Only 2 tabs allowed")
     }
 
-    fun dialogConfirmed(useMediaFileExtension: Boolean, position: Int, callback: (success: Boolean) -> Unit) {
-        tabs[position].dialogConfirmed(useMediaFileExtension, callback)
+    fun dialogConfirmed(useMediaFileExtension: Boolean, position: Int, callback: (Boolean) -> Unit) {
+        tabs[position]?.dialogConfirmed(useMediaFileExtension, callback)
     }
 }

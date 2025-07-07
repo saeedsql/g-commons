@@ -24,9 +24,11 @@ class RenameDialog(val activity: BaseSimpleActivity, val paths: ArrayList<String
             viewPager = dialogTabViewPager
             tabsAdapter = RenameAdapter(activity, paths)
             viewPager.adapter = tabsAdapter
-            viewPager.onPageChangeListener {
-                dialogTabLayout.getTabAt(it)!!.select()
-            }
+            viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
+                override fun onPageSelected(position: Int) {
+                    dialogTabLayout.getTabAt(position)?.select()
+                }
+            })
             viewPager.currentItem = activity.baseConfig.lastRenameUsed
 
             if (activity.isDynamicTheme()) {
