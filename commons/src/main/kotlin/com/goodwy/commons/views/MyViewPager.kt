@@ -4,9 +4,9 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.util.AttributeSet
 import android.view.MotionEvent
-import com.duolingo.open.rtlviewpager.RtlViewPager
+import androidx.viewpager2.widget.ViewPager2
 
-class MyViewPager : RtlViewPager {
+class MyViewPager : ViewPager2 {
 
     private var isPagingEnabled = true
 
