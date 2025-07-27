@@ -125,6 +125,6 @@ dependencies {
     implementation(libs.behavio.rule)
     implementation(libs.rx.animation)
     implementation(libs.rx.java)
-    implementation(libs.billing.client)
-    implementation(libs.rustore.client)
+//    implementation(libs.billing.client)
+//    implementation(libs.rustore.client)
 }
