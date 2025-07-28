@@ -4,9 +4,9 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.util.AttributeSet
 import android.view.MotionEvent
-import com.duolingo.open.rtlviewpager.RtlViewPager
+import androidx.viewpager.widget.ViewPager
 
-class MyViewPager : RtlViewPager {
+class MyViewPager : ViewPager {
 
     private var isPagingEnabled = true
 
@@ -16,7 +16,7 @@ class MyViewPager : RtlViewPager {
 
     override fun onInterceptTouchEvent(ev: MotionEvent): Boolean {
         return try {
-            this.isPagingEnabled && super.onInterceptTouchEvent(ev)
+            isPagingEnabled && super.onInterceptTouchEvent(ev)
         } catch (ignored: Exception) {
             false
         }
@@ -25,7 +25,7 @@ class MyViewPager : RtlViewPager {
     @SuppressLint("ClickableViewAccessibility")
     override fun onTouchEvent(ev: MotionEvent): Boolean {
         return try {
-            this.isPagingEnabled && super.onTouchEvent(ev)
+            isPagingEnabled && super.onTouchEvent(ev)
         } catch (ignored: Exception) {
             false
         }
