@@ -43,16 +43,7 @@
         <activity android:name="com.devgroup.commons.activities.CustomizationActivity"
             android:configChanges="orientation|keyboardHidden|screenSize|uiMode"/>
 
-        <activity android:name="com.devgroup.commons.activities.PurchaseActivity"
-            android:exported="true"
-            android:configChanges="orientation|keyboardHidden|screenSize|uiMode">
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="purchase-scheme" />
-            </intent-filter>
-        </activity>
+
 
         <activity
             android:name="com.devgroup.commons.activities.ManageBlockedNumbersActivity"

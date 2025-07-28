@@ -720,22 +720,22 @@ abstract class BaseSimpleActivity : AppCompatActivity() {
                               playStoreInstalled: Boolean = true,
                               ruStoreInstalled: Boolean = false,
                               showCollection: Boolean = resources.getBoolean(R.bool.show_collection)) {
-        Intent(applicationContext, PurchaseActivity::class.java).apply {
-            putExtra(APP_ICON_IDS, getAppIconIDs())
-            putExtra(APP_LAUNCHER_NAME, getAppLauncherName())
-            putExtra(APP_NAME, getString(appNameId))
-            putExtra(PRODUCT_ID_LIST, productIdList)
-            putExtra(PRODUCT_ID_LIST_RU, productIdListRu)
-            putExtra(SUBSCRIPTION_ID_LIST, subscriptionIdList)
-            putExtra(SUBSCRIPTION_ID_LIST_RU, subscriptionIdListRu)
-            putExtra(SUBSCRIPTION_YEAR_ID_LIST, subscriptionYearIdList)
-            putExtra(SUBSCRIPTION_YEAR_ID_LIST_RU, subscriptionYearIdListRu)
-            putExtra(SHOW_LIFEBUOY, showLifebuoy)
-            putExtra(PLAY_STORE_INSTALLED, playStoreInstalled)
-            putExtra(SHOW_COLLECTION, showCollection)
-            putExtra(RU_STORE, ruStoreInstalled)
-            startActivity(this)
-        }
+//        Intent(applicationContext, PurchaseActivity::class.java).apply {
+//            putExtra(APP_ICON_IDS, getAppIconIDs())
+//            putExtra(APP_LAUNCHER_NAME, getAppLauncherName())
+//            putExtra(APP_NAME, getString(appNameId))
+//            putExtra(PRODUCT_ID_LIST, productIdList)
+//            putExtra(PRODUCT_ID_LIST_RU, productIdListRu)
+//            putExtra(SUBSCRIPTION_ID_LIST, subscriptionIdList)
+//            putExtra(SUBSCRIPTION_ID_LIST_RU, subscriptionIdListRu)
+//            putExtra(SUBSCRIPTION_YEAR_ID_LIST, subscriptionYearIdList)
+//            putExtra(SUBSCRIPTION_YEAR_ID_LIST_RU, subscriptionYearIdListRu)
+//            putExtra(SHOW_LIFEBUOY, showLifebuoy)
+//            putExtra(PLAY_STORE_INSTALLED, playStoreInstalled)
+//            putExtra(SHOW_COLLECTION, showCollection)
+//            putExtra(RU_STORE, ruStoreInstalled)
+//            startActivity(this)
+//        }
     }
 
     fun startCustomizationActivity(showAccentColor : Boolean = false, isCollection : Boolean = false,
